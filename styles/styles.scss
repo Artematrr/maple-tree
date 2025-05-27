@@ -1,0 +1,23 @@
+@import 
+	'reset', 
+	'fonts', 
+	'mixins', 
+	'media', 
+	'variables', 
+	'utils', 
+	'globals';
+
+@import
+  'blocks/swiper',
+  'blocks/form',
+  'blocks/button',
+  'blocks/header',
+  'blocks/footer',
+  'blocks/hero',
+  'blocks/popular-categories',
+  'blocks/landscaping-services',
+  'blocks/swiper-block',
+  'blocks/rating',
+  'blocks/qna',
+  'blocks/mailing'
+	;

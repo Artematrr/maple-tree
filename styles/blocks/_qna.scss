@@ -1,0 +1,156 @@
+.qna {
+	margin-bottom: var(--section-margin-bottom);
+
+	&__container {
+	}
+
+	&__inner {
+		display: flex;
+		gap: 20px 90px;
+		padding: 60px;
+		border-radius: 28px;
+		background-color: var(--white);
+	}
+
+	&__left {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+		max-width: 530px;
+		width: 100%;
+	}
+
+	&__title {
+		@include fluid-text(60, 34);
+	}
+
+	&__desc {
+	}
+
+	&__actions {
+		display: flex;
+		align-items: center;
+		gap: 48px;
+	}
+
+	&__button {
+		height: 57px;
+	}
+
+	&__link {
+	}
+
+	&__logo {
+		width: 430px;
+		height: 310px;
+	}
+
+	&__right {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+
+	&__accordion {
+		display: flex;
+		flex-direction: column;
+		gap: 0;
+	}
+
+	&__item {
+		padding: 26px 24px;
+		border-bottom: 1px solid var(--primary-400);
+		overflow: hidden;
+
+		&:first-child {
+			border-top: 1px solid var(--primary-400);
+		}
+
+		:not(.is-open) .qna__icon-plus {
+			display: block;
+		}
+		:not(.is-open) .qna__icon-minus {
+			display: none;
+		}
+
+		&.is-open {
+			.qna__toggle {
+				color: var(--primary-500);
+			}
+
+			.qna__icon * {
+				fill: var(--primary-400);
+				stroke: var(--primary-400);
+			}
+
+			.qna__icon-minus {
+				display: block;
+			}
+			.qna__icon-plus {
+				display: none;
+			}
+
+			.qna__answer {
+				max-height: 300px;
+				padding-top: 30px;
+				opacity: 1;
+			}
+		}
+	}
+
+	&__toggle {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 10px;
+		background: transparent;
+		border: none;
+		padding: 0;
+		width: 100%;
+
+		@include hover {
+			color: var(--primary-500);
+
+			.qna__icon * {
+				fill: var(--primary-500);
+				stroke: var(--primary-500);
+			}
+		}
+	}
+
+	&__question {
+		@include fluid-text(24, 18);
+
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 10px;
+		max-width: 448px;
+		width: 100%;
+		font-weight: 500;
+		line-height: 1.45;
+		text-align: left;
+		cursor: pointer;
+	}
+
+	&__icon {
+		@include square(24px);
+	}
+
+	&__icon-minus {
+	}
+
+	&__icon-plus {
+	}
+
+	&__answer {
+		overflow: hidden;
+		opacity: 0;
+		max-height: 0;
+		padding-top: 0;
+		transition: max-height var(--transition-duration)
+				var(--transition-timing-function),
+			opacity var(--transition-duration) var(--transition-timing-function),
+			padding-top 0.1s var(--transition-timing-function) 0.05s;
+	}
+}

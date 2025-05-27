@@ -1,0 +1,81 @@
+:root {
+	--white: #ffffff;
+	--black: #000000;
+
+	--primary-400: #969300;
+	--primary-500: #5e710c;
+	--primary-600: #323e00;
+	--secondary-400: #fbd81d;
+	--secondary-500: #ffa600;
+	--secondary-600: #ff760a;
+	--secondary-800: #fc3110;
+	--secondary-900: #912707;
+
+	--gray-100: #fcfdff;
+	--gray-200: #faf9f7;
+	--gray-400: #E8E8E8;
+	--gray-500: #dedede;
+	--gray-700: #5c5c5c;
+	--gray-800: #525252;
+	--gray-900: #1b1b1b;
+
+	--background-color: var(--gray-200);
+	--text-color: var(--gray-900);
+
+	--background-gradient: linear-gradient(
+		188deg,
+		#fbd81d -8.63%,
+		#969300 36.16%,
+		#5e710c 93.59%
+	);
+	--background-gradient-primary: linear-gradient(
+		180deg,
+		rgba(0, 0, 0, 0) 14.58%,
+		#5e710c 100%
+	);
+	--background-gradient-secondary: linear-gradient(
+		180deg,
+		rgba(0, 0, 0, 0) 14.58%,
+		#ffa600 100%
+	);
+
+	--shadow-gray-light: 0px 8px 40px 0px rgba(120, 120, 120, 0.12);
+	--shadow-gray-dark: 0px 4px 40px 0px rgba(163, 163, 163, 0.1);
+	--shadow-primary: 0px 0px 20px 0px rgba(0, 0, 0, 0.11);
+
+	--border-primary: 1px solid var(--primary-400);
+	--border-secondary: 1px solid var(--secondary-900);
+	--border-gray: 1px solid var(--gray-500);
+
+	--border-radius-xl: 25px;
+	--border-radius-lg: 20px;
+	--border-radius-md: 12px;
+	--border-radius-sm: 8px;
+	--border-radius-xs: 5px;
+
+	--input-height: 72px;
+	--button-height: 57px;
+
+	--font-family-base: 'Nunito Sans', sans-serif;
+
+	--container-width: 1410px;
+	--container-padding-x: 17px;
+
+	--transition-duration: 0.2s;
+	--transition-timing-function: ease-in-out;
+
+	--section-margin-bottom: 90px;
+	--header-height: 145px;
+
+	@include mobile {
+		--section-margin-bottom: 25px;
+		--header-height: 65px;
+	}
+	// --section-padding-y: 70px;
+	// @include desktop {
+	// 	--section-padding-y: 50px;
+	// }
+	// @include mobile {
+	// 	--section-padding-y: 30px;
+	// }
+}

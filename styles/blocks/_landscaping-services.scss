@@ -1,0 +1,111 @@
+.landscaping-services {
+	margin-bottom: var(--section-margin-bottom);
+
+	&__rows {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__row {
+		position: relative;
+		display: flex;
+		gap: 30px;
+
+		&--top {
+			align-items: flex-start;
+			margin-bottom: -50px;
+		}
+		&--bottom {
+			align-items: flex-end;
+		}
+	}
+
+	&__item {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		flex: 1 1 0;
+		border-radius: 25px;
+		overflow: hidden;
+
+		&--xl {
+			flex: 0 1 486px;
+			height: 420px;
+		}
+		&--md {
+			flex: 0 1 360px;
+			height: 330px;
+		}
+		&--sm {
+			flex: 0 1 300px;
+			height: 330px;
+		}
+		&--lg {
+			flex: 0 1 360px;
+			height: 420px;
+		}
+	}
+
+	&__image {
+		z-index: 1;
+		width: 100%;
+		height: 100%;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	&__overlay {
+		position: absolute;
+		z-index: 2;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		top: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		padding: 32px;
+		background: var(--background-gradient-primary);
+		transition: all var(--transition-duration) var(--transition-timing-function);
+
+		@include hover {
+			background: var(--background-gradient-secondary);
+		}
+	}
+
+	&__text {
+		color: var(--white);
+		width: 100%;
+		text-align: left;
+		z-index: 4;
+		font-weight: 500;
+		justify-content: space-between;
+
+		@include hover {
+			color: var(--white);
+		}
+	}
+
+	&__title-wrapper {
+		display: flex;
+		align-items: center;
+		height: 330px;
+	}
+	&__title {
+		padding-bottom: 10px;
+		max-width: 540px;
+		text-align: right;
+
+		&.bottom-line {
+			&::before {
+				right: 0;
+				left: unset;
+			}
+		}
+	}
+}
