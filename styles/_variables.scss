@@ -13,7 +13,7 @@
 
 	--gray-100: #fcfdff;
 	--gray-200: #faf9f7;
-	--gray-400: #E8E8E8;
+	--gray-400: #e8e8e8;
 	--gray-500: #dedede;
 	--gray-700: #5c5c5c;
 	--gray-800: #525252;
@@ -39,6 +39,8 @@
 		#ffa600 100%
 	);
 
+	--overlay-black: rgba(0, 0, 0, 0.7);
+
 	--shadow-gray-light: 0px 8px 40px 0px rgba(120, 120, 120, 0.12);
 	--shadow-gray-dark: 0px 4px 40px 0px rgba(163, 163, 163, 0.1);
 	--shadow-primary: 0px 0px 20px 0px rgba(0, 0, 0, 0.11);
@@ -47,23 +49,22 @@
 	--border-secondary: 1px solid var(--secondary-900);
 	--border-gray: 1px solid var(--gray-500);
 
-	--border-radius-xl: 25px;
-	--border-radius-lg: 20px;
-	--border-radius-md: 12px;
-	--border-radius-sm: 8px;
-	--border-radius-xs: 5px;
+	// --border-radius-xl: 25px;
+	// --border-radius-lg: 20px;
+	// --border-radius-md: 12px;
+	// --border-radius-sm: 8px;
+	// --border-radius-xs: 5px;
 
-	--input-height: 72px;
-	--button-height: 57px;
+	--transition-duration: 0.2s;
+	--transition-timing-function: ease-in;
 
 	--font-family-base: 'Nunito Sans', sans-serif;
 
 	--container-width: 1410px;
 	--container-padding-x: 17px;
 
-	--transition-duration: 0.2s;
-	--transition-timing-function: ease-in-out;
-
+	--input-height: 72px;
+	--button-height: 57px;
 	--section-margin-bottom: 90px;
 	--header-height: 145px;
 
@@ -71,11 +72,4 @@
 		--section-margin-bottom: 25px;
 		--header-height: 65px;
 	}
-	// --section-padding-y: 70px;
-	// @include desktop {
-	// 	--section-padding-y: 50px;
-	// }
-	// @include mobile {
-	// 	--section-padding-y: 30px;
-	// }
 }

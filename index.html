@@ -15,7 +15,7 @@
 	<header class="header">
 		<div class="header__container container">
 			<a href="/" class="header__logo">
-				<img src="/images/logo.svg" alt="Клён — питомник растений">
+				<img src="/images/logo.svg" alt="Клён — питомник растений" loading="lazy">
 			</a>
 			<div class="header__content">
 				<div class="header__top">
@@ -39,22 +39,22 @@
 							<span>Режим работы с 9:00 до 19:00</span>
 						</div>
 						<div class="header__actions">
-							<button class="header__button button button--outline">Перезвонить</button>
-							<button class="header__button button button--outline">Задать вопрос</button>
+							<button class="header__button button button--outline js-modal-callback">Перезвонить</button>
+							<button class="header__button button button--outline js-modal-askQuestion">Задать вопрос</button>
 						</div>
 					</div>
-					<div class="header__cart">
-						<a href="#" class="header__cart-link">
+					<a href="#" class="header__cart js-modal-cart">
+						<div class="header__cart-icon-wrapper">
 							<img src="/images/icons/cart.svg" alt="Корзина">
 							<span class="header__cart-number">0</span>
-						</a>
+						</div>
 						<span class="header__cart-text">В корзине пусто</span>
-					</div>
+					</a>
 				</div>
 				<nav class="header__nav">
 					<ul class="header__menu">
-						<li><a href="#" class="header__catalogue"><img src="/images/icons/catalogue-icon.svg"
-									alt="Каталог">Каталог</a></li>
+						<li><a href="#" class="header__catalog"><img src="/images/icons/catalog-icon.svg" alt="Каталог">Каталог</a>
+						</li>
 						<li><a href="#">Наши услуги</a></li>
 						<li><a href="#">Портфолио</a></li>
 						<li><a href="#">Питомник</a></li>
@@ -98,7 +98,7 @@
 						</p>
 					</div>
 					<div class="hero__actions">
-						<button class="hero__button button">Запросить каталог и прайс</button>
+						<button class="hero__button button js-modal-sendcatalog">Запросить каталог и прайс</button>
 						<a href="#" class="hero__link button button--link">Перейти в каталог
 							<img src="/images/icons/arrow.svg" alt="">
 						</a>
@@ -108,7 +108,7 @@
 					<div class="hero__image-wrapper">
 						<div class="hero__image-frame">
 							<div class="hero__image">
-								<img src="/images/hero.jpg" alt="Цветы" width="544" height="560">
+								<img src="/images/hero.jpg" alt="Цветы" width="544" height="560" loading="lazy">
 							</div>
 						</div>
 					</div>
@@ -124,92 +124,92 @@
 				<h2 class="popular-categories__title bottom-line">
 					<span>Популярные</span> категории
 				</h2>
-				<div class="popular-categories__rows">
-					<div class="popular-categories__row-five">
-						<a href="#" class="popular-categories__item">
-							<div class="popular-categories__frame">
-								<div class="popular-categories__image" style="width: 78px; height: 156px;">
-									<img src="/images/categories/categories-1.png" alt="Лиственные" width="78" height="156">
-								</div>
+				<div class="popular-categories__list">
+					<a href="#" class="popular-categories__item">
+						<div class="popular-categories__frame">
+							<div class="popular-categories__image" style="width: 78px; height: 156px;">
+								<img src="/images/categories/categories-1.png" alt="Лиственные" loading="lazy">
 							</div>
-							<div class="popular-categories__name">Лиственные</div>
-							<div class="popular-categories__count">10000 позиций</div>
-						</a>
-						<a href="#" class="popular-categories__item">
-							<div class="popular-categories__frame">
-								<div class="popular-categories__image" style="width: 78px; height: 156px;">
-									<img src="/images/categories/categories-2.png" alt="Хвойные" width="78" height="156">
-								</div>
+						</div>
+						<div class="popular-categories__name">Лиственные</div>
+						<div class="popular-categories__count">10000 позиций</div>
+					</a>
+					<a href="#" class="popular-categories__item">
+						<div class="popular-categories__frame">
+							<div class="popular-categories__image" style="width: 78px; height: 156px;">
+								<img src="/images/categories/categories-2.png" alt="Хвойные" loading="lazy">
 							</div>
-							<div class="popular-categories__name">Хвойные</div>
-							<div class="popular-categories__count">3000 позиций</div>
-						</a>
-						<a href="#" class="popular-categories__item">
-							<div class="popular-categories__frame">
-								<div class="popular-categories__image" style="width: 171px; height: 156px;">
-									<img src="/images/categories/categories-3.png" alt="Плодовые" width="171" height="156">
-								</div>
+						</div>
+						<div class="popular-categories__name">Хвойные</div>
+						<div class="popular-categories__count">3000 позиций</div>
+					</a>
+					<a href="#" class="popular-categories__item">
+						<div class="popular-categories__frame">
+							<div class="popular-categories__image" style="width: 171px; height: 156px;">
+								<img src="/images/categories/categories-3.png" alt="Плодовые" loading="lazy">
 							</div>
-							<div class="popular-categories__name">Плодовые</div>
-							<div class="popular-categories__count">4000 позиций</div>
-						</a>
-						<a href="#" class="popular-categories__item">
-							<div class="popular-categories__frame">
-								<div class="popular-categories__image" style="width: 163px; height: 156px;">
-									<img src="/images/categories/categories-4.png" alt="Вересковые" width="163" height="156">
-								</div>
+						</div>
+						<div class="popular-categories__name">Плодовые</div>
+						<div class="popular-categories__count">4000 позиций</div>
+					</a>
+					<a href="#" class="popular-categories__item">
+						<div class="popular-categories__frame">
+							<div class="popular-categories__image" style="width: 163px; height: 156px;">
+								<img src="/images/categories/categories-4.png" alt="Вересковые" loading="lazy">
 							</div>
-							<div class="popular-categories__name">Вересковые</div>
-							<div class="popular-categories__count">1000 позиций</div>
-						</a>
-						<a href="#" class="popular-categories__item">
-							<div class="popular-categories__frame">
-								<div class="popular-categories__image" style="width: 78px; height: 156px;">
-									<img src="/images/categories/categories-5.png" alt="Водные и околоводные" width="78" height="156">
-								</div>
+						</div>
+						<div class="popular-categories__name">Вересковые</div>
+						<div class="popular-categories__count">1000 позиций</div>
+					</a>
+					<a href="#" class="popular-categories__item">
+						<div class="popular-categories__frame">
+							<div class="popular-categories__image" style="width: 78px; height: 156px;">
+								<img src="/images/categories/categories-5.png" alt="Водные и околоводные" loading="lazy">
 							</div>
-							<div class="popular-categories__name">Водные и околоводные</div>
-							<div class="popular-categories__count">4500 позиций</div>
-						</a>
-					</div>
-					<div class="popular-categories__row-four">
-						<a href="#" class="popular-categories__item">
-							<div class="popular-categories__frame">
-								<div class="popular-categories__image" style="width: 135px; height: 156px;">
-									<img src="/images/categories/categories-6.png" alt="Розы">
-								</div>
+						</div>
+						<div class="popular-categories__name">Водные и околоводные</div>
+						<div class="popular-categories__count">4500 позиций</div>
+					</a>
+
+
+					<a href="#" class="popular-categories__item">
+						<div class="popular-categories__frame">
+							<div class="popular-categories__image" style="width: 135px; height: 156px;">
+								<img src="/images/categories/categories-6.png" alt="Розы" loading="lazy">
 							</div>
-							<div class="popular-categories__name">Розы</div>
-							<div class="popular-categories__count">4500 позиций</div>
-						</a>
-						<a href="#" class="popular-categories__item">
-							<div class="popular-categories__frame">
-								<div class="popular-categories__image" style="width:199px; height: 156px;">
-									<img src="/images/categories/categories-7.png" alt="Многолетние и злаки">
-								</div>
+						</div>
+						<div class="popular-categories__name">Розы</div>
+						<div class="popular-categories__count">4500 позиций</div>
+					</a>
+					<a href="#" class="popular-categories__item">
+						<div class="popular-categories__frame">
+							<div class="popular-categories__image" style="width:199px; height: 156px;">
+								<img src="/images/categories/categories-7.png" alt="Многолетние и злаки" loading="lazy">
 							</div>
-							<div class="popular-categories__name">Многолетние и злаки</div>
-							<div class="popular-categories__count">80000 позиций</div>
-						</a>
-						<a href="#" class="popular-categories__item">
-							<div class="popular-categories__frame">
-								<div class="popular-categories__image" style="width: 100px; height: 156px;">
-									<img src="/images/categories/categories-8.png" alt="Лианы">
-								</div>
+						</div>
+						<div class="popular-categories__name">Многолетние и злаки</div>
+						<div class="popular-categories__count">80000 позиций</div>
+					</a>
+					<a href="#" class="popular-categories__item">
+						<div class="popular-categories__frame">
+							<div class="popular-categories__image" style="width: 100px; height: 156px;">
+								<img src="/images/categories/categories-8.png" alt="Лианы" loading="lazy">
 							</div>
-							<div class="popular-categories__name">Лианы</div>
-							<div class="popular-categories__count">500 позиций</div>
-						</a>
-						<a href="#" class="popular-categories__item">
-							<div class="popular-categories__frame">
-								<div class="popular-categories__image" style="width: 230px; height: 113px;">
-									<img src="/images/categories/categories-9.png" alt="Товары для озеленения и благоустройства">
-								</div>
+						</div>
+						<div class="popular-categories__name">Лианы</div>
+						<div class="popular-categories__count">500 позиций</div>
+					</a>
+					<a href="#" class="popular-categories__item">
+						<div class="popular-categories__frame">
+							<div class="popular-categories__image" style="width: 230px; height: 113px;">
+								<img src="/images/categories/categories-9.png" alt="Товары для озеленения и благоустройства"
+									loading="lazy">
 							</div>
-							<div class="popular-categories__name">Товары для озеленения и благоустройства</div>
-							<div class="popular-categories__count">1000 позиций</div>
-						</a>
-					</div>
+						</div>
+						<div class="popular-categories__name">Товары для озеленения и благоустройства</div>
+						<div class="popular-categories__count">1000 позиций</div>
+					</a>
+
 
 
 				</div>
@@ -230,13 +230,13 @@
 								</div>
 							</div>
 							<div class="landscaping-services__image">
-								<img src="/images/services/landscaping-services-1.jpg" alt="Ландшафтный дизайн">
+								<img src="/images/services/landscaping-services-1.jpg" alt="Ландшафтный дизайн" loading="lazy">
 							</div>
 
 						</a>
 						<a href="#" class="landscaping-services__item landscaping-services__item--md">
 							<div class="landscaping-services__image">
-								<img src="/images/services/landscaping-services-2.jpg" alt="Проектирование">
+								<img src="/images/services/landscaping-services-2.jpg" alt="Проектирование" loading="lazy">
 							</div>
 							<div class="landscaping-services__overlay">
 
@@ -256,7 +256,7 @@
 					<div class="landscaping-services__row landscaping-services__row--bottom">
 						<a href="#" class="landscaping-services__item landscaping-services__item--sm">
 							<div class="landscaping-services__image">
-								<img src="/images/services/landscaping-services-3.jpg" alt="Высадка растений">
+								<img src="/images/services/landscaping-services-3.jpg" alt="Высадка растений" loading="lazy">
 							</div>
 							<div class="landscaping-services__overlay">
 
@@ -269,7 +269,7 @@
 						</a>
 						<a href="#" class="landscaping-services__item landscaping-services__item--sm">
 							<div class="landscaping-services__image">
-								<img src="/images/services/landscaping-services-4.jpg" alt="Устройство газона">
+								<img src="/images/services/landscaping-services-4.jpg" alt="Устройство газона" loading="lazy">
 							</div>
 							<div class="landscaping-services__overlay">
 
@@ -282,7 +282,7 @@
 						</a>
 						<a href="#" class="landscaping-services__item landscaping-services__item--lg">
 							<div class="landscaping-services__image">
-								<img src="/images/services/landscaping-services-5.jpg" alt="Сезонное обслуживание">
+								<img src="/images/services/landscaping-services-5.jpg" alt="Сезонное обслуживание" loading="lazy">
 							</div>
 							<div class="landscaping-services__overlay">
 
@@ -295,7 +295,7 @@
 						</a>
 						<a href="#" class="landscaping-services__item landscaping-services__item--lg">
 							<div class="landscaping-services__image">
-								<img src="/images/services/landscaping-services-6.jpg" alt="Автополив">
+								<img src="/images/services/landscaping-services-6.jpg" alt="Автополив" loading="lazy">
 							</div>
 							<div class="landscaping-services__overlay">
 
@@ -311,7 +311,7 @@
 			</div>
 		</section>
 
-		<section class="swiper-block swiper-block--catalogue">
+		<section class="swiper-block swiper-block--catalog">
 			<div class="swiper-block__container container">
 				<header class="title-wrapper">
 					<h2 class="swiper-block__title bottom-line" data-badge="">
@@ -319,7 +319,2327 @@
 					</h2>
 					<p class="badge-text">Новинки</p>
 				</header>
-				<!-- swiper-block__swiper -->
+				<div class="swiper-block__swiper swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide">
+							<div class="catalog-card">
+								<div class="catalog-card__main">
+									<div class="catalog-card__swiper-container">
+										<div class="catalog-card__swiper swiper">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<img src="/images/catalog/catalog-1.jpg" alt="Разнообразный и богатый опыт" loading="lazy">
+												</div>
+												<div class="swiper-slide">
+													<img src="/images/catalog/catalog-2.jpg" alt="Разнообразный и богатый опыт" loading="lazy">
+												</div>
+												<div class="swiper-slide">
+													<img src="/images/catalog/catalog-3.jpg" alt="Разнообразный и богатый опыт" loading="lazy">
+												</div>
+												<div class="swiper-slide">
+													<img src="/images/catalog/catalog-4.jpg" alt="Разнообразный и богатый опыт" loading="lazy">
+												</div>
+											</div>
+										</div>
+										<div class="swiper-pagination"></div>
+									</div>
+									<div class="catalog-card__content">
+										<p class="catalog-card__articul">Арт. 103296706</p>
+										<div class="catalog-card__name">
+											<a href="#" class="catalog-card__title">Разнообразный и богатый опыт</a>
+											<p class="catalog-card__subtitle">Malus Red Katie</p>
+										</div>
+										<div class="catalog-card__details">
+											<p>C-10,PA 160-180 см + крона</p>
+										</div>
+										<p class="catalog-card__availability">В наличии</p>
+										<p class="catalog-card__price">
+											Цена
+											<span class="catalog-card__price-current">16 000 ₽</span>
+											<span class="catalog-card__price-old">25 000 ₽</span>
+										</p>
+										<div class="catalog-card__actions">
+											<button class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+												data-label="Купить в один клик" title="Купить в один клик">
+												<img src="/images/icons/one-click.svg" alt="">
+											</button>
+											<button class="catalog-card__button catalog-card__button--cart button js-modal-cart"
+												data-label="В корзину" title="В корзину">
+												<img src="/images/icons/shopping-cart.svg" alt="">
+												В корзину
+											</button>
+											<button class="catalog-card__button catalog-card__button--info button js-info-open"
+												data-label="Информация" title="Информация">
+												<img src="/images/icons/exclamation-white.svg" alt="">
+											</button>
+										</div>
+									</div>
+								</div>
+								<div class="catalog-card__info">
+									<div class="catalog-card__name">
+										<a href="#" class="catalog-card__title">Разнообразный и богатый опыт</a>
+										<p class="catalog-card__subtitle">Malus Red Katie</p>
+									</div>
+									<div class="catalog-card__info-list">
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability">В наличии</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														<span class="catalog-card__price-current">16 000 ₽</span>
+														<span class="catalog-card__price-old">25 000 ₽</span>
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона, C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability">В наличии</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														Цена по запросу
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability catalog-card__availability--for-order">Под заказ</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														<span class="catalog-card__price-current">16 000 ₽</span>
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability">В наличии</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														<span class="catalog-card__price-current">16 000 ₽</span>
+														<span class="catalog-card__price-old">25 000 ₽</span>
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability">В наличии</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														Цена по запросу
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability catalog-card__availability--for-order">Под заказ</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														<span class="catalog-card__price-current">16 000 ₽</span>
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability">В наличии</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														<span class="catalog-card__price-current">16 000 ₽</span>
+														<span class="catalog-card__price-old">25 000 ₽</span>
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона, C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability">В наличии</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														Цена по запросу
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability catalog-card__availability--for-order">Под заказ</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														<span class="catalog-card__price-current">16 000 ₽</span>
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability">В наличии</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														<span class="catalog-card__price-current">16 000 ₽</span>
+														<span class="catalog-card__price-old">25 000 ₽</span>
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона, C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability">В наличии</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														Цена по запросу
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability catalog-card__availability--for-order">Под заказ</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														<span class="catalog-card__price-current">16 000 ₽</span>
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability">В наличии</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														<span class="catalog-card__price-current">16 000 ₽</span>
+														<span class="catalog-card__price-old">25 000 ₽</span>
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона, C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability">В наличии</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														Цена по запросу
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability catalog-card__availability--for-order">Под заказ</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														<span class="catalog-card__price-current">16 000 ₽</span>
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability">В наличии</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														<span class="catalog-card__price-current">16 000 ₽</span>
+														<span class="catalog-card__price-old">25 000 ₽</span>
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона, C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability">В наличии</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														Цена по запросу
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability catalog-card__availability--for-order">Под заказ</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														<span class="catalog-card__price-current">16 000 ₽</span>
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability">В наличии</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														<span class="catalog-card__price-current">16 000 ₽</span>
+														<span class="catalog-card__price-old">25 000 ₽</span>
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона, C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability">В наличии</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														Цена по запросу
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability catalog-card__availability--for-order">Под заказ</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														<span class="catalog-card__price-current">16 000 ₽</span>
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability">В наличии</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														<span class="catalog-card__price-current">16 000 ₽</span>
+														<span class="catalog-card__price-old">25 000 ₽</span>
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона, C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability">В наличии</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														Цена по запросу
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability catalog-card__availability--for-order">Под заказ</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														<span class="catalog-card__price-current">16 000 ₽</span>
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability">В наличии</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														<span class="catalog-card__price-current">16 000 ₽</span>
+														<span class="catalog-card__price-old">25 000 ₽</span>
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона, C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability">В наличии</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														Цена по запросу
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability catalog-card__availability--for-order">Под заказ</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														<span class="catalog-card__price-current">16 000 ₽</span>
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="catalog-card__info-bottom">
+										<a href="javascript:void(0);" class="catalog-card__info-close js-card-close">Свернуть</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="catalog-card">
+								<div class="catalog-card__main">
+									<div class="catalog-card__swiper-container">
+										<div class="catalog-card__swiper swiper">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<img src="/images/catalog/catalog-2.jpg" alt="Яблоня Ред Кетти" loading="lazy">
+												</div>
+												<div class="swiper-slide">
+													<img src="/images/catalog/catalog-1.jpg" alt="Яблоня Ред Кетти" loading="lazy">
+												</div>
+												<div class="swiper-slide">
+													<img src="/images/catalog/catalog-3.jpg" alt="Яблоня Ред Кетти" loading="lazy">
+												</div>
+												<div class="swiper-slide">
+													<img src="/images/catalog/catalog-4.jpg" alt="Яблоня Ред Кетти" loading="lazy">
+												</div>
+											</div>
+										</div>
+										<div class="swiper-pagination"></div>
+									</div>
+									<div class="catalog-card__content">
+										<p class="catalog-card__articul">Арт. 103296706</p>
+										<div class="catalog-card__name">
+											<a href="#" class="catalog-card__title">Яблоня Ред Кетти</a>
+											<p class="catalog-card__subtitle">Malus Red Katie</p>
+										</div>
+										<div class="catalog-card__details">
+											<p>C-10,PA 160-180 см + крона</p>
+										</div>
+										<p class="catalog-card__availability">В наличии</p>
+										<p class="catalog-card__price">
+											Цена по запросу
+										</p>
+										<div class="catalog-card__actions">
+											<button class="catalog-card__button catalog-card__button--cart button js-modal-requestPrice"
+												data-label="В корзину" title="В корзину">
+												<img src="/images/icons/shopping-cart.svg" alt="">
+												Запросить цену
+											</button>
+											<button class="catalog-card__button catalog-card__button--info button js-info-open"
+												data-label="Информация" title="Информация">
+												<img src="/images/icons/exclamation-white.svg" alt="">
+											</button>
+										</div>
+									</div>
+								</div>
+								<div class="catalog-card__info">
+									<div class="catalog-card__name">
+										<a href="#" class="catalog-card__title">Яблоня Ред Кетти</a>
+										<p class="catalog-card__subtitle">Malus Red Katie</p>
+									</div>
+									<div class="catalog-card__info-list">
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability">В наличии</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														<span class="catalog-card__price-current">16 000 ₽</span>
+														<span class="catalog-card__price-old">25 000 ₽</span>
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона, C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability">В наличии</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														Цена по запросу
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability catalog-card__availability--for-order">Под заказ</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														<span class="catalog-card__price-current">16 000 ₽</span>
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability">В наличии</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														<span class="catalog-card__price-current">16 000 ₽</span>
+														<span class="catalog-card__price-old">25 000 ₽</span>
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона, C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability">В наличии</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														Цена по запросу
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability catalog-card__availability--for-order">Под заказ</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														<span class="catalog-card__price-current">16 000 ₽</span>
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability">В наличии</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														<span class="catalog-card__price-current">16 000 ₽</span>
+														<span class="catalog-card__price-old">25 000 ₽</span>
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона, C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability">В наличии</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														Цена по запросу
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability catalog-card__availability--for-order">Под заказ</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														<span class="catalog-card__price-current">16 000 ₽</span>
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability">В наличии</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														<span class="catalog-card__price-current">16 000 ₽</span>
+														<span class="catalog-card__price-old">25 000 ₽</span>
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона, C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability">В наличии</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														Цена по запросу
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability catalog-card__availability--for-order">Под заказ</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														<span class="catalog-card__price-current">16 000 ₽</span>
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability">В наличии</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														<span class="catalog-card__price-current">16 000 ₽</span>
+														<span class="catalog-card__price-old">25 000 ₽</span>
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона, C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability">В наличии</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														Цена по запросу
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability catalog-card__availability--for-order">Под заказ</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														<span class="catalog-card__price-current">16 000 ₽</span>
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="catalog-card__info-bottom">
+										<a href="javascript:void(0);" class="catalog-card__info-close js-card-close">Свернуть</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="catalog-card">
+								<div class="catalog-card__main">
+									<div class="catalog-card__swiper-container">
+										<div class="catalog-card__swiper swiper">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<img src="/images/catalog/catalog-3.jpg" alt="Разнообразный и богатий сезон" loading="lazy">
+												</div>
+												<div class="swiper-slide">
+													<img src="/images/catalog/catalog-1.jpg" alt="Разнообразный и богатий сезон" loading="lazy">
+												</div>
+												<div class="swiper-slide">
+													<img src="/images/catalog/catalog-2.jpg" alt="Разнообразный и богатий сезон" loading="lazy">
+												</div>
+												<div class="swiper-slide">
+													<img src="/images/catalog/catalog-4.jpg" alt="Разнообразный и богатий сезон" loading="lazy">
+												</div>
+											</div>
+										</div>
+										<div class="swiper-pagination"></div>
+									</div>
+									<div class="catalog-card__content">
+										<p class="catalog-card__articul">Арт. 103296706</p>
+										<div class="catalog-card__name">
+											<a href="#" class="catalog-card__title">Яблоня Ред Кетти</a>
+											<p class="catalog-card__subtitle">Malus Red Katie</p>
+										</div>
+										<div class="catalog-card__details">
+											<p>C-10,PA 160-180 см + крона</p>
+										</div>
+										<p class="catalog-card__availability catalog-card__availability--for-order">Под заказ</p>
+										<p class="catalog-card__price">
+											Цена
+											<span class="catalog-card__price-current">16 000 ₽</span>
+											<span class="catalog-card__price-old">25 000 ₽</span>
+										</p>
+										<div class="catalog-card__actions">
+											<button class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+												data-label="Купить в один клик" title="Купить в один клик">
+												<img src="/images/icons/one-click.svg" alt="">
+											</button>
+											<button class="catalog-card__button catalog-card__button--cart button js-modal-cart"
+												data-label="В корзину" title="В корзину">
+												<img src="/images/icons/shopping-cart.svg" alt="">
+												В корзину
+											</button>
+											<button class="catalog-card__button catalog-card__button--info button js-info-open"
+												data-label="Информация" title="Информация">
+												<img src="/images/icons/exclamation-white.svg" alt="">
+											</button>
+										</div>
+									</div>
+								</div>
+								<div class="catalog-card__info">
+									<div class="catalog-card__name">
+										<a href="#" class="catalog-card__title">Яблоня Ред Кетти</a>
+										<p class="catalog-card__subtitle">Malus Red Katie</p>
+									</div>
+									<div class="catalog-card__info-list">
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability">В наличии</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														<span class="catalog-card__price-current">16 000 ₽</span>
+														<span class="catalog-card__price-old">25 000 ₽</span>
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона, C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability">В наличии</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														Цена по запросу
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability catalog-card__availability--for-order">Под заказ</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														<span class="catalog-card__price-current">16 000 ₽</span>
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability">В наличии</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														<span class="catalog-card__price-current">16 000 ₽</span>
+														<span class="catalog-card__price-old">25 000 ₽</span>
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона, C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability">В наличии</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														Цена по запросу
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability catalog-card__availability--for-order">Под заказ</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														<span class="catalog-card__price-current">16 000 ₽</span>
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability">В наличии</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														<span class="catalog-card__price-current">16 000 ₽</span>
+														<span class="catalog-card__price-old">25 000 ₽</span>
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона, C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability">В наличии</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														Цена по запросу
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability catalog-card__availability--for-order">Под заказ</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														<span class="catalog-card__price-current">16 000 ₽</span>
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="catalog-card__info-bottom">
+										<a href="javascript:void(0);" class="catalog-card__info-close js-card-close">Свернуть</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide">
+							<div class="catalog-card">
+								<div class="catalog-card__main">
+									<div class="catalog-card__swiper-container">
+										<div class="catalog-card__swiper swiper">
+											<div class="swiper-wrapper">
+												<div class="swiper-slide">
+													<img src="/images/catalog/catalog-4.jpg" alt="Разнообразный и богатый опыт" loading="lazy">
+												</div>
+												<div class="swiper-slide">
+													<img src="/images/catalog/catalog-1.jpg" alt="Разнообразный и богатый опыт" loading="lazy">
+												</div>
+												<div class="swiper-slide">
+													<img src="/images/catalog/catalog-2.jpg" alt="Разнообразный и богатый опыт" loading="lazy">
+												</div>
+												<div class="swiper-slide">
+													<img src="/images/catalog/catalog-3.jpg" alt="Разнообразный и богатый опыт" loading="lazy">
+												</div>
+
+											</div>
+										</div>
+										<div class="swiper-pagination"></div>
+									</div>
+									<div class="catalog-card__content">
+										<p class="catalog-card__articul">Арт. 103296706</p>
+										<div class="catalog-card__name">
+											<a href="#" class="catalog-card__title">Разнообразный и богатый опыт</a>
+											<p class="catalog-card__subtitle">Malus Red Katie</p>
+										</div>
+										<div class="catalog-card__details">
+											<p>C-10,PA 160-180 см + крона</p>
+										</div>
+										<p class="catalog-card__availability">В наличии</p>
+										<p class="catalog-card__price">
+											Цена
+											<span class="catalog-card__price-current">16 000 ₽</span>
+											<span class="catalog-card__price-old">25 000 ₽</span>
+										</p>
+										<div class="catalog-card__actions">
+											<button class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+												data-label="Купить в один клик" title="Купить в один клик">
+												<img src="/images/icons/one-click.svg" alt="">
+											</button>
+											<button class="catalog-card__button catalog-card__button--cart button js-modal-cart"
+												data-label="В корзину" title="В корзину">
+												<img src="/images/icons/shopping-cart.svg" alt="">
+												В корзину
+											</button>
+											<button class="catalog-card__button catalog-card__button--info button js-info-open"
+												data-label="Информация" title="Информация">
+												<img src="/images/icons/exclamation-white.svg" alt="">
+											</button>
+										</div>
+									</div>
+								</div>
+								<div class="catalog-card__info">
+									<div class="catalog-card__name">
+										<a href="#" class="catalog-card__title">Разнообразный и богатый опыт</a>
+										<p class="catalog-card__subtitle">Malus Red Katie</p>
+									</div>
+									<div class="catalog-card__info-list">
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability">В наличии</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														<span class="catalog-card__price-current">16 000 ₽</span>
+														<span class="catalog-card__price-old">25 000 ₽</span>
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона, C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability">В наличии</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														Цена по запросу
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability catalog-card__availability--for-order">Под заказ</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														<span class="catalog-card__price-current">16 000 ₽</span>
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability">В наличии</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														<span class="catalog-card__price-current">16 000 ₽</span>
+														<span class="catalog-card__price-old">25 000 ₽</span>
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability">В наличии</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														Цена по запросу
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability catalog-card__availability--for-order">Под заказ</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														<span class="catalog-card__price-current">16 000 ₽</span>
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability">В наличии</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														<span class="catalog-card__price-current">16 000 ₽</span>
+														<span class="catalog-card__price-old">25 000 ₽</span>
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона, C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability">В наличии</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														Цена по запросу
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability catalog-card__availability--for-order">Под заказ</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														<span class="catalog-card__price-current">16 000 ₽</span>
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability">В наличии</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														<span class="catalog-card__price-current">16 000 ₽</span>
+														<span class="catalog-card__price-old">25 000 ₽</span>
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона, C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability">В наличии</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														Цена по запросу
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability catalog-card__availability--for-order">Под заказ</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														<span class="catalog-card__price-current">16 000 ₽</span>
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability">В наличии</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														<span class="catalog-card__price-current">16 000 ₽</span>
+														<span class="catalog-card__price-old">25 000 ₽</span>
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона, C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability">В наличии</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														Цена по запросу
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability catalog-card__availability--for-order">Под заказ</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														<span class="catalog-card__price-current">16 000 ₽</span>
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability">В наличии</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														<span class="catalog-card__price-current">16 000 ₽</span>
+														<span class="catalog-card__price-old">25 000 ₽</span>
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона, C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability">В наличии</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														Цена по запросу
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability catalog-card__availability--for-order">Под заказ</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														<span class="catalog-card__price-current">16 000 ₽</span>
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability">В наличии</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														<span class="catalog-card__price-current">16 000 ₽</span>
+														<span class="catalog-card__price-old">25 000 ₽</span>
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона, C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability">В наличии</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														Цена по запросу
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability catalog-card__availability--for-order">Под заказ</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														<span class="catalog-card__price-current">16 000 ₽</span>
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability">В наличии</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														<span class="catalog-card__price-current">16 000 ₽</span>
+														<span class="catalog-card__price-old">25 000 ₽</span>
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона, C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability">В наличии</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														Цена по запросу
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability catalog-card__availability--for-order">Под заказ</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														<span class="catalog-card__price-current">16 000 ₽</span>
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability">В наличии</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														<span class="catalog-card__price-current">16 000 ₽</span>
+														<span class="catalog-card__price-old">25 000 ₽</span>
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона, C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability">В наличии</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														Цена по запросу
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="catalog-card__info-item">
+											<div class="catalog-card__info-right">
+												<div class="catalog-card__details">
+													<p>C-10,PA 160-180 см + крона</p>
+												</div>
+											</div>
+											<div class="catalog-card__info-left">
+												<p class="catalog-card__availability catalog-card__availability--for-order">Под заказ</p>
+												<div class="catalog-card__info-group">
+													<p class="catalog-card__price">
+														<span class="catalog-card__price-current">16 000 ₽</span>
+													</p>
+													<div class="catalog-card__actions">
+														<button
+															class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+															data-label="Купить в один клик" title="Купить в один клик">
+															<img src="/images/icons/one-click.svg" alt="">
+														</button>
+														<button class="catalog-card__button catalog-card__button--info button"
+															data-label="Информация" title="Информация">
+															<img src="/images/icons/exclamation-white.svg" alt="">
+														</button>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="catalog-card__info-bottom">
+										<a href="javascript:void(0);" class="catalog-card__info-close js-card-close">Свернуть</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 				<a href="#" class="swiper-block__link button button--link">В каталог <img src="/images/icons/arrow.svg"
 						alt=""></a>
 			</div>
@@ -330,12 +2650,12 @@
 				<h2 class="swiper-block__title bottom-line">
 					<span>Новости </span> и интересные статьи
 				</h2>
-				<div class="swiper swiper-block__swiper">
+				<div class="swiper-block__swiper swiper">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
 							<a class="swiper-block__card" href="#">
 								<div class="swiper-block__image">
-									<img src="/images/news/news-1.jpg" alt="Яблоки в корзине">
+									<img src="/images/news/news-1.jpg" alt="Яблоки в корзине" loading="lazy">
 								</div>
 								<div class="swiper-block__overlay">
 									<div class="swiper-block__content">
@@ -351,7 +2671,7 @@
 						<div class="swiper-slide">
 							<a class="swiper-block__card" href="#">
 								<div class="swiper-block__image">
-									<img src="/images/news/news-2.jpg" alt="Красные яблоки">
+									<img src="/images/news/news-2.jpg" alt="Красные яблоки" loading="lazy">
 								</div>
 								<div class="swiper-block__overlay">
 									<div class="swiper-block__content">
@@ -367,7 +2687,7 @@
 						<div class="swiper-slide">
 							<a class="swiper-block__card" href="#">
 								<div class="swiper-block__image">
-									<img src="/images/news/news-3.jpg" alt="Яблоко крупным планом">
+									<img src="/images/news/news-3.jpg" alt="Яблоко крупным планом" loading="lazy">
 								</div>
 								<div class="swiper-block__overlay">
 									<div class="swiper-block__content">
@@ -384,7 +2704,7 @@
 						<div class="swiper-slide">
 							<a class="swiper-block__card" href="#">
 								<div class="swiper-block__image">
-									<img src="/images/news/news-4.jpg" alt="Много яблок">
+									<img src="/images/news/news-4.jpg" alt="Много яблок" loading="lazy">
 								</div>
 								<div class="swiper-block__overlay">
 									<div class="swiper-block__content">
@@ -412,33 +2732,26 @@
 					Наш <span>рейтинг</span>
 				</h2>
 				<div class="rating__cards">
-					<div class="rating__card">
-						<div class="rating__widget">
-							<iframe src="https://yandex.ru/sprav/widget/rating-badge/219175152701?type=award" loading="lazy"
-								width="150" height="50" frameborder="0"></iframe>
+					<a href="#" class="rating__card" target="_blank" rel="noopener">
+						<div class="rating__image">
+							<img src="/images/rating/rating-yandex.svg" alt="Рейтинг организации в Яндексе" loading="lazy">
 						</div>
-					</div>
-					<div class="rating__card">
-						<div class="rating__widget">
-							<iframe id="medium_light_70000001069163672" frameborder="0" width="150" height="50"
-								sandbox="allow-modals allow-forms allow-scripts allow-same-origin allow-popups allow-top-navigation-by-user-activation"></iframe>
-						</div>
-					</div>
-
-					<!-- <div class="rating__card">
-						<div class="rating__card-header">
-							<img src="/images/rating/rating-2gis.png" alt="2ГИС" class="rating__logo" />
-							<div class="rating__score">
-								4,5
-								<span class="rating__score-max"></span>
-							</div>
-						</div>
-						<div class="rating__desc">Рейтинг организации на 2GIS</div>
-						<a href="#" class="rating__action" target="_blank" rel="noopener">
+						<p class="rating__description">Рейтинг организации в Яндексе</p>
+						<div class="rating__link button button--link">
 							Оставить отзыв
-							<img src="/images/icons/arrow.svg" alt="стрелка" />
-						</a>
-					</div> -->
+							<img src="/images/icons/arrow.svg" alt="">
+						</div>
+					</a>
+					<a href="#" class="rating__card" target="_blank" rel="noopener">
+						<div class="rating__image">
+							<img src="/images/rating/rating-2gis.svg" alt="Рейтинг организации на 2GIS" loading="lazy">
+						</div>
+						<div class="rating__description">Рейтинг организации на 2GIS</div>
+						<div class="rating__link button button--link">
+							Оставить отзыв
+							<img src="/images/icons/arrow.svg" alt="">
+						</div>
+					</a>
 				</div>
 			</div>
 		</section>
@@ -450,18 +2763,18 @@
 						<h2 class="qna__title">
 							<span>Ответы</span> на часто возникающие вопросы
 						</h2>
-						<div class="qna__desc">
+						<div class="qna__description">
 							Что такое хороший садовый инвентарь — это то, чем приятно и удобно работать в саду, это то, что
 							существенно облегчает наш труд, это надёжные и качественные садовые инструменты и техника, давно
 							зарекомендовавших себя и признанных во всём мире производителей, таких как Gardena и Fiskars.
 						</div>
 						<div class="qna__actions">
-							<button class="qna__button button">Задать свой вопрос</button>
+							<button class="qna__button button js-modal-askQuestion">Задать свой вопрос</button>
 							<a href="#" class="qna__link button button--link">Наши контакты <img src="/images/icons/arrow.svg"
 									alt=""></a>
 						</div>
 						<div class="qna__logo">
-							<img src="/images/qna-bg.png" alt="Клён — питомник растений">
+							<img src="/images/qna-bg.png" alt="Клён — питомник растений" loading="lazy">
 						</div>
 					</div>
 					<div class="qna__right">
@@ -584,21 +2897,21 @@
 							Подпишитесь <br>
 							<span>на нашу рассылку</span>
 						</h2>
-						<form class="mailing__form form">
+						<form class="mailing__form form" id="mailing-form">
 							<header class="mailing__form-header">
 								<h3 class="mailing__form-title">Заполните форму</h3>
 								<p class="mailing__form-subtitle">и узнавайте о новых статьях и акциях первыми</p>
 							</header>
-							<input type="email" class="form__input" name="email" id="email" placeholder="Email">
+							<input type="email" class="form__input" name="email" id="email" placeholder="Email" required>
 							<button type="submit" class="mailing__form-button button">Отправить</button>
-							<div class="form__checkbox-group">
-								<input type="checkbox" name="privacy" id="privacy" class="form__checkbox-sm" checked>
+							<div class="form__group">
+								<input type="checkbox" name="privacy" id="privacy" class="form__checkbox-sm" checked required>
 								<label for="privacy" class="form__label">Нажимая, соглашаюсь на обработку персональных данных</label>
 							</div>
 						</form>
 					</div>
 					<div class="mailing__image">
-						<img src="/images/mailing/mailing-1.jpg" alt="Фрукты">
+						<img src="/images/mailing/mailing-1.jpg" alt="Фрукты" loading="lazy">
 					</div>
 				</div>
 			</div>
@@ -610,11 +2923,11 @@
 			<div class="footer__top">
 				<div class="footer__logo footer__col">
 					<div class="footer__image">
-						<img src="/images/logo-white.svg" alt="Клён — питомник растений">
+						<img src="/images/logo-white.svg" alt="Клён — питомник растений" loading="lazy">
 					</div>
 					<div class="footer__actions">
-						<button class="footer__button button button--outline">Обратный звонок</button>
-						<button class="footer__button button button--outline">Задать вопрос</button>
+						<button class="footer__button button button--outline js-modal-callback">Обратный звонок</button>
+						<button class="footer__button button button--outline js-modal-askQuestion">Задать вопрос</button>
 					</div>
 				</div>
 				<ul class="footer__menu footer__col">
@@ -670,7 +2983,7 @@
 				</div>
 				<a href="#" class="footer__dev">
 					<span>Сайт разработан</span>
-					<img src="/images/agelar.svg" alt="Agelar">
+					<img src="/images/agelar.svg" alt="Agelar" loading="lazy">
 				</a>
 			</div>
 		</div>
@@ -681,6 +2994,324 @@
 	<script src="/scripts/swiper-bundle.min.js"></script>
 	<script src="/scripts/micromodal.min.js"></script>
 	<script src="/scripts/main.js"></script>
+
+
+	<!-- Modals -->
+	<div class="modal micromodal-slide" id="modal-callback" aria-hidden="true">
+		<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+			<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-callback-title">
+				<header class="modal__header">
+					<div></div>
+					<button class="modal__close" aria-label="Закрыть" data-micromodal-close></button>
+				</header>
+				<div class="modal__content" id="modal-callback-content">
+					<form class="modal__form form" id="callback-form">
+						<div class="modal__form-header">
+							<h3 class="modal__form-title" id="modal-callback-title">Связаться с вами?</h3>
+							<p class="modal__form-subtitle">Менеджер перезвонит вам
+								в ближайшее время</p>
+						</div>
+						<div class="modal__form-inputs">
+							<input type="text" id="callback-name" name="callback-name" class="form__input" placeholder="Ваше имя"
+								required>
+							<input type="tel" id="callback-phone" name="callback-phone" class="form__input" placeholder="Телефон"
+								maxlength="18" required>
+						</div>
+						<div class="form__group">
+							<input type="checkbox" name="callback-privacy" id="callback-privacy" class="form__checkbox-sm" checked
+								required>
+							<label for="callback-privacy" class="form__label">Нажимая, соглашаюсь на обработку персональных
+								данных</label>
+						</div>
+						<div class="modal__form-bottom">
+							<button type="submit" class="button">Отправить</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal micromodal-slide" id="modal-sendcatalog" aria-hidden="true">
+		<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+			<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-sendcatalog-title">
+				<header class="modal__header">
+					<div></div>
+					<button class="modal__close" aria-label="Закрыть" data-micromodal-close></button>
+				</header>
+				<div class="modal__content" id="modal-sendcatalog-content">
+					<form class="modal__form form" id="sendcatalog-form">
+						<div class="modal__form-header">
+							<h3 class="modal__form-title" id="modal-sendcatalog-title">Прислать вам каталог и прайс?</h3>
+							<p class="modal__form-subtitle">Заполните форму и мы вышлем все
+								в ближайшее время</p>
+						</div>
+						<div class="modal__form-inputs">
+							<input type="text" id="sendcatalog-name" name="sendcatalog-name" class="form__input"
+								placeholder="Ваше имя" required>
+							<input type="email" id="sendcatalog-email" name="sendcatalog-email" class="form__input"
+								placeholder="Email" required>
+						</div>
+						<div class="form__group">
+							<input type="checkbox" name="sendcatalog-privacy" id="sendcatalog-privacy" class="form__checkbox-sm"
+								checked required>
+							<label for="sendcatalog-privacy" class="form__label">Нажимая, соглашаюсь на обработку персональных
+								данных</label>
+						</div>
+						<div class="modal__form-bottom">
+							<button type="submit" class="button">Отправить</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal micromodal-slide" id="modal-requestPrice" aria-hidden="true">
+		<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+			<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-requestPrice-title">
+				<header class="modal__header">
+					<div></div>
+					<button class="modal__close" aria-label="Закрыть" data-micromodal-close></button>
+				</header>
+				<div class="modal__content" id="modal-requestPrice-content">
+					<form class="modal__form form" id="requestPrice-form">
+						<div class="modal__form-header">
+							<h3 class="modal__form-title" id="modal-requestPrice-title">Связаться с вами?</h3>
+							<p class="modal__form-subtitle">Вас заинтересовал <span>арт. 123456</span></p>
+							<p class="modal__form-subtitle">заполните форму мы свяжемся с вами для уточнения стоимости</p>
+						</div>
+						<div class="modal__form-inputs">
+							<input type="text" id="requestPrice-name" name="requestPrice-name" class="form__input"
+								placeholder="Ваше имя" required>
+							<input type="tel" id="requestPrice-phone" name="requestPrice-phone" class="form__input"
+								placeholder="Телефон" maxlength="18" required>
+						</div>
+						<div class="form__group">
+							<input type="checkbox" name="requestPrice-privacy" id="requestPrice-privacy" class="form__checkbox-sm"
+								checked required>
+							<label for="requestPrice-privacy" class="form__label">Нажимая, соглашаюсь на обработку персональных
+								данных</label>
+						</div>
+						<div class="modal__form-bottom">
+							<button type="submit" class="button">Отправить</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal micromodal-slide" id="modal-askQuestion" aria-hidden="true">
+		<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+			<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-askQuestion-title">
+				<header class="modal__header">
+					<div></div>
+					<button class="modal__close" aria-label="Закрыть" data-micromodal-close></button>
+				</header>
+				<div class="modal__content" id="modal-askQuestion-content">
+					<form class="modal__form form" id="askQuestion-form">
+						<div class="modal__form-header">
+							<h3 class="modal__form-title" id="modal-askQuestion-title">У вас есть вопросы?</h3>
+							<p class="modal__form-subtitle">Заполните форму менеджер перезвонит вам в ближайшее время</p>
+						</div>
+						<div class="modal__form-inputs">
+							<input type="text" id="askQuestion-name" name="askQuestion-name" class="form__input"
+								placeholder="Ваше имя" required>
+							<input type="tel" id="askQuestion-phone" name="askQuestion-phone" class="form__input"
+								placeholder="Телефон" maxlength="18" required>
+							<textarea name="askQuestion-textarea" id="askQuestion-textarea" rows="10" class="form__textarea"
+								placeholder="Текст вопроса"></textarea>
+						</div>
+						<div class="form__group">
+							<input type="checkbox" name="askQuestion-privacy" id="askQuestion-privacy" class="form__checkbox-sm"
+								checked required>
+							<label for="askQuestion-privacy" class="form__label">Нажимая, соглашаюсь на обработку персональных
+								данных</label>
+						</div>
+						<div class="modal__form-bottom">
+							<button type="submit" class="button">Отправить</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal micromodal-slide" id="modal-cart" aria-hidden="true">
+		<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+			<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-cart-title">
+				<header class="modal__header">
+					<h2 class="modal__title bottom-line">Ваша корзина</h2>
+					<button class="modal__close" aria-label="Закрыть" data-micromodal-close></button>
+				</header>
+				<div class="modal__content" id="modal-cart-content">
+
+					<div class="modal__cart cart">
+						<div class="cart__checkbox-group">
+							<label class="form__checkbox" for="cart-select-all">
+								<input class="form__checkbox-control" type="checkbox" name="cart-select-all" id="cart-select-all"
+									checked>
+								<span class="form__checkbox-emulator"></span>
+								<span class="form__checkbox-label">Удалить выбранное</span>
+							</label>
+						</div>
+						<ul class="cart__list">
+							<li class="cart__item">
+								<label class="form__checkbox" for="cart-item-1">
+									<input class="form__checkbox-control" type="checkbox" name="cart-item-1" id="cart-item-1" checked>
+									<span class="form__checkbox-emulator"></span>
+								</label>
+								<div class="cart__image">
+									<img src="/images/catalog/catalog-1.jpg" alt="Яблоня Ред Кетти" loading="lazy">
+								</div>
+								<div class="cart__info">
+									<div class="cart__articul">Арт. 103296706</div>
+									<div class="cart__info-name">
+										<div class="cart__title">Яблоня Ред Кетти</div>
+										<div class="cart__subtitle">Malus Red Katie</div>
+									</div>
+									<div class="cart__desc">С-10,РА 160-180 см + крона</div>
+								</div>
+								<div class="cart__price-block">
+									<div class="cart__price">
+										<div class="cart__price-text">Цена</div>
+										<div class="cart__price-row">
+											<span class="cart__price-current">2 000 ₽</span>
+											<span class="cart__price-old">5 000 ₽</span>
+										</div>
+									</div>
+									<div class="cart__quantity">
+										<button class="cart__quantity-button cart__quantity-button-minus" type="button">-</button>
+										<input type="number" name="cart__quantity-1" id="cart__quantity-1" class="cart__quantity-value"
+											value="1" min="1">
+										<button class="cart__quantity-button cart__quantity-button-plus" type="button">+</button>
+									</div>
+									<div class="cart__total">
+										<div class="cart__total-text">Цена</div>
+										<div class="cart__total-row">
+											<span class="cart__total-current">16 000 ₽</span>
+											<span class="cart__total-old">25 000 ₽</span>
+										</div>
+									</div>
+								</div>
+								<button class="cart__remove" type="button">×</button>
+							</li>
+							<li class="cart__item">
+								<label class="form__checkbox" for="cart-item-2">
+									<input class="form__checkbox-control" type="checkbox" name="cart-item-2" id="cart-item-2" checked>
+									<span class="form__checkbox-emulator"></span>
+								</label>
+								<div class="cart__image">
+									<img src="/images/catalog/catalog-2.jpg" alt="Яблоня Ред Кетти" loading="lazy">
+								</div>
+								<div class="cart__info">
+									<div class="cart__articul">Арт. 103296706</div>
+									<div class="cart__info-name">
+										<div class="cart__title">Яблоня Ред Кетти</div>
+										<div class="cart__subtitle">Malus Red Katie</div>
+									</div>
+									<div class="cart__desc">С-10,РА 160-180 см + крона</div>
+								</div>
+								<div class="cart__price-block">
+									<div class="cart__price">
+										<div class="cart__price-text">Цена</div>
+										<div class="cart__price-row">
+											<span class="cart__price-current">2 000 ₽</span>
+											<span class="cart__price-old">5 000 ₽</span>
+										</div>
+									</div>
+									<div class="cart__quantity">
+										<button class="cart__quantity-button cart__quantity-button-minus" type="button">-</button>
+										<input type="number" name="cart__quantity-2" id="cart__quantity-2" class="cart__quantity-value"
+											value="1" min="1">
+										<button class="cart__quantity-button cart__quantity-button-plus" type="button">+</button>
+									</div>
+									<div class="cart__total">
+										<div class="cart__total-text">Цена</div>
+										<div class="cart__total-row">
+											<span class="cart__total-current">16 000 ₽</span>
+											<span class="cart__total-old">25 000 ₽</span>
+										</div>
+									</div>
+								</div>
+								<button class="cart__remove" type="button">×</button>
+							</li>
+						</ul>
+						<div class="cart__checkbox-group">
+							<label class="form__checkbox" for="cart-select-all-bottom">
+								<input class="form__checkbox-control" type="checkbox" name="cart-select-all-bottom"
+									id="cart-select-all-bottom" checked>
+								<span class="form__checkbox-emulator"></span>
+								<span class="form__checkbox-label">Удалить выбранное</span>
+							</label>
+						</div>
+					</div>
+
+					<form class="modal__form form" id="cart-form">
+						<div class="modal__form-header">
+							<h3 class="modal__form-title" id="modal-cart-title">Заполните форму, чтобы оформить заявку</h3>
+							<p class="modal__form-subtitle">Менеджер перезвонит вам в ближайшее время, для уточнения заказа и доставки
+							</p>
+						</div>
+						<div class="modal__form-inputs">
+							<input type="text" id="cart-name" name="cart-name" class="form__input" placeholder="Ваше имя" required>
+							<input type="tel" id="cart-phone" name="cart-phone" class="form__input" placeholder="Телефон"
+								maxlength="18" required>
+						</div>
+						<div class="form__group">
+							<input type="checkbox" name="cart-privacy" id="cart-privacy" class="form__checkbox-sm" checked required>
+							<label for="cart-privacy" class="form__label">Нажимая, соглашаюсь на обработку персональных
+								данных</label>
+						</div>
+						<div class="modal__form-bottom">
+							<button type="submit" class="button">Оставить заявку</button>
+							<button type="button" class="button button--link" aria-label="Закрыть" data-micromodal-close>Вернуться к
+								покупкам <img src="/images/icons/arrow.svg" alt=""></button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal micromodal-slide" id="modal-oneClick" aria-hidden="true">
+		<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+			<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-oneClick-title">
+				<header class="modal__header">
+					<div></div>
+					<button class="modal__close" aria-label="Закрыть" data-micromodal-close></button>
+				</header>
+				<div class="modal__content" id="modal-oneClick-content">
+					<form class="modal__form form" id="oneClick-form">
+						<div class="modal__form-header">
+							<h3 class="modal__form-title" id="modal-oneClick-title">Купить в один клик</h3>
+							<p class="modal__form-subtitle">Вас заинтересовал <span>арт. 123456</span></p>
+							<p class="modal__form-subtitle">Заполните форму менеджер перезвонит вам в ближайшее время для уточнения
+								заказа, оплаты и доставки</p>
+						</div>
+						<div class="modal__form-inputs">
+							<input type="text" id="oneClick-name" name="oneClick-name" class="form__input" placeholder="Ваше имя"
+								required>
+							<input type="tel" id="oneClick-phone" name="oneClick-phone" class="form__input" placeholder="Телефон"
+								maxlength="18" required>
+							<textarea name="oneClick-textarea" id="oneClick-textarea" rows="10" class="form__textarea"
+								placeholder="Комментарий к заказу"></textarea>
+						</div>
+						<div class="form__group">
+							<input type="checkbox" name="oneClick-privacy" id="oneClick-privacy" class="form__checkbox-sm" checked
+								required>
+							<label for="oneClick-privacy" class="form__label">Нажимая, соглашаюсь на обработку персональных
+								данных</label>
+						</div>
+						<div class="modal__form-bottom">
+							<button type="submit" class="button">Отправить</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 
 </body>
 

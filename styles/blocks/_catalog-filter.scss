@@ -1,0 +1,153 @@
+.catalog-filter {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: 15px;
+	border-radius: 20px;
+	background: var(--white);
+	box-shadow: 0px 8px 40px 0px rgba(120, 120, 120, 0.12);
+
+	&__group {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+
+		&--top {
+			gap: 15px;
+		}
+	}
+
+	&__title {
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 1.45;
+	}
+
+	&__subtitle {
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 1.35;
+	}
+
+	.form__checkbox {
+		gap: 15px;
+
+		@include hover {
+			.form__checkbox-emulator {
+				border-color: var(--primary-400);
+			}
+		}
+	}
+
+	.form__checkbox-emulator {
+		transition: border-color 0.1s var(--transition-timing-function);
+	}
+
+	.form__checkbox-control:checked + .form__checkbox-emulator {
+		background-color: var(--primary-400);
+		border-color: var(--primary-400);
+	}
+
+	.form__checkbox-emulator::after {
+		background-image: url('/images/icons/check-sm.svg');
+	}
+
+	.form__checkbox-label {
+		display: inline-flex;
+		flex: 1;
+		font-size: 14px;
+	}
+
+	&__dropdown {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+
+		&.is-open {
+			.catalog-filter__dropdown-options {
+				display: flex;
+			}
+
+			.catalog-filter__dropdown-arrow {
+				transform: translateY(0);
+				rotate: 180deg;
+			}
+		}
+	}
+
+	&__dropdown-trigger {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		gap: 10px;
+	}
+
+	&__dropdown-arrow {
+		transform: translateY(50%);
+	}
+
+	&__dropdown-options {
+		display: none;
+		flex-direction: column;
+		gap: 10px;
+
+		&:not(.is-expanded) {
+			.initially-hidden {
+				display: none;
+			}
+		}
+	}
+
+	&__dropdown-group {
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+		width: 100%;
+	}
+
+	&__dropdown-icon {
+		@include square(24px);
+		@include flex-center;
+	}
+
+	&__dropdown-count {
+		color: var(--gray-700);
+		font-size: 12px;
+	}
+
+	&__dropdown-all {
+		color: var(--primary-500);
+		font-size: 14px;
+		text-decoration: underline;
+
+		@include hover {
+			color: var(--primary-600);
+		}
+	}
+
+	&__bottom {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+	}
+
+	&__found {
+		min-height: 50px;
+		padding: 8px 30px;
+		gap: 4px;
+		border-radius: 8px;
+		background: var(--secondary-900);
+	}
+
+	&__reset {
+		color: var(--primary-500);
+		font-size: 14px;
+		text-decoration: underline;
+
+		@include hover {
+			color: var(--primary-600);
+		}
+	}
+}

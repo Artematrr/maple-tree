@@ -24,7 +24,7 @@
 		@include fluid-text(60, 34);
 	}
 
-	&__desc {
+	&__description {
 	}
 
 	&__actions {
@@ -34,7 +34,7 @@
 	}
 
 	&__button {
-		height: 57px;
+		height: var(--button-height);
 	}
 
 	&__link {

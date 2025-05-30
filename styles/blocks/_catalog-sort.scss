@@ -1,0 +1,27 @@
+.catalog-sort {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+
+	&__group {
+		display: flex;
+		align-items: center;
+		gap: 15px;
+		flex-wrap: wrap;
+	}
+
+	&__name {
+		font-size: 14px;
+	}
+
+	.form__select-input {
+		width: 155px;
+		padding: 12px 15px;
+		border: 1px solid var(--gray-500);
+	}
+
+	.form__select-arrow {
+		right: 15px;
+	}
+}

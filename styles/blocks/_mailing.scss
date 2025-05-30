@@ -1,5 +1,5 @@
 .mailing {
-margin-bottom: var(--section-margin-bottom);
+	margin-bottom: var(--section-margin-bottom);
 
 	&__container {
 	}
@@ -52,13 +52,10 @@ margin-bottom: var(--section-margin-bottom);
 			bottom: 0;
 			left: 0;
 			pointer-events: none;
+			border-radius: 12px;
 			box-shadow: 61px 26px 80px -30px rgba(150, 147, 0, 0.29);
-			// -webkit-box-shadow: 61px 26px 400px -30px rgba(150, 147, 0, 0.29);
-			// -moz-box-shadow: 61px 26px 400px -30px rgba(150, 147, 0, 0.29);
-
-// 			box-shadow: 33px 38px 153px 8px rgba(150,147,0,0.29);
-// -webkit-box-shadow: 33px 38px 153px 8px rgba(150,147,0,0.29);
-// -moz-box-shadow: 33px 38px 153px 8px rgba(150,147,0,0.29);
+			-webkit-box-shadow: 61px 26px 400px -30px rgba(150, 147, 0, 0.29);
+			-moz-box-shadow: 61px 26px 400px -30px rgba(150, 147, 0, 0.29);
 		}
 	}
 

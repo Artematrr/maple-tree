@@ -1,0 +1,48 @@
+.catalog {
+	margin-bottom: var(--section-margin-bottom);
+
+	&__container {
+		display: grid;
+		grid-template-columns: 330px 1fr;
+		gap: 30px;
+
+		@include mobile {
+			flex-direction: column;
+		}
+	}
+
+	&__aside {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+	}
+
+	&__main {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+	}
+
+	&__title {
+		@include fluid-text(48, 34);
+
+		padding-bottom: 15px;
+	}
+
+	&__cards {
+		display: grid;
+		grid-template-columns: repeat(3, minmax(250px, 330px));
+		gap: 30px;
+
+		@include desktop-l {
+			gap: 20px;
+		}
+		@include desktop {
+			grid-template-columns: repeat(2, minmax(300px, 600px));
+		}
+
+		@include tablet {
+			grid-template-columns: repeat(1, minmax(300px, 700px));
+		}
+	}
+}

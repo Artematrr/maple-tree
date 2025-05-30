@@ -1,0 +1,48 @@
+.text-block {
+	margin-bottom: var(--section-margin-bottom);
+
+	&__inner {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+		padding: 60px;
+		background-color: var(--white);
+		border-radius: 28px;
+	}
+
+	header {
+		text-align: center;
+	}
+
+	article {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	h3,
+	h4,
+	b {
+		font-size: 16px;
+		font-weight: 700;
+	}
+
+	ul {
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+		margin-block-start: 0;
+		margin-block-end: 0;
+		padding-inline-start: 20px;
+	}
+
+	footer {
+		display: flex;
+		justify-content: center;
+		gap: 48px;
+
+		.button {
+			height: var(--button-height);
+		}
+	}
+}

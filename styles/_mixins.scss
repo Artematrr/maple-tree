@@ -4,14 +4,14 @@
 	font-size: clamp(#{$min}px, #{$max / $layoutWidth * 100}vw, #{$max}px);
 }
 
-// @mixin reset-link {
-//   color: inherit;
-//
-//   &,
-//   &:hover {
-//     text-decoration: none;
-//   }
-// }
+@mixin reset-link {
+  color: inherit;
+
+  &,
+  &:hover {
+    text-decoration: none;
+  }
+}
 
 @mixin reset-button {
 	padding: 0;
@@ -39,6 +39,7 @@
 
 @mixin square($size) {
 	width: $size;
+	height: $size;
 	aspect-ratio: 1;
 }
 

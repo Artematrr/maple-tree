@@ -11,20 +11,9 @@
 		padding-bottom: 15px;
 	}
 
-	&__rows {
+	&__list {
 		display: flex;
-		flex-direction: column;
-		gap: 30px;
-	}
-
-	&__row-five {
-		display: grid;
-		grid-template-columns: repeat(5, 1fr);
-		gap: 30px;
-	}
-	&__row-four {
-		display: grid;
-		grid-template-columns: repeat(4, 1fr);
+		flex-wrap: wrap;
 		gap: 30px;
 	}
 
@@ -34,6 +23,7 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: flex-end;
+		flex: 1 0 230px;
 		padding: 20px;
 		border-radius: 12px;
 		box-shadow: 0px 4px 40px 0px rgba(163, 163, 163, 0.1);
