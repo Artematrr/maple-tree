@@ -19,6 +19,12 @@
 		}
 	}
 
+	&--services {
+		.catalog-top-categories__item {
+			flex: 1 0 300px;
+		}
+	}
+
 	&__frame {
 		@include square(36px);
 

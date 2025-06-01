@@ -1,0 +1,46 @@
+.service-types {
+	&__container {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+
+		@include mobile {
+			gap: 15px;
+		}
+	}
+
+	&__title {
+		padding-bottom: 15px;
+	}
+
+	&__cards {
+		display: flex;
+		gap: 15px 30px;
+		justify-content: space-between;
+
+		@include tablet-s {
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+
+	&__card {
+		@extend .landscaping-services__item;
+
+		font-size: 18px;
+		max-width: 450px;
+		max-height: 280px;
+	}
+
+	&__image {
+		@extend .landscaping-services__image;
+	}
+
+	&__overlay {
+		@extend .landscaping-services__overlay;
+	}
+
+	&__text {
+		@extend .landscaping-services__text;
+	}
+}

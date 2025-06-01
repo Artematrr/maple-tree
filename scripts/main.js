@@ -1,7 +1,6 @@
 // Свайперы
 new Swiper('.swiper-block__swiper', {
 	spaceBetween: 30,
-
 	breakpoints: {
 		320: {
 			slidesPerView: 1,
@@ -16,6 +15,115 @@ new Swiper('.swiper-block__swiper', {
 			slidesPerView: 4,
 		},
 	},
+})
+
+new Swiper('.brands__swiper', {
+	spaceBetween: 30,
+	breakpoints: {
+		320: {
+			slidesPerView: 1,
+		},
+		375: {
+			slidesPerView: 1.5,
+		},
+		768: {
+			slidesPerView: 3,
+		},
+		1024: {
+			slidesPerView: 4,
+		},
+		1440: {
+			slidesPerView: 5,
+		},
+	},
+})
+
+new Swiper('.gallery__swiper', {
+	spaceBetween: 30,
+	breakpoints: {
+		320: {
+			slidesPerView: 1,
+		},
+		375: {
+			slidesPerView: 1.5,
+		},
+		768: {
+			slidesPerView: 3,
+		},
+		1024: {
+			slidesPerView: 4,
+		},
+		1440: {
+			slidesPerView: 5,
+		},
+	},
+	navigation: {
+		prevEl: '.gallery__swiper-prev',
+		nextEl: '.gallery__swiper-next',
+	},
+})
+new Swiper('.product__type-swiper', {
+	spaceBetween: 15,
+	mousewheel: true,
+	loop: true,
+	breakpoints: {
+		320: {
+			slidesPerView: 3,
+			direction: 'vertical',
+			spaceBetween: 10,
+			height: 3 * 102,
+		},
+		375: {
+			slidesPerView: 3,
+			direction: 'vertical',
+			spaceBetween: 10,
+			height: 3 * 102,
+		},
+		768: {
+			slidesPerView: 2,
+			direction: 'horizontal',
+			spaceBetween: 15,
+		},
+		1440: {
+			slidesPerView: 3,
+			direction: 'horizontal',
+			spaceBetween: 15,
+		},
+	},
+	navigation: {
+		prevEl: '.product__type-prev',
+		nextEl: '.product__type-next',
+	},
+})
+
+new Swiper('.product__swiper', {
+	slidesPerGroup: 1,
+	breakpoints: {
+		320: {
+			slidesPerView: 3,
+			slidesPerGroup: 3,
+		},
+	},
+	spaceBetween: 10,
+	watchSlidesProgress: true,
+	navigation: {
+		prevEl: '.product__swiper-prev',
+		nextEl: '.product__swiper-next',
+	},
+})
+
+new Swiper('.product__swiper-preview', {
+	slidesPerGroup: 1,
+	// grabCursor: true,
+	slidesPerView: 1,
+	breakpoints: {
+		320: {
+			slidesPerView: 1,
+			centeredSlides: true,
+		},
+	},
+	thumbs: { swiper: '.product__swiper' },
+	spaceBetween: 30,
 })
 
 document
@@ -55,6 +163,8 @@ jQuery(document).ready(function () {
 			$item.addClass('is-open')
 		}
 	})
+
+	$('#product-tabs').tabs()
 
 	// Модальные окна
 	MicroModal.init({
@@ -225,4 +335,18 @@ jQuery(document).ready(function () {
 			updatePricePositions(slider, container)
 		})
 	})
+
+	document
+		.querySelectorAll('.js-product-description-toggle')
+		.forEach(toggle => {
+			toggle.addEventListener('click', function () {
+				const descriptionBlock = this.closest('.product__description-block')
+				descriptionBlock.classList.toggle('is-open')
+				if (descriptionBlock.classList.contains('is-open')) {
+					this.textContent = 'Свернуть'
+				} else {
+					this.textContent = 'Полное описание'
+				}
+			})
+		})
 })

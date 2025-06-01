@@ -19,6 +19,11 @@
 	// 	text-transform: uppercase;
 	// }
 
+	img {
+		max-width: 40px;
+		max-height: 40px;
+	}
+
 	@include hover {
 		background-color: var(--secondary-500);
 	}
@@ -29,8 +34,8 @@
 		border: 1px solid var(--secondary-900);
 
 		@include hover {
-			background-color: var(--secondary-900);
 			color: var(--white);
+			background-color: var(--secondary-900);
 		}
 	}
 
@@ -43,6 +48,16 @@
 		@include hover {
 			background-color: inherit;
 			color: var(--primary-500);
+		}
+	}
+
+	&--gray {
+		color: var(--primary-500);
+		background-color: var(--gray-500);
+
+		@include hover {
+			color: var(--white);
+			background-color: var(--primary-500);
 		}
 	}
 }

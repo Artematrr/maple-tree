@@ -6,8 +6,8 @@
 		grid-template-columns: 330px 1fr;
 		gap: 30px;
 
-		@include mobile {
-			flex-direction: column;
+		@include tablet {
+			grid-template-columns: 1fr;
 		}
 	}
 
@@ -45,4 +45,13 @@
 			grid-template-columns: repeat(1, minmax(300px, 700px));
 		}
 	}
+
+	.text-block {
+		margin-bottom: 0;
+
+		h2 {
+			@include fluid-text(48, 34);
+		}
+	}
+
 }

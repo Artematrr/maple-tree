@@ -1,11 +1,19 @@
 .breadcrumbs {
 	margin-bottom: 30px;
 
+	@include mobile {
+		margin-bottom: 25px;
+	}
+
 	&__list {
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
 		gap: 5px 8px;
+
+		@include mobile {
+			flex-wrap: nowrap;
+		}
 	}
 
 	&__item {
@@ -14,6 +22,33 @@
 		font-size: 14px;
 		line-height: 1;
 		min-height: 24px;
+
+		@include mobile {
+			a {
+				text-overflow: ellipsis;
+				white-space: nowrap;
+				overflow: hidden;
+			}
+
+			&:not(:first-child):not(:last-child) {
+				display: none;
+			}
+
+			&:first-child:not(:only-child) {
+				a {
+					display: none;
+				}
+
+				&::after {
+					content: '...';
+					display: inline-block;
+				}
+			}
+
+			&:last-child {
+				overflow: hidden;
+			}
+		}
 
 		&:last-child {
 			color: var(--primary-500);

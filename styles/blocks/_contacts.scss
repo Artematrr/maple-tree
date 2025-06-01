@@ -1,0 +1,225 @@
+.contacts {
+	margin-bottom: var(--section-margin-bottom);
+
+	&__container {
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+	}
+
+	&__title {
+		padding-bottom: 15px;
+	}
+
+	&__row {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		justify-content: space-between;
+		gap: 30px;
+		align-items: stretch;
+
+		@include tablet {
+			grid-template-columns: 1fr;
+		}
+		@include mobile {
+			gap: 10px;
+		}
+	}
+
+	&__col {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 5px;
+		padding: 30px;
+		border-radius: 28px;
+		background: var(--white);
+		justify-content: center;
+
+		@include mobile {
+			padding: 15px;
+			gap: 15px;
+		}
+	}
+
+	&__map-wrapper {
+		border-radius: 5px;
+		overflow: hidden;
+		width: 100%;
+		height: 450px;
+
+		@include mobile{
+			height: 218px;
+		}
+	}
+
+	&__list {
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+		width: 100%;
+
+		@include mobile {
+			gap: 15px;
+		}
+	}
+
+	&__item {
+		display: flex;
+		flex: 1 0 0;
+		gap: 5px 10px;
+		width: 100%;
+	}
+
+	&__item-phone {
+		.contacts__item-text {
+			font-size: 20px;
+		}
+	}
+
+	&__icon {
+		@include square(42px);
+		@include flex-center;
+	}
+
+	&__item-row {
+		display: flex;
+		justify-content: space-between;
+		gap: 10px;
+		flex: 1 0 0;
+		align-items: flex-end;
+		flex-wrap: wrap;
+	}
+
+	&__item-col {
+		display: flex;
+		flex-direction: column;
+		gap: 5px;
+	}
+
+	&__item-title {
+		@include fluid-text(18, 16);
+
+		font-weight: 700;
+		line-height: 1.45;
+
+		@include mobile {
+			line-height: 1.35;
+		}
+	}
+
+	&__item-text {
+		@include fluid-text(20, 16);
+	}
+
+	&__item-socials {
+		display: flex;
+		align-items: center;
+		flex-direction: row;
+		gap: 13px;
+	}
+
+	&__item-social {
+		@include square(32px);
+
+		display: flex;
+		flex-shrink: 0;
+	}
+
+	&__list-row {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 5px;
+
+		.contacts__item {
+			flex: 1 1 308px;
+		}
+	}
+
+	&__form {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+
+		@include mobile {
+			.form__input {
+				height: 52px;
+				padding: 15px 10px;
+			}
+
+			.form__textarea {
+				height: 11rem;
+			}
+
+			.modal__form-bottom .button {
+				height: 53px;
+			}
+		}
+	}
+
+	&__form-header {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+		margin-bottom: calc(72px - 15px);
+
+		@include mobile {
+			margin-bottom: 0;
+		}
+	}
+
+	&__form-title {
+	}
+
+	&__form-subtitle {
+		color: var(--black);
+		font-size: 20px;
+	}
+
+	&__form-row {
+		display: flex;
+		align-items: center;
+		gap: 15px 30px;
+
+		@include mobile {
+			flex-direction: column;
+		}
+	}
+
+	&__form-privacy {
+		text-align: center;
+
+		@include mobile {
+			text-align: left;
+		}
+	}
+}
+.container {
+}
+.h2 {
+}
+.bottom-line {
+}
+.form {
+	&__input {
+	}
+
+	&__textarea {
+	}
+
+	&__group {
+	}
+
+	&__checkbox-sm {
+	}
+
+	&__label {
+	}
+}
+.modal {
+	&__form-bottom {
+	}
+}
+.button {
+}
