@@ -4144,6 +4144,7 @@ h4,
 .product__contents {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   gap: 15px;
 }
 .product__header {
