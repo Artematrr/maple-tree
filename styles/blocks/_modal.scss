@@ -137,6 +137,15 @@
 
 		.button {
 			height: var(--button-height);
+
+				@include mobile {
+					// height: auto;
+				}
+		}
+
+		@include mobile {
+			flex-direction: column;
+			gap: 10px;
 		}
 	}
 
@@ -154,10 +163,18 @@
 			padding: 30px;
 			border-radius: 12px;
 			border: 1px solid var(--primary-500);
+
+			@include mobile {
+				padding: 10px;
+			}
 		}
 
 		.modal__form-inputs {
 			flex-direction: row;
+
+			@include mobile {
+				flex-direction: column;
+			}
 		}
 	}
 }

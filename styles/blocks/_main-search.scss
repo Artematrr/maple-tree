@@ -1,0 +1,16 @@
+.main-search {
+	margin-bottom: 30px;
+
+	@include mobile {
+		margin-bottom: 10px;
+	}
+
+	&__container {
+		display: flex;
+		justify-content: center;
+	}
+
+	.catalog-search {
+		max-width: 1168px;
+	}
+}

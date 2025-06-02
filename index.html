@@ -84,7 +84,8 @@
 							Весь каталог сезона
 							<span class="hero__accent">
 								<span class="hero__accent-position">
-									<img src="/images/year-mark.svg" alt="" class="hero__accent-mark">
+									<img src="/images/year-mark.svg" alt="" class="hero__accent-mark hidden-mobile">
+									<img src="/images/year-mark-mobile.svg" alt="" class="hero__accent-mark visible-mobile">
 									2025
 								</span>
 								года
@@ -114,6 +115,58 @@
 					</div>
 					<div class="hero__year">
 						2025
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="main-search">
+			<div class="main-search__container container">
+				<div class="catalog-search">
+					<div class="catalog-search__alphabet">
+						<div class="catalog-search__description">Найдите растение в каталоге по наименованию или&nbsp;алфавиту:
+						</div>
+						<div class="catalog-search__group">
+							<div class="catalog-search__input-container">
+								<input type="search" class="catalog-search__input" placeholder="Поиск по наименованию">
+								<button type="button" class="catalog-search__button">
+									<img src="/images/icons/search-icon.svg" alt="" class="catalog-search__icon">
+								</button>
+							</div>
+							<ul class="catalog-search__letters">
+								<li><a href="javascript:void(0);" data-letter="А">А</a></li>
+								<li><a href="javascript:void(0);" data-letter="Б">Б</a></li>
+								<li><a href="javascript:void(0);" data-letter="В">В</a></li>
+								<li><a href="javascript:void(0);" data-letter="Г">Г</a></li>
+								<li><a href="javascript:void(0);" data-letter="Д">Д</a></li>
+								<li><a href="javascript:void(0);" data-letter="Е">Е</a></li>
+								<li><a href="javascript:void(0);" data-letter="Ё">Ё</a></li>
+								<li><a href="javascript:void(0);" data-letter="Ж">Ж</a></li>
+								<li><a href="javascript:void(0);" data-letter="З">З</a></li>
+								<li><a href="javascript:void(0);" data-letter="И">И</a></li>
+								<li><a href="javascript:void(0);" data-letter="Й">Й</a></li>
+								<li><a href="javascript:void(0);" data-letter="К">К</a></li>
+								<li><a href="javascript:void(0);" data-letter="Л">Л</a></li>
+								<li><a href="javascript:void(0);" data-letter="М">М</a></li>
+								<li><a href="javascript:void(0);" data-letter="Н">Н</a></li>
+								<li><a href="javascript:void(0);" data-letter="О">О</a></li>
+								<li><a href="javascript:void(0);" data-letter="П">П</a></li>
+								<li><a href="javascript:void(0);" data-letter="Р">Р</a></li>
+								<li><a href="javascript:void(0);" data-letter="С">С</a></li>
+								<li><a href="javascript:void(0);" data-letter="Т">Т</a></li>
+								<li><a href="javascript:void(0);" data-letter="У">У</a></li>
+								<li><a href="javascript:void(0);" data-letter="Ф">Ф</a></li>
+								<li><a href="javascript:void(0);" data-letter="Х">Х</a></li>
+								<li><a href="javascript:void(0);" data-letter="Ц">Ц</a></li>
+								<li><a href="javascript:void(0);" data-letter="Ч">Ч</a></li>
+								<li><a href="javascript:void(0);" data-letter="Ш">Ш</a></li>
+								<li><a href="javascript:void(0);" data-letter="Щ">Щ</a></li>
+								<li><a href="javascript:void(0);" data-letter="Ы">Ы</a></li>
+								<li><a href="javascript:void(0);" data-letter="Э">Э</a></li>
+								<li><a href="javascript:void(0);" data-letter="Ю">Ю</a></li>
+								<li><a href="javascript:void(0);" data-letter="Я">Я</a></li>
+							</ul>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -2990,8 +3043,8 @@
 	</footer>
 
 	<script src="/scripts/jquery-3.7.1.min.js"></script>
-	<script src="/scripts/jquery.mask.min.js"></script>
 	<script src="/scripts/jquery-ui.min.js"></script>
+	<script src="/scripts/jquery.mask.min.js"></script>
 	<script src="/scripts/swiper-bundle.min.js"></script>
 	<script src="/scripts/micromodal.min.js"></script>
 	<script src="/scripts/main.js"></script>
@@ -3025,7 +3078,7 @@
 								данных</label>
 						</div>
 						<div class="modal__form-bottom">
-							<button type="submit" class="button">Отправить</button>
+							<button type="submit" class="button">Перезвоните мне</button>
 						</div>
 					</form>
 				</div>
@@ -3035,7 +3088,7 @@
 
 	<div class="modal micromodal-slide" id="modal-sendCatalog" aria-hidden="true">
 		<div class="modal__overlay" tabindex="-1" data-micromodal-close>
-			<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-sendCatalogalog-title">
+			<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-sendCatalog-title">
 				<header class="modal__header">
 					<div></div>
 					<button class="modal__close" aria-label="Закрыть" data-micromodal-close></button>
@@ -3159,85 +3212,94 @@
 						</div>
 						<ul class="cart__list">
 							<li class="cart__item">
-								<label class="form__checkbox" for="cart-item-1">
-									<input class="form__checkbox-control" type="checkbox" name="cart-item-1" id="cart-item-1" checked>
-									<span class="form__checkbox-emulator"></span>
-								</label>
-								<div class="cart__image">
-									<img src="/images/catalog/catalog-1.jpg" alt="Яблоня Ред Кетти" loading="lazy">
-								</div>
-								<div class="cart__info">
-									<div class="cart__articul">Арт. 103296706</div>
-									<div class="cart__info-name">
-										<a href="#" class="cart__title">Яблоня Ред Кетти</a>
-										<div class="cart__subtitle">Malus Red Katie</div>
+								<div class="cart__item-left">
+									<label class="form__checkbox" for="cart-item-1">
+										<input class="form__checkbox-control" type="checkbox" name="cart-item-1" id="cart-item-1" checked>
+										<span class="form__checkbox-emulator"></span>
+									</label>
+									<div class="cart__image">
+										<img src="/images/catalog/catalog-1.jpg" alt="Яблоня Ред Кетти" loading="lazy">
 									</div>
-									<div class="cart__desc">С-10,РА 160-180 см + крона</div>
+									<div class="cart__info">
+										<div class="cart__articul">Арт. 103296706</div>
+										<div class="cart__info-name">
+											<a href="#" class="cart__title">Яблоня Ред Кетти</a>
+											<div class="cart__subtitle">Malus Red Katie</div>
+										</div>
+										<div class="cart__desc">С-10,РА 160-180 см + крона</div>
+									</div>
 								</div>
-								<div class="cart__price-block">
-									<div class="cart__price">
-										<div class="cart__price-text">Цена</div>
-										<div class="cart__price-row">
-											<span class="cart__price-current">2 000 ₽</span>
-											<span class="cart__price-old">5 000 ₽</span>
+								<div class="cart__item-right">
+									<div class="cart__price-block">
+										<div class="cart__price">
+											<div class="cart__price-text">Цена</div>
+											<div class="cart__price-row">
+												<span class="cart__price-current">2 000 ₽</span>
+												<span class="cart__price-old">5 000 ₽</span>
+											</div>
+										</div>
+										<div class="cart__quantity">
+											<button class="cart__quantity-button cart__quantity-button-minus" type="button">-</button>
+											<input type="number" name="cart__quantity-1" id="cart__quantity-1" class="cart__quantity-value"
+												value="1" min="1">
+											<button class="cart__quantity-button cart__quantity-button-plus" type="button">+</button>
+										</div>
+										<div class="cart__total">
+											<div class="cart__total-text">Цена</div>
+											<div class="cart__total-row">
+												<span class="cart__total-current">16 000 ₽</span>
+												<span class="cart__total-old">25 000 ₽</span>
+											</div>
 										</div>
 									</div>
-									<div class="cart__quantity">
-										<button class="cart__quantity-button cart__quantity-button-minus" type="button">-</button>
-										<input type="number" name="cart__quantity-1" id="cart__quantity-1" class="cart__quantity-value"
-											value="1" min="1">
-										<button class="cart__quantity-button cart__quantity-button-plus" type="button">+</button>
-									</div>
-									<div class="cart__total">
-										<div class="cart__total-text">Цена</div>
-										<div class="cart__total-row">
-											<span class="cart__total-current">16 000 ₽</span>
-											<span class="cart__total-old">25 000 ₽</span>
-										</div>
-									</div>
+									<button class="cart__remove" type="button">×</button>
 								</div>
-								<button class="cart__remove" type="button">×</button>
 							</li>
 							<li class="cart__item">
-								<label class="form__checkbox" for="cart-item-2">
-									<input class="form__checkbox-control" type="checkbox" name="cart-item-2" id="cart-item-2" checked>
-									<span class="form__checkbox-emulator"></span>
-								</label>
-								<div class="cart__image">
-									<img src="/images/catalog/catalog-2.jpg" alt="Яблоня Ред Кетти" loading="lazy">
-								</div>
-								<div class="cart__info">
-									<div class="cart__articul">Арт. 103296706</div>
-									<div class="cart__info-name">
-										<a href="#" class="cart__title">Яблоня Ред Кетти</a>
-										<div class="cart__subtitle">Malus Red Katie</div>
+								<div class="cart__item-left">
+									<label class="form__checkbox" for="cart-item-1">
+										<input class="form__checkbox-control" type="checkbox" name="cart-item-1" id="cart-item-1" checked>
+										<span class="form__checkbox-emulator"></span>
+									</label>
+									<div class="cart__image">
+										<img src="/images/catalog/catalog-1.jpg" alt="Яблоня Ред Кетти" loading="lazy">
 									</div>
-									<div class="cart__desc">С-10,РА 160-180 см + крона</div>
+									<div class="cart__info">
+										<div class="cart__articul">Арт. 103296706</div>
+										<div class="cart__info-name">
+											<a href="#" class="cart__title">Яблоня Ред Кетти</a>
+											<div class="cart__subtitle">Malus Red Katie</div>
+										</div>
+										<div class="cart__desc">С-10,РА 160-180 см + крона</div>
+									</div>
 								</div>
-								<div class="cart__price-block">
-									<div class="cart__price">
-										<div class="cart__price-text">Цена</div>
-										<div class="cart__price-row">
-											<span class="cart__price-current">2 000 ₽</span>
-											<span class="cart__price-old">5 000 ₽</span>
+								<div class="cart__item-right">
+									<div class="cart__price-block">
+										<div class="cart__price">
+											<div class="cart__price-text">Цена</div>
+											<div class="cart__price-row">
+												<span class="cart__price-current">2 000 ₽</span>
+												<span class="cart__price-old">5 000 ₽</span>
+											</div>
+										</div>
+										<div class="cart__quantity">
+											<button class="cart__quantity-button cart__quantity-button-minus" type="button">-</button>
+											<input type="number" name="cart__quantity-1" id="cart__quantity-1" class="cart__quantity-value"
+												value="1" min="1">
+											<button class="cart__quantity-button cart__quantity-button-plus" type="button">+</button>
+										</div>
+										<div class="cart__total">
+											<div class="cart__total-text">Цена</div>
+											<div class="cart__total-row">
+												<span class="cart__total-current">16 000 ₽</span>
+												<span class="cart__total-old">25 000 ₽</span>
+											</div>
 										</div>
 									</div>
-									<div class="cart__quantity">
-										<button class="cart__quantity-button cart__quantity-button-minus" type="button">-</button>
-										<input type="number" name="cart__quantity-2" id="cart__quantity-2" class="cart__quantity-value"
-											value="1" min="1">
-										<button class="cart__quantity-button cart__quantity-button-plus" type="button">+</button>
-									</div>
-									<div class="cart__total">
-										<div class="cart__total-text">Цена</div>
-										<div class="cart__total-row">
-											<span class="cart__total-current">16 000 ₽</span>
-											<span class="cart__total-old">25 000 ₽</span>
-										</div>
-									</div>
+									<button class="cart__remove" type="button">×</button>
 								</div>
-								<button class="cart__remove" type="button">×</button>
 							</li>
+
 						</ul>
 						<div class="cart__checkbox-group">
 							<label class="form__checkbox" for="cart-select-all-bottom">

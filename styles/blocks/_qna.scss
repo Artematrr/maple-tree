@@ -10,6 +10,10 @@
 		padding: 60px;
 		border-radius: 28px;
 		background-color: var(--white);
+
+		@include mobile {
+			flex-direction: column;
+		}
 	}
 
 	&__left {
