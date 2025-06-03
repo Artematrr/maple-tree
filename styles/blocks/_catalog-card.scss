@@ -236,9 +236,12 @@
 		gap: 5px;
 		min-height: 35px;
 		margin-top: auto;
-		font-size: 14px;
 	}
 
+	&__price-text {
+		font-size: 14px;
+	}
+	
 	&__price-current {
 		font-size: 24px;
 		font-weight: 700;

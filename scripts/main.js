@@ -1,5 +1,4 @@
 // Свайперы
-
 new Swiper('.brands__swiper', {
 	spaceBetween: 30,
 	breakpoints: {
@@ -122,47 +121,67 @@ document
 		})
 	})
 
-document.querySelectorAll('.swiper-block__swiper').forEach(swiperEl => {
-	new Swiper(swiperEl, {
-		spaceBetween: 30,
-		breakpoints: {
-			320: {
-				slidesPerView: 1,
+document
+	.querySelectorAll('.swiper-block--news .swiper-block__swiper')
+	.forEach(swiperEl => {
+		new Swiper(swiperEl, {
+			spaceBetween: 30,
+			breakpoints: {
+				320: {
+					slidesPerView: 1,
+				},
+				540: {
+					slidesPerView: 2,
+				},
+				1024: {
+					slidesPerView: 3,
+				},
+				1440: {
+					slidesPerView: 4,
+				},
 			},
-			540: {
-				slidesPerView: 2,
+			pagination: {
+				el: swiperEl.querySelector('.swiper-block__pagination'),
+				clickable: true,
 			},
-			1024: {
-				slidesPerView: 3,
-			},
-			1440: {
-				slidesPerView: 4,
-			},
-		},
-		pagination: {
-			el: swiperEl.querySelector('.swiper-pagination'),
-			clickable: true,
-		},
+		})
 	})
-})
 
-// new Swiper('.swiper-block__swiper', {
-// 	spaceBetween: 30,
-// 	breakpoints: {
-// 		320: {
-// 			slidesPerView: 1,
-// 		},
-// 		540: {
-// 			slidesPerView: 2,
-// 		},
-// 		1024: {
-// 			slidesPerView: 3,
-// 		},
-// 		1440: {
-// 			slidesPerView: 4,
-// 		},
-// 	},
-// })
+document
+	.querySelectorAll('.swiper-block--catalog .swiper-block__swiper')
+	.forEach(swiperEl => {
+		new Swiper(swiperEl, {
+			spaceBetween: 30,
+			breakpoints: {
+				320: {
+					slidesPerView: 1,
+					spaceBetween: 10,
+				},
+				375: {
+					slidesPerView: 2,
+					spaceBetween: 10,
+					grid: {
+						rows: 2,
+						fill: 'row',
+					},
+				},
+				768: {
+					slidesPerView: 2,
+					spaceBetween: 15,
+				},
+				1024: {
+					slidesPerView: 3,
+				},
+				1440: {
+					slidesPerView: 4,
+				},
+			},
+			pagination: {
+				el: swiperEl.querySelector('.swiper-block__pagination'),
+				clickable: true,
+			},
+		})
+	})
 
 jQuery(document).ready(function () {
 	// Общие скрипты

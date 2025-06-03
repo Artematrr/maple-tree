@@ -5,6 +5,10 @@
 		display: flex;
 		flex-direction: column;
 		gap: 30px;
+
+		@include mobile {
+			gap: 15px;
+		}
 	}
 
 	&__title {
@@ -15,6 +19,10 @@
 		display: flex;
 		flex-wrap: wrap;
 		gap: 30px;
+
+		@include mobile {
+			gap: 15px;
+		}
 	}
 
 	&__item {
@@ -32,9 +40,88 @@
 			var(--transition-timing-function);
 		min-height: 258px;
 		text-align: center;
+		overflow: hidden;
 
 		@include hover {
 			box-shadow: 0px 4px 40px 0px rgba(163, 163, 163, 0.3);
+		}
+
+		@include mobile {
+			padding: 15px;
+			flex: 1 0 155px;
+			min-height: unset;
+		}
+
+		.img-1 {
+			width: 78px;
+			height: 156px;
+		}
+		.img-2 {
+			@extend .img-1;
+		}
+		.img-3 {
+			width: 171px;
+			height: 156px;
+		}
+		.img-4 {
+			width: 163px;
+			height: 156px;
+		}
+		.img-5 {
+			@extend .img-1;
+		}
+		.img-6 {
+			width: 135px;
+			height: 156px;
+		}
+		.img-7 {
+			width: 199px;
+			height: 156px;
+		}
+		.img-8 {
+			width: 100px;
+			height: 156px;
+		}
+		.img-9 {
+			width: 230px;
+			height: 113px;
+		}
+
+		@include mobile {
+			.img-1 {
+				width: 24px;
+				height: 47px;
+			}
+			.img-2 {
+				@extend .img-1;
+			}
+			.img-3 {
+				width: 51px;
+				height: 47px;
+			}
+			.img-4 {
+				width: 50px;
+				height: 46px;
+			}
+			.img-5 {
+				@extend .img-1;
+			}
+			.img-6 {
+				width: 41px;
+				height: 47px;
+			}
+			.img-7 {
+				width: 60px;
+				height: 48px;
+			}
+			.img-8 {
+				width: 30px;
+				height: 47px;
+			}
+			.img-9 {
+				width: 69px;
+				height: 34px;
+			}
 		}
 	}
 
@@ -52,6 +139,17 @@
 		border-radius: 1000px 1000px 0px 0px;
 		border: 1px solid var(--primary-400);
 		background: var(--gray-200);
+
+		@include mobile {
+			@include square(36px);
+
+			flex-shrink: 0;
+			padding: 0px 3px;
+			margin-inline: 3px;
+			margin-top: 9px;
+			border-radius: 300px 300px 0px 0px;
+			border: 0.3px solid var(--primary-400);
+		}
 	}
 
 	&__image {
@@ -76,6 +174,10 @@
 		@include fluid-text(14, 12);
 
 		color: var(--gray-700);
+
+		@include mobile {
+			margin-top: auto;
+		}
 	}
 
 	&__link {

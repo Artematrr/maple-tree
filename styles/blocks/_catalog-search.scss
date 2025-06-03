@@ -7,9 +7,13 @@
 	background: var(--white);
 	box-shadow: 0px 8px 40px 0px rgba(120, 120, 120, 0.12);
 
+	@include mobile {
+		padding: 15px;
+	}
+
 	&__alphabet {
 		display: flex;
-		gap: 10px 30px;
+		gap: 15px 30px;
 		min-height: 86px;
 		padding: 20px 30px;
 		border-radius: 20px;
@@ -17,6 +21,10 @@
 
 		@include desktop {
 			flex-wrap: wrap;
+		}
+
+		@include mobile {
+			padding: 10px;
 		}
 	}
 
@@ -31,6 +39,11 @@
 
 		@include desktop {
 			max-width: unset;
+		}
+
+		@include mobile {
+			text-align: center;
+			font-weight: 700;
 		}
 	}
 
@@ -102,6 +115,17 @@
 			@include hover {
 				color: var(--secondary-900);
 			}
+		}
+	}
+
+	&__letters-row {
+		display: contents;
+		align-items: center;
+		justify-content: space-between;
+		width: 100%;
+
+		@include mobile {
+			display: flex;
 		}
 	}
 

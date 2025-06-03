@@ -107,7 +107,8 @@
 			@include fluid-text(20, 14);
 
 			text-wrap: nowrap;
-			transition: color var(--transition-duration) var(--transition-timing-function);
+			transition: color var(--transition-duration)
+				var(--transition-timing-function);
 
 			@include desktop {
 				display: none;
@@ -286,9 +287,10 @@
 	// mobile
 	&__mobile {
 		position: relative;
+		display: none;
 
-		@include tablet-above {
-			display: none;
+		@include tablet {
+			display: block;
 		}
 
 		&.is-open {
@@ -317,6 +319,8 @@
 
 		.header__cart {
 			@include square(24px);
+
+			margin-right: 10px;
 		}
 
 		.header__cart-icon-wrapper img {
@@ -438,7 +442,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
-		gap: 15px;
+		gap: 5px;
 		min-height: 45px;
 		z-index: 12;
 	}
@@ -459,6 +463,10 @@
 		display: flex;
 		align-items: center;
 		gap: 15px;
+
+		@include mobile-s {
+			gap: 10px;
+		}
 	}
 
 	&__mobile-burger {

@@ -3,6 +3,10 @@
 		display: flex;
 		flex-direction: column;
 		gap: 30px;
+
+		@include mobile {
+			gap: 15px;
+		}
 	}
 
 	&__top {
@@ -16,8 +20,19 @@
 		color: var(--white);
 		background-color: var(--primary-600);
 
+		@include desktop {
+			gap: 30px;
+		}
+
+		@include tablet {
+			grid-template-columns: repeat(2, 1fr);
+			gap: 30px 40px;
+		}
+
 		@include mobile {
 			grid-template-columns: 1fr;
+			gap: 15px;
+			padding: 15px;
 		}
 	}
 
@@ -30,6 +45,13 @@
 
 	&__logo {
 		gap: 30px;
+		min-width: 220px;
+
+		@include mobile {
+			align-items: center;
+			gap: 10px;
+			min-width: unset;
+		}
 	}
 
 	&__image {
@@ -41,6 +63,14 @@
 		display: flex;
 		flex-direction: column;
 		gap: 15px;
+
+		@include mobile {
+			width: 100%;
+			flex-direction: row;
+			align-items: center;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
 	}
 
 	&__button {
@@ -52,6 +82,11 @@
 		@include hover {
 			background-color: var(--secondary-500);
 		}
+
+		@include mobile {
+			flex: 1 0 0;
+			padding: 8px 15px;
+		}
 	}
 
 	&__menu {
@@ -60,16 +95,27 @@
 				color: var(--secondary-500);
 			}
 		}
+
+		@include mobile {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+		}
 	}
 
 	&__contacts {
 		justify-content: center;
 		gap: 15px;
+		min-width: 220px;
 
 		a {
 			@include hover {
 				color: var(--secondary-500);
 			}
+		}
+
+		@include mobile {
+			gap: 5px;
+			min-width: unset;
 		}
 	}
 
@@ -114,6 +160,7 @@
 
 		@include mobile {
 			flex-direction: column;
+			padding-bottom: 15px;
 		}
 	}
 
@@ -124,6 +171,10 @@
 			@include hover {
 				color: var(--primary-500);
 			}
+		}
+
+		@include mobile {
+			text-align: center;
 		}
 	}
 

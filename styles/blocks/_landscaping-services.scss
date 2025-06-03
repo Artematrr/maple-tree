@@ -1,9 +1,29 @@
 .landscaping-services {
 	margin-bottom: var(--section-margin-bottom);
 
+	&__container {
+		display: flex;
+		flex-direction: column;
+		gap: 15px;
+	}
+
 	&__rows {
 		display: flex;
 		flex-direction: column;
+
+		@include tablet {
+			gap: 15px;
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+		}
+
+		@include mobile {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		@include mobile-s {
+			grid-template-columns: repeat(1, 1fr);
+		}
 	}
 
 	&__row {
@@ -17,6 +37,10 @@
 		}
 		&--bottom {
 			align-items: flex-end;
+		}
+
+		@include tablet {
+			display: contents;
 		}
 	}
 
@@ -44,6 +68,11 @@
 		&--lg {
 			flex: 0 1 360px;
 			height: 420px;
+		}
+
+		@include tablet {
+			flex: 1 1 0;
+			height: 180px;
 		}
 	}
 
@@ -76,9 +105,15 @@
 		@include hover {
 			background: var(--background-gradient-secondary);
 		}
+
+		@include tablet {
+			padding: 15px 10px;
+		}
 	}
 
 	&__text {
+		@include fluid-text(18, 14);
+
 		color: var(--white);
 		width: 100%;
 		text-align: left;
@@ -95,16 +130,38 @@
 		display: flex;
 		align-items: center;
 		height: 330px;
-	}
-	&__title {
-		padding-bottom: 10px;
-		max-width: 540px;
-		text-align: right;
 
-		&.bottom-line {
-			&::before {
-				right: 0;
-				left: unset;
+		@include tablet {
+			display: none;
+		}
+	}
+
+	&__title {
+		&--main {
+			display: none;
+			text-align: left;
+			padding-bottom: 15px;
+
+			@include tablet {
+				display: block;
+			}
+		}
+
+		&--inner {
+			display: block;
+			padding-bottom: 10px;
+			max-width: 540px;
+			text-align: right;
+
+			&.bottom-line {
+				&::before {
+					right: 0;
+					left: unset;
+				}
+			}
+
+			@include tablet {
+				display: none;
 			}
 		}
 	}
