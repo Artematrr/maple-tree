@@ -61,15 +61,17 @@
 	--font-family-base: 'Nunito Sans', sans-serif;
 
 	--container-width: 1410px;
-	--container-padding-x: 17px;
+	--container-padding-x: 15px;
 
 	--input-height: 72px;
 	--button-height: 57px;
 	--section-margin-bottom: 90px;
 	--header-height: 145px;
 
+	@include tablet {
+		--header-height: 55px;
+	}
 	@include mobile {
 		--section-margin-bottom: 25px;
-		--header-height: 65px;
 	}
 }

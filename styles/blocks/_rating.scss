@@ -4,10 +4,13 @@
 	&__container {
 		display: flex;
 		align-items: center;
-		gap: 80px;
+		gap: 15px 80px;
 
-		@include mobile {
+		@include tablet {
 			flex-direction: column;
+		}
+		@include mobile {
+			align-items: flex-start;
 		}
 	}
 
@@ -18,8 +21,13 @@
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		align-items: center;
-		gap: 30px;
+		gap: 15px 30px;
 		width: 100%;
+
+		@include mobile {
+			display: flex;
+			flex-direction: column;
+		}
 	}
 
 	&__card {
@@ -39,8 +47,28 @@
 		box-shadow: 0 4px 32px 0 transparent;
 		transition: box-shadow var(--transition-duration)
 			var(--transition-timing-function);
+
 		@include hover {
 			box-shadow: 0 4px 32px 0 rgba(120, 120, 120, 0.13);
+		}
+
+		@include mobile {
+			padding: 15px 5px;
+			width: 100%;
+			min-height: unset;
+		}
+	}
+
+	&__card-top {
+		display: contents;
+
+		@include mobile {
+			display: flex;
+			align-items: center;
+			justify-content: flex-end;
+			flex-direction: column;
+			flex: 1 1 0;
+			gap: 12px;
 		}
 	}
 

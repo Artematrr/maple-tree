@@ -43,7 +43,7 @@
 							<button class="header__button button button--outline js-modal-askQuestion">Задать вопрос</button>
 						</div>
 					</div>
-					<a href="#" class="header__cart js-modal-cart">
+					<a href="javascript:void(0);" class="header__cart js-modal-cart">
 						<div class="header__cart-icon-wrapper">
 							<img src="/images/icons/cart.svg" alt="Корзина">
 							<span class="header__cart-number">0</span>
@@ -62,7 +62,7 @@
 						<li><a href="#">Полезно знать</a></li>
 						<li><a href="#">Контакты</a></li>
 						<li>
-							<a href="#" class="header__search">
+							<a href="javascript:void(0);" class="header__search">
 								<span class="header__search-icon">
 									<img src="/images/icons/search.svg" alt="Поиск">
 								</span>
@@ -71,6 +71,93 @@
 						</li>
 					</ul>
 				</nav>
+			</div>
+		</div>
+
+		<div class="header__mobile container">
+			<div class="header__mobile-menu">
+				<nav class="header__nav">
+					<ul class="header__menu">
+						<li>
+							<a href="#" class="header__catalog"><img src="/images/icons/catalog-icon.svg" alt="Каталог">Каталог</a>
+						</li>
+						<li><a href="#">Наши услуги</a></li>
+						<li><a href="#">Портфолио</a></li>
+						<li><a href="#">Питомник</a></li>
+						<li><a href="#">Доставка и оплата</a></li>
+						<li><a href="#">Полезно знать</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+				<div class="header__contacts">
+					<div class="header__contacts-group">
+						<a href="tel:88000000009" class="header__phone">
+							<img src="/images/icons/phone.svg" alt="Телефон">
+							<span>8 (800) 000-00-09</span>
+						</a>
+						<div class="header__socials">
+							<a href="#" class="header__social" aria-label="ВКонтакте"><img src="/images/icons/vkontakte.svg"
+									alt="VK"></a>
+							<a href="#" class="header__social" aria-label="WhatsApp"><img src="/images/icons/whatsapp.svg"
+									alt="WhatsApp"></a>
+							<a href="#" class="header__social" aria-label="Telegram"><img src="/images/icons/telegram.svg"
+									alt="Telegram"></a>
+						</div>
+					</div>
+					<div class="header__schedule">
+						<img src="/images/icons/dashboard.svg" alt="">
+						<span>Режим работы с 9:00 до 19:00</span>
+					</div>
+					<div class="header__actions">
+						<button class="header__button button button--outline js-modal-callback">Перезвонить</button>
+						<button class="header__button button button--outline js-modal-askQuestion">Задать вопрос</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="header__mobile-content">
+				<div class="header__mobile-top">
+					<div class="header__mobile-left">
+						<div class="header__mobile-burger js-menu-toggle">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<div class="header__mobile-logo">
+							<img src="/images/logo-mobile.svg" alt="">
+						</div>
+					</div>
+					<div class="header__mobile-right">
+						<a href="tel:88000000009" class="header__phone">
+							<img src="/images/icons/phone-black.svg" alt="Телефон">
+						</a>
+						<div class="header__socials">
+							<a href="#" class="header__social" aria-label="ВКонтакте"><img src="/images/icons/vkontakte.svg"
+									alt="VK"></a>
+							<a href="#" class="header__social" aria-label="WhatsApp"><img src="/images/icons/whatsapp.svg"
+									alt="WhatsApp"></a>
+							<a href="#" class="header__social" aria-label="Telegram"><img src="/images/icons/telegram.svg"
+									alt="Telegram"></a>
+						</div>
+						<a href="javascript:void(0);" class="header__search">
+							<span class="header__search-icon">
+								<img src="/images/icons/search.svg" alt="Поиск">
+							</span>
+						</a>
+						<a href="javascript:void(0);" class="header__cart js-modal-cart">
+							<div class="header__cart-icon-wrapper">
+								<img src="/images/icons/cart.svg" alt="Корзина">
+								<span class="header__cart-number">0</span>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="header__mobile-bottom">
+					<a href="#" class="header__mobile-button header__catalog button"><img src="/images/icons/catalog-icon.svg"
+							alt="Каталог">Каталог</a>
+					<button class="header__mobile-button button button--outline js-modal-callback">Перезвонить</button>
+					<button class="header__mobile-button button button--outline js-modal-askQuestion">Задать вопрос</button>
+				</div>
 			</div>
 		</div>
 	</header>
@@ -122,6 +209,7 @@
 
 		<section class="main-search">
 			<div class="main-search__container container">
+				<h2 class="visually-hidden">Поиск</h2>
 				<div class="catalog-search">
 					<div class="catalog-search__alphabet">
 						<div class="catalog-search__description">Найдите растение в каталоге по наименованию или&nbsp;алфавиту:
@@ -2773,6 +2861,7 @@
 						</div>
 
 					</div>
+					<div class="swiper-pagination"></div>
 				</div>
 				<a href="#" class="swiper-block__link button button--link">Все новости и статьи <img
 						src="/images/icons/arrow.svg" alt=""></a>
@@ -2786,20 +2875,24 @@
 				</h2>
 				<div class="rating__cards">
 					<a href="#" class="rating__card" target="_blank" rel="noopener">
-						<div class="rating__image">
-							<img src="/images/rating/rating-yandex.svg" alt="Рейтинг организации в Яндексе" loading="lazy">
+						<div class="rating__card-top">
+							<div class="rating__image">
+								<img src="/images/rating/rating-yandex.svg" alt="Рейтинг организации в Яндексе" loading="lazy">
+							</div>
+							<p class="rating__description">Рейтинг организации в Яндексе</p>
 						</div>
-						<p class="rating__description">Рейтинг организации в Яндексе</p>
 						<div class="rating__link button button--link">
 							Оставить отзыв
 							<img src="/images/icons/arrow.svg" alt="">
 						</div>
 					</a>
 					<a href="#" class="rating__card" target="_blank" rel="noopener">
-						<div class="rating__image">
-							<img src="/images/rating/rating-2gis.svg" alt="Рейтинг организации на 2GIS" loading="lazy">
+						<div class="rating__card-top">
+							<div class="rating__image">
+								<img src="/images/rating/rating-2gis.svg" alt="Рейтинг организации на 2GIS" loading="lazy">
+							</div>
+							<div class="rating__description">Рейтинг организации на 2GIS</div>
 						</div>
-						<div class="rating__description">Рейтинг организации на 2GIS</div>
 						<div class="rating__link button button--link">
 							Оставить отзыв
 							<img src="/images/icons/arrow.svg" alt="">
@@ -2827,7 +2920,7 @@
 									alt=""></a>
 						</div>
 						<div class="qna__logo">
-							<img src="/images/qna-bg.png" alt="Клён — питомник растений" loading="lazy">
+							<img src="/images/logo.svg" alt="Клён — питомник растений" loading="lazy">
 						</div>
 					</div>
 					<div class="qna__right">
@@ -3257,8 +3350,8 @@
 							</li>
 							<li class="cart__item">
 								<div class="cart__item-left">
-									<label class="form__checkbox" for="cart-item-1">
-										<input class="form__checkbox-control" type="checkbox" name="cart-item-1" id="cart-item-1" checked>
+									<label class="form__checkbox" for="cart-item-2">
+										<input class="form__checkbox-control" type="checkbox" name="cart-item-2" id="cart-item-2" checked>
 										<span class="form__checkbox-emulator"></span>
 									</label>
 									<div class="cart__image">
@@ -3284,7 +3377,7 @@
 										</div>
 										<div class="cart__quantity">
 											<button class="cart__quantity-button cart__quantity-button-minus" type="button">-</button>
-											<input type="number" name="cart__quantity-1" id="cart__quantity-1" class="cart__quantity-value"
+											<input type="number" name="cart__quantity-2" id="cart__quantity-2" class="cart__quantity-value"
 												value="1" min="1">
 											<button class="cart__quantity-button cart__quantity-button-plus" type="button">+</button>
 										</div>

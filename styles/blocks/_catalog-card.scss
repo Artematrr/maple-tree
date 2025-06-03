@@ -153,19 +153,6 @@
 
 	&__swiper-container {
 		position: relative;
-
-		.swiper-pagination {
-			position: relative;
-			bottom: unset;
-			top: unset;
-			margin-top: 10px;
-		}
-
-		.swiper-pagination-bullet {
-			width: 12px;
-			height: 12px;
-			background-color: var(--secondary-900);
-		}
 	}
 
 	&__swiper {
@@ -297,14 +284,4 @@
 			padding: 6px 10px;
 		}
 	}
-}
-.swiper {
-}
-.swiper-wrapper {
-}
-.swiper-slide {
-}
-.swiper-pagination {
-}
-.button {
 }

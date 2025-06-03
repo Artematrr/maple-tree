@@ -1,21 +1,4 @@
 // Свайперы
-new Swiper('.swiper-block__swiper', {
-	spaceBetween: 30,
-	breakpoints: {
-		320: {
-			slidesPerView: 1,
-		},
-		540: {
-			slidesPerView: 2,
-		},
-		1024: {
-			slidesPerView: 3,
-		},
-		1440: {
-			slidesPerView: 4,
-		},
-	},
-})
 
 new Swiper('.brands__swiper', {
 	spaceBetween: 30,
@@ -62,6 +45,7 @@ new Swiper('.gallery__swiper', {
 		nextEl: '.gallery__swiper-next',
 	},
 })
+
 new Swiper('.product__type-swiper', {
 	spaceBetween: 15,
 	mousewheel: true,
@@ -114,7 +98,6 @@ new Swiper('.product__swiper', {
 
 new Swiper('.product__swiper-preview', {
 	slidesPerGroup: 1,
-	// grabCursor: true,
 	slidesPerView: 1,
 	breakpoints: {
 		320: {
@@ -139,13 +122,45 @@ document
 		})
 	})
 
-// new Swiper('.animals__tabs', {
-// 	slidesPerView: 'auto',
-// 	spaceBetween: 10,
-// 	mousewheel: true,
-// 	freeMode: true,
-// 	scrollbar: {
-// 		el: '.swiper-scrollbar',
+document.querySelectorAll('.swiper-block__swiper').forEach(swiperEl => {
+	new Swiper(swiperEl, {
+		spaceBetween: 30,
+		breakpoints: {
+			320: {
+				slidesPerView: 1,
+			},
+			540: {
+				slidesPerView: 2,
+			},
+			1024: {
+				slidesPerView: 3,
+			},
+			1440: {
+				slidesPerView: 4,
+			},
+		},
+		pagination: {
+			el: swiperEl.querySelector('.swiper-pagination'),
+			clickable: true,
+		},
+	})
+})
+
+// new Swiper('.swiper-block__swiper', {
+// 	spaceBetween: 30,
+// 	breakpoints: {
+// 		320: {
+// 			slidesPerView: 1,
+// 		},
+// 		540: {
+// 			slidesPerView: 2,
+// 		},
+// 		1024: {
+// 			slidesPerView: 3,
+// 		},
+// 		1440: {
+// 			slidesPerView: 4,
+// 		},
 // 	},
 // })
 
@@ -162,6 +177,13 @@ jQuery(document).ready(function () {
 			$item.siblings('.qna__item').removeClass('is-open')
 			$item.addClass('is-open')
 		}
+	})
+
+	// aside menu toggle
+	$('.js-menu-toggle').on('click', function (e) {
+		e.preventDefault()
+		$('.header__mobile').toggleClass('is-open')
+		setCooldown()
 	})
 
 	$('#product-tabs').tabs()

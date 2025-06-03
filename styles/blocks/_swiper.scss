@@ -93,4 +93,22 @@
 
 .swiper-pagination {
 	z-index: 2;
+	position: relative;
+	bottom: unset;
+	top: unset;
+	margin-top: 10px;
+}
+
+.swiper-pagination-bullet {
+	width: 12px;
+	height: 12px;
+	background-color: var(--secondary-900);
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+	bottom: unset;
+	top: unset;
 }
