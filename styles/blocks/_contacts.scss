@@ -8,6 +8,8 @@
 	}
 
 	&__title {
+		@include fluid-text(48, 34);
+
 		padding-bottom: 15px;
 	}
 
@@ -48,7 +50,7 @@
 		width: 100%;
 		height: 450px;
 
-		@include mobile{
+		@include mobile {
 			height: 218px;
 		}
 	}
@@ -67,7 +69,7 @@
 	&__item {
 		display: flex;
 		flex: 1 0 0;
-		gap: 5px 10px;
+		gap: 5px 15px;
 		width: 100%;
 	}
 
@@ -141,8 +143,11 @@
 		display: flex;
 		flex-direction: column;
 		gap: 15px;
+		padding-inline: 5px;
 
 		@include mobile {
+			padding-inline: 0;
+
 			.form__input {
 				height: 52px;
 				padding: 15px 10px;

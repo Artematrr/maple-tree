@@ -67,7 +67,7 @@
 		@include mobile {
 			width: 100%;
 			flex-direction: row;
-			align-items: center;
+			align-items: stretch;
 			flex-wrap: wrap;
 			justify-content: space-between;
 		}

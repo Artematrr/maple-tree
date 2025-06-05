@@ -1,24 +1,77 @@
 .catalog-sort {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
 	gap: 20px;
+
+	@include mobile {
+		gap: 10px 5px;
+	}
+
+	&__filter-button {
+		@include square(43px);
+		@include reset-button;
+
+		display: none;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		flex-shrink: 0;
+		border-radius: 5px;
+		background-color: var(--white);
+		margin-right: auto;
+
+		@include hover {
+			background-color: var(--primary-500);
+
+			* {
+				fill: var(--white);
+			}
+		}
+
+		@include tablet {
+			display: flex;
+		}
+
+		@include mobile {
+		margin-right: unset;
+		}
+	}
 
 	&__group {
 		display: flex;
 		align-items: center;
 		gap: 15px;
 		flex-wrap: wrap;
+
+		@include mobile {
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 0;
+		}
 	}
 
 	&__name {
-		font-size: 14px;
+		@include fluid-text(14, 12);
 	}
 
 	.form__select-input {
+		@include fluid-text(14, 12);
+
 		width: 155px;
 		padding: 12px 15px;
 		border: 1px solid var(--gray-500);
+
+		&--count {
+			@include mobile {
+				width: 86px;
+			}
+		}
+
+		@include mobile {
+			padding: 6px 10px;
+		}
 	}
 
 	.form__select-arrow {

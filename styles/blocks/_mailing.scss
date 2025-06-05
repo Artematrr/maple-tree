@@ -118,7 +118,10 @@
 		padding: 15px 30px;
 		height: 53px;
 
+		margin-top: -5px;
+
 		@include mobile {
+			margin-top: 0;
 			padding: 6px 30px;
 			height: auto;
 		}

@@ -15,6 +15,10 @@
 		border-color: var(--primary-500);
 	}
 
+	@include mobile {
+		padding: 5px;
+	}
+
 	&__main {
 		display: flex;
 		flex-direction: column;
@@ -36,12 +40,15 @@
 		border-radius: inherit;
 		padding: 20px;
 
+		@include mobile {
+			padding: 5px;
+		}
+
 		&.is-visible {
 			display: flex;
 		}
 
 		.catalog-card__availability {
-			font-size: 12px;
 			padding-left: 15px;
 
 			&::before {
@@ -53,6 +60,10 @@
 			flex-direction: column-reverse;
 			gap: 0;
 			font-size: 10px;
+
+			@include mobile {
+				min-height: unset;
+			}
 		}
 		.catalog-card__price-current {
 			width: 100%;
@@ -74,6 +85,10 @@
 
 			padding: 4px;
 
+			img {
+				max-width: 100%;
+			}
+
 			&--info {
 				background-color: var(--secondary-500);
 			}
@@ -90,6 +105,7 @@
 
 		&::-webkit-scrollbar {
 			width: 6px;
+			width: 4px;
 		}
 
 		&::-webkit-scrollbar-track {
@@ -113,12 +129,23 @@
 		padding-bottom: 5px;
 		border-bottom: 1px solid var(--gray-500);
 		gap: 10px;
+
+		@include mobile {
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 5px;
+		}
 	}
 
 	&__info-right {
 		display: flex;
 		flex-direction: column;
 		flex: 1 1 148px;
+
+		@include mobile {
+			flex: 1;
+			width: 100%;
+		}
 	}
 
 	&__info-left {
@@ -126,12 +153,25 @@
 		flex-direction: column;
 		align-items: flex-end;
 		flex: 1 1 130px;
+
+		@include mobile {
+			flex: 1;
+			width: 100%;
+			gap: 5px;
+			align-items: flex-start;
+		}
 	}
 
 	&__info-group {
 		display: flex;
 		align-items: center;
 		gap: 10px;
+
+		@include mobile {
+			flex: 1;
+			width: 100%;
+			justify-content: space-between;
+		}
 	}
 
 	&__info-bottom {
@@ -153,16 +193,33 @@
 
 	&__swiper-container {
 		position: relative;
+
+		@include mobile {
+			.swiper-pagination {
+				margin-top: 5px;
+				height: 10px;
+			}
+
+			.swiper-pagination-bullet {
+				@include square(8px);
+			}
+		}
 	}
 
 	&__swiper {
 		max-width: 290px;
 		height: 250px;
+		border-radius: 5px;
 
 		img {
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
+		}
+
+		@include mobile {
+			height: 135px;
+			max-width: 270px;
 		}
 	}
 
@@ -171,6 +228,10 @@
 		flex-direction: column;
 		gap: 15px;
 		height: 100%;
+
+		@include mobile {
+			gap: 5px;
+		}
 	}
 
 	&__articul {
@@ -184,8 +245,9 @@
 	}
 
 	&__title {
+		@include fluid-text(20, 16);
+
 		color: var(--secondary-900);
-		font-size: 20px;
 		font-weight: 700;
 		white-space: nowrap;
 		text-overflow: ellipsis;
@@ -193,19 +255,21 @@
 	}
 
 	&__subtitle {
+		@include fluid-text(14, 12);
+
 		color: var(--gray-700);
-		font-size: 14px;
 	}
 
 	&__details {
-		font-size: 14px;
+		@include fluid-text(14, 12);
 	}
 
 	&__availability {
-		color: var(--primary-400);
-		font-size: 14px;
-		padding-left: 22px;
+		@include fluid-text(14, 12);
+
 		position: relative;
+		padding-left: 22px;
+		color: var(--primary-400);
 
 		&::before {
 			@include square(12px);
@@ -236,21 +300,33 @@
 		gap: 5px;
 		min-height: 35px;
 		margin-top: auto;
+
+		@include mobile {
+			gap: 0 5px;
+			flex-wrap: wrap;
+			justify-content: flex-start;
+		}
 	}
 
 	&__price-text {
-		font-size: 14px;
+		@include fluid-text(14, 12);
+
+		@include mobile {
+			width: 100%;
+		}
 	}
-	
+
 	&__price-current {
-		font-size: 24px;
+		@include fluid-text(24, 18);
+
 		font-weight: 700;
 		line-height: 1.45;
 	}
 
 	&__price-old {
+		@include fluid-text(14, 12);
+
 		color: var(--gray-700);
-		font-size: 14px;
 		text-decoration: line-through;
 	}
 
@@ -276,15 +352,32 @@
 			@include square(24px);
 		}
 
-		&--one-click {
+		&--one-click,
+		&--info {
 			padding: 6px 10px;
+
+			@include mobile {
+				@include square(24px);
+
+				img {
+					width: 15.75px;
+					height: 18px;
+				}
+			}
 		}
 
 		&--cart {
-		}
+			@include mobile {
+				padding: 4.5px 11.25px;
+				gap: 7.5px;
+				font-size: 12px;
+				font-weight: 400;
 
-		&--info {
-			padding: 6px 10px;
+				img {
+					width: 15.75px;
+					height: 16.625px;
+				}
+			}
 		}
 	}
 }

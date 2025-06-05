@@ -3,6 +3,13 @@
 	flex-wrap: wrap;
 	gap: 15px;
 
+	@include mobile {
+		flex-wrap: nowrap;
+		max-width: calc(100dvw - var(--container-padding-x) * 2);
+		overflow: auto;
+		margin-inline: auto;
+	}
+
 	&__item {
 		display: flex;
 		align-items: center;
@@ -16,6 +23,10 @@
 
 		@include hover {
 			box-shadow: 0px 4px 40px 0px rgba(163, 163, 163, 0.3);
+		}
+
+		@include mobile {
+			flex: 1 0 200px;
 		}
 	}
 

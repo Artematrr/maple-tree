@@ -44,7 +44,7 @@
 							<button class="header__button button button--outline js-modal-askQuestion">Задать вопрос</button>
 						</div>
 					</div>
-					<a href="#" class="header__cart js-modal-cart">
+					<a href="javascript:void(0);" class="header__cart js-modal-cart">
 						<div class="header__cart-icon-wrapper">
 							<img src="/images/icons/cart.svg" alt="Корзина">
 							<span class="header__cart-number">0</span>
@@ -63,7 +63,7 @@
 						<li><a href="#">Полезно знать</a></li>
 						<li><a href="#">Контакты</a></li>
 						<li>
-							<a href="#" class="header__search">
+							<a href="javascript:void(0);" class="header__search">
 								<span class="header__search-icon">
 									<img src="/images/icons/search.svg" alt="Поиск">
 								</span>
@@ -74,6 +74,93 @@
 				</nav>
 			</div>
 		</div>
+
+		<div class="header__mobile container">
+			<div class="header__mobile-menu">
+				<nav class="header__nav">
+					<ul class="header__menu">
+						<li>
+							<a href="#" class="header__catalog"><img src="/images/icons/catalog-icon.svg" alt="Каталог">Каталог</a>
+						</li>
+						<li><a href="#">Наши услуги</a></li>
+						<li><a href="#">Портфолио</a></li>
+						<li><a href="#">Питомник</a></li>
+						<li><a href="#">Доставка и оплата</a></li>
+						<li><a href="#">Полезно знать</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+				<div class="header__contacts">
+					<div class="header__contacts-group">
+						<a href="tel:88000000009" class="header__phone">
+							<img src="/images/icons/phone.svg" alt="Телефон">
+							<span>8 (800) 000-00-09</span>
+						</a>
+						<div class="header__socials">
+							<a href="#" class="header__social" aria-label="ВКонтакте"><img src="/images/icons/vkontakte.svg"
+									alt="VK"></a>
+							<a href="#" class="header__social" aria-label="WhatsApp"><img src="/images/icons/whatsapp.svg"
+									alt="WhatsApp"></a>
+							<a href="#" class="header__social" aria-label="Telegram"><img src="/images/icons/telegram.svg"
+									alt="Telegram"></a>
+						</div>
+					</div>
+					<div class="header__schedule">
+						<img src="/images/icons/dashboard.svg" alt="">
+						<span>Режим работы с 9:00 до 19:00</span>
+					</div>
+					<div class="header__actions">
+						<button class="header__button button button--outline js-modal-callback">Перезвонить</button>
+						<button class="header__button button button--outline js-modal-askQuestion">Задать вопрос</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="header__mobile-content">
+				<div class="header__mobile-top">
+					<div class="header__mobile-left">
+						<div class="header__mobile-burger js-menu-toggle">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<a href="#" class="header__mobile-logo">
+							<img src="/images/logo-mobile.svg" alt="">
+						</a>
+					</div>
+					<div class="header__mobile-right">
+						<a href="tel:88000000009" class="header__phone">
+							<img src="/images/icons/phone-black.svg" alt="Телефон">
+						</a>
+						<div class="header__socials">
+							<a href="#" class="header__social" aria-label="ВКонтакте"><img src="/images/icons/vkontakte.svg"
+									alt="VK"></a>
+							<a href="#" class="header__social" aria-label="WhatsApp"><img src="/images/icons/whatsapp.svg"
+									alt="WhatsApp"></a>
+							<a href="#" class="header__social" aria-label="Telegram"><img src="/images/icons/telegram.svg"
+									alt="Telegram"></a>
+						</div>
+						<a href="javascript:void(0);" class="header__search">
+							<span class="header__search-icon">
+								<img src="/images/icons/search.svg" alt="Поиск">
+							</span>
+						</a>
+						<a href="javascript:void(0);" class="header__cart js-modal-cart">
+							<div class="header__cart-icon-wrapper">
+								<img src="/images/icons/cart.svg" alt="Корзина">
+								<span class="header__cart-number">0</span>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="header__mobile-bottom">
+					<a href="#" class="header__mobile-button header__catalog button"><img src="/images/icons/catalog-icon.svg"
+							alt="Каталог">Каталог</a>
+					<button class="header__mobile-button button button--outline js-modal-callback">Перезвонить</button>
+					<button class="header__mobile-button button button--outline js-modal-askQuestion">Задать вопрос</button>
+				</div>
+			</div>
+		</div>
 	</header>
 
 	<nav class="breadcrumbs container">
@@ -82,6 +169,7 @@
 			<li class="breadcrumbs__item"><a href="#">Хвойные растения</a></li>
 		</ul>
 	</nav>
+
 	<main class="main">
 
 		<section class="catalog">
@@ -248,971 +336,973 @@
 							<a href="javascript:void(0);" class="catalog-categories__all js-catalog-all"> Развернуть каталог</a>
 						</div>
 					</div>
-					<div class="catalog-filter">
-						<div class="catalog-filter__group catalog-filter__group--top">
-							<h2 class="catalog-filter__title">Подбор по параметрам</h2>
-							<div class="form__select-container">
-								<select name="filter-category" id="filter-category" class="form__select-input"
-									aria-label="Категория растения">
-									<option value="" selected disabled>Выберите категорию</option>
-									<option value="category-1">Категория 1</option>
-									<option value="category-2">Категория 2</option>
-									<option value="category-3">Категория 3</option>
-								</select>
-								<div class="form__select-arrow">
-									<img src="/images/icons/arrow-down.svg" alt="">
-								</div>
-							</div>
-							<div class="form__select-container">
-								<select name="filter-type" id="filter-type" class="form__select-input" aria-label="Вид растения">
-									<option value="" selected disabled>Выберите вид</option>
-									<option value="type-1">Вид 1</option>
-									<option value="type-2">Вид 2</option>
-									<option value="type-3">Вид 3</option>
-								</select>
-								<div class="form__select-arrow">
-									<img src="/images/icons/arrow-down.svg" alt="">
-								</div>
-							</div>
-						</div>
-
-						<div class="catalog-filter__group" id="filter-price">
-							<h3 class="catalog-filter__subtitle">Цена:</h3>
-							<div class="form__slider-container">
-								<div id="price-slider" class="form__slider" data-min="1" data-max="90000">
-									<span id="price-min" class="form__slider-value form__slider-min"></span>
-									<span id="price-max" class="form__slider-value form__slider-max"></span>
-								</div>
-							</div>
-						</div>
-
-						<div class="catalog-filter__group" id="filter-floral-color">
-							<div class="catalog-filter__dropdown">
-								<div class="catalog-filter__dropdown-trigger js-filter-trigger">
-									<h3 class="catalog-filter__subtitle">Окрас соцветия:</h3>
-									<div class="catalog-filter__dropdown-arrow">
+					<div id="catalog-filter__container">
+						<div class="catalog-filter">
+							<div class="catalog-filter__group catalog-filter__group--top">
+								<h2 class="catalog-filter__title">Подбор по параметрам</h2>
+								<div class="form__select-container">
+									<select name="filter-category" id="filter-category" class="form__select-input"
+										aria-label="Категория растения">
+										<option value="" selected disabled>Выберите категорию</option>
+										<option value="category-1">Категория 1</option>
+										<option value="category-2">Категория 2</option>
+										<option value="category-3">Категория 3</option>
+									</select>
+									<div class="form__select-arrow">
 										<img src="/images/icons/arrow-down.svg" alt="">
 									</div>
 								</div>
-								<div class="catalog-filter__dropdown-options">
-									<div class="catalog-filter__dropdown-group">
-										<label class="form__checkbox" for="filter-floral-color-1">
-											<input class="form__checkbox-control" type="checkbox" name="filter-floral-color-1"
-												id="filter-floral-color-1">
-											<span class="form__checkbox-emulator"></span>
-											<span class="catalog-filter__dropdown-icon">
-												<img src="/images/floral-color/floral-color-1.svg" alt="">
-											</span>
-											<span class="form__checkbox-label">
-												Синий
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
-										<label class="form__checkbox" for="filter-floral-color-2">
-											<input class="form__checkbox-control" type="checkbox" name="filter-floral-color-2"
-												id="filter-floral-color-2">
-											<span class="form__checkbox-emulator"></span>
-											<span class="catalog-filter__dropdown-icon">
-												<img src="/images/floral-color/floral-color-2.svg" alt="">
-											</span>
-											<span class="form__checkbox-label">
-												Красный
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
-										<label class="form__checkbox" for="filter-floral-color-3">
-											<input class="form__checkbox-control" type="checkbox" name="filter-floral-color-3"
-												id="filter-floral-color-3">
-											<span class="form__checkbox-emulator"></span>
-											<span class="catalog-filter__dropdown-icon">
-												<img src="/images/floral-color/floral-color-3.svg" alt="">
-											</span>
-											<span class="form__checkbox-label">
-												Фиолетовый
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
-										<label class="form__checkbox" for="filter-floral-color-4">
-											<input class="form__checkbox-control" type="checkbox" name="filter-floral-color-4"
-												id="filter-floral-color-4">
-											<span class="form__checkbox-emulator"></span>
-											<span class="catalog-filter__dropdown-icon">
-												<img src="/images/floral-color/floral-color-4.svg" alt="">
-											</span>
-											<span class="form__checkbox-label">
-												Желтый
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
-										<label class="form__checkbox" for="filter-floral-color-5">
-											<input class="form__checkbox-control" type="checkbox" name="filter-floral-color-5"
-												id="filter-floral-color-5">
-											<span class="form__checkbox-emulator"></span>
-											<span class="catalog-filter__dropdown-icon">
-												<img src="/images/floral-color/floral-color-5.svg" alt="">
-											</span>
-											<span class="form__checkbox-label">
-												Оранжевый
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
-										<label class="form__checkbox initially-hidden" for="filter-floral-color-6">
-											<input class="form__checkbox-control" type="checkbox" name="filter-floral-color-6"
-												id="filter-floral-color-6">
-											<span class="form__checkbox-emulator"></span>
-											<span class="catalog-filter__dropdown-icon">
-												<img src="/images/floral-color/floral-color-6.svg" alt="">
-											</span>
-											<span class="form__checkbox-label">
-												Розовый
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
-										<label class="form__checkbox initially-hidden" for="filter-floral-color-7">
-											<input class="form__checkbox-control" type="checkbox" name="filter-floral-color-7"
-												id="filter-floral-color-7">
-											<span class="form__checkbox-emulator"></span>
-											<span class="catalog-filter__dropdown-icon">
-												<img src="/images/floral-color/floral-color-7.svg" alt="">
-											</span>
-											<span class="form__checkbox-label">
-												Голубой
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
-									</div>
-									<a href="javascript:void(0);" class="catalog-filter__dropdown-all js-filter-all">Развернуть ещё</a>
-								</div>
-							</div>
-						</div>
-
-						<div class="catalog-filter__group" id="filter-leaf-color">
-							<div class="catalog-filter__dropdown">
-								<div class="catalog-filter__dropdown-trigger js-filter-trigger">
-									<h3 class="catalog-filter__subtitle">Окрас листвы:</h3>
-									<div class="catalog-filter__dropdown-arrow">
+								<div class="form__select-container">
+									<select name="filter-type" id="filter-type" class="form__select-input" aria-label="Вид растения">
+										<option value="" selected disabled>Выберите вид</option>
+										<option value="type-1">Вид 1</option>
+										<option value="type-2">Вид 2</option>
+										<option value="type-3">Вид 3</option>
+									</select>
+									<div class="form__select-arrow">
 										<img src="/images/icons/arrow-down.svg" alt="">
 									</div>
 								</div>
-								<div class="catalog-filter__dropdown-options">
+							</div>
 
-									<div class="form__select-container">
-										<select name="filter-season-leaf" id="filter-season-leaf" class="form__select-input"
-											aria-label="Сезон">
-											<option value="" selected disabled>Выберите сезон</option>
-											<option value="season-1">Зима</option>
-											<option value="season-2">Весна</option>
-											<option value="season-3">Лето</option>
-											<option value="season-4">Осень</option>
-										</select>
-										<div class="form__select-arrow">
+							<div class="catalog-filter__group" id="filter-price">
+								<h3 class="catalog-filter__subtitle">Цена:</h3>
+								<div class="form__slider-container">
+									<div id="price-slider" class="form__slider" data-min="1" data-max="90000">
+										<span id="price-min" class="form__slider-value form__slider-min"></span>
+										<span id="price-max" class="form__slider-value form__slider-max"></span>
+									</div>
+								</div>
+							</div>
+
+							<div class="catalog-filter__group" id="filter-floral-color">
+								<div class="catalog-filter__dropdown">
+									<div class="catalog-filter__dropdown-trigger js-filter-trigger">
+										<h3 class="catalog-filter__subtitle">Окрас соцветия:</h3>
+										<div class="catalog-filter__dropdown-arrow">
 											<img src="/images/icons/arrow-down.svg" alt="">
 										</div>
 									</div>
-
-									<div class="catalog-filter__dropdown-group">
-										<label class="form__checkbox" for="filter-leaf-color-1">
-											<input class="form__checkbox-control" type="checkbox" name="filter-leaf-color-1"
-												id="filter-leaf-color-1">
-											<span class="form__checkbox-emulator"></span>
-											<span class="catalog-filter__dropdown-icon">
-												<img src="/images/leaf-color/leaf-color-1.svg" alt="">
-											</span>
-											<span class="form__checkbox-label">
-												Зеленый
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
-										<label class="form__checkbox" for="filter-leaf-color-2">
-											<input class="form__checkbox-control" type="checkbox" name="filter-leaf-color-2"
-												id="filter-leaf-color-2">
-											<span class="form__checkbox-emulator"></span>
-											<span class="catalog-filter__dropdown-icon">
-												<img src="/images/leaf-color/leaf-color-2.svg" alt="">
-											</span>
-											<span class="form__checkbox-label">
-												Желтый
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
-										<label class="form__checkbox" for="filter-leaf-color-3">
-											<input class="form__checkbox-control" type="checkbox" name="filter-leaf-color-3"
-												id="filter-leaf-color-3">
-											<span class="form__checkbox-emulator"></span>
-											<span class="catalog-filter__dropdown-icon">
-												<img src="/images/leaf-color/leaf-color-3.svg" alt="">
-											</span>
-											<span class="form__checkbox-label">
-												Красный
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
-										<label class="form__checkbox" for="filter-leaf-color-4">
-											<input class="form__checkbox-control" type="checkbox" name="filter-leaf-color-4"
-												id="filter-leaf-color-4">
-											<span class="form__checkbox-emulator"></span>
-											<span class="catalog-filter__dropdown-icon">
-												<img src="/images/leaf-color/leaf-color-4.svg" alt="">
-											</span>
-											<span class="form__checkbox-label">
-												Пестролистный
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
+									<div class="catalog-filter__dropdown-options">
+										<div class="catalog-filter__dropdown-group">
+											<label class="form__checkbox" for="filter-floral-color-1">
+												<input class="form__checkbox-control" type="checkbox" name="filter-floral-color-1"
+													id="filter-floral-color-1">
+												<span class="form__checkbox-emulator"></span>
+												<span class="catalog-filter__dropdown-icon">
+													<img src="/images/floral-color/floral-color-1.svg" alt="">
+												</span>
+												<span class="form__checkbox-label">
+													Синий
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+											<label class="form__checkbox" for="filter-floral-color-2">
+												<input class="form__checkbox-control" type="checkbox" name="filter-floral-color-2"
+													id="filter-floral-color-2">
+												<span class="form__checkbox-emulator"></span>
+												<span class="catalog-filter__dropdown-icon">
+													<img src="/images/floral-color/floral-color-2.svg" alt="">
+												</span>
+												<span class="form__checkbox-label">
+													Красный
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+											<label class="form__checkbox" for="filter-floral-color-3">
+												<input class="form__checkbox-control" type="checkbox" name="filter-floral-color-3"
+													id="filter-floral-color-3">
+												<span class="form__checkbox-emulator"></span>
+												<span class="catalog-filter__dropdown-icon">
+													<img src="/images/floral-color/floral-color-3.svg" alt="">
+												</span>
+												<span class="form__checkbox-label">
+													Фиолетовый
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+											<label class="form__checkbox" for="filter-floral-color-4">
+												<input class="form__checkbox-control" type="checkbox" name="filter-floral-color-4"
+													id="filter-floral-color-4">
+												<span class="form__checkbox-emulator"></span>
+												<span class="catalog-filter__dropdown-icon">
+													<img src="/images/floral-color/floral-color-4.svg" alt="">
+												</span>
+												<span class="form__checkbox-label">
+													Желтый
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+											<label class="form__checkbox" for="filter-floral-color-5">
+												<input class="form__checkbox-control" type="checkbox" name="filter-floral-color-5"
+													id="filter-floral-color-5">
+												<span class="form__checkbox-emulator"></span>
+												<span class="catalog-filter__dropdown-icon">
+													<img src="/images/floral-color/floral-color-5.svg" alt="">
+												</span>
+												<span class="form__checkbox-label">
+													Оранжевый
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+											<label class="form__checkbox initially-hidden" for="filter-floral-color-6">
+												<input class="form__checkbox-control" type="checkbox" name="filter-floral-color-6"
+													id="filter-floral-color-6">
+												<span class="form__checkbox-emulator"></span>
+												<span class="catalog-filter__dropdown-icon">
+													<img src="/images/floral-color/floral-color-6.svg" alt="">
+												</span>
+												<span class="form__checkbox-label">
+													Розовый
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+											<label class="form__checkbox initially-hidden" for="filter-floral-color-7">
+												<input class="form__checkbox-control" type="checkbox" name="filter-floral-color-7"
+													id="filter-floral-color-7">
+												<span class="form__checkbox-emulator"></span>
+												<span class="catalog-filter__dropdown-icon">
+													<img src="/images/floral-color/floral-color-7.svg" alt="">
+												</span>
+												<span class="form__checkbox-label">
+													Голубой
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+										</div>
+										<a href="javascript:void(0);" class="catalog-filter__dropdown-all js-filter-all">Развернуть ещё</a>
 									</div>
 								</div>
 							</div>
-						</div>
 
-						<div class="catalog-filter__group" id="filter-needle-color">
-							<div class="catalog-filter__dropdown">
-								<div class="catalog-filter__dropdown-trigger js-filter-trigger">
-									<h3 class="catalog-filter__subtitle">Окрас хвои:</h3>
-									<div class="catalog-filter__dropdown-arrow">
-										<img src="/images/icons/arrow-down.svg" alt="">
-									</div>
-								</div>
-								<div class="catalog-filter__dropdown-options">
-
-									<div class="form__select-container">
-										<select name="filter-season-needle" id="filter-season-needle" class="form__select-input"
-											aria-label="Сезон">
-											<option value="" selected disabled>Выберите сезон</option>
-											<option value="season-1">Зима</option>
-											<option value="season-2">Весна</option>
-											<option value="season-3">Лето</option>
-											<option value="season-4">Осень</option>
-										</select>
-										<div class="form__select-arrow">
+							<div class="catalog-filter__group" id="filter-leaf-color">
+								<div class="catalog-filter__dropdown">
+									<div class="catalog-filter__dropdown-trigger js-filter-trigger">
+										<h3 class="catalog-filter__subtitle">Окрас листвы:</h3>
+										<div class="catalog-filter__dropdown-arrow">
 											<img src="/images/icons/arrow-down.svg" alt="">
 										</div>
 									</div>
+									<div class="catalog-filter__dropdown-options">
 
-									<div class="catalog-filter__dropdown-group">
-										<label class="form__checkbox" for="filter-needle-color-1">
-											<input class="form__checkbox-control" type="checkbox" name="filter-needle-color-1"
-												id="filter-needle-color-1">
-											<span class="form__checkbox-emulator"></span>
-											<span class="catalog-filter__dropdown-icon">
-												<img src="/images/needle-color/needle-color-1.svg" alt="">
-											</span>
-											<span class="form__checkbox-label">
-												Зеленый
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
-										<label class="form__checkbox" for="filter-needle-color-2">
-											<input class="form__checkbox-control" type="checkbox" name="filter-needle-color-2"
-												id="filter-needle-color-2">
-											<span class="form__checkbox-emulator"></span>
-											<span class="catalog-filter__dropdown-icon">
-												<img src="/images/needle-color/needle-color-2.svg" alt="">
-											</span>
-											<span class="form__checkbox-label">
-												Сизый
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
-										<label class="form__checkbox" for="filter-needle-color-3">
-											<input class="form__checkbox-control" type="checkbox" name="filter-needle-color-3"
-												id="filter-needle-color-3">
-											<span class="form__checkbox-emulator"></span>
-											<span class="catalog-filter__dropdown-icon">
-												<img src="/images/needle-color/needle-color-3.svg" alt="">
-											</span>
-											<span class="form__checkbox-label">
-												Голубой
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
-										<label class="form__checkbox" for="filter-needle-color-4">
-											<input class="form__checkbox-control" type="checkbox" name="filter-needle-color-4"
-												id="filter-needle-color-4">
-											<span class="form__checkbox-emulator"></span>
-											<span class="catalog-filter__dropdown-icon">
-												<img src="/images/needle-color/needle-color-4.svg" alt="">
-											</span>
-											<span class="form__checkbox-label">
-												Желтый
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
-										<label class="form__checkbox" for="filter-needle-color-5">
-											<input class="form__checkbox-control" type="checkbox" name="filter-needle-color-5"
-												id="filter-needle-color-5">
-											<span class="form__checkbox-emulator"></span>
-											<span class="catalog-filter__dropdown-icon">
-												<img src="/images/needle-color/needle-color-5.svg" alt="">
-											</span>
-											<span class="form__checkbox-label">
-												Пестрый
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
+										<div class="form__select-container">
+											<select name="filter-season-leaf" id="filter-season-leaf" class="form__select-input"
+												aria-label="Сезон">
+												<option value="" selected disabled>Выберите сезон</option>
+												<option value="season-1">Зима</option>
+												<option value="season-2">Весна</option>
+												<option value="season-3">Лето</option>
+												<option value="season-4">Осень</option>
+											</select>
+											<div class="form__select-arrow">
+												<img src="/images/icons/arrow-down.svg" alt="">
+											</div>
+										</div>
+
+										<div class="catalog-filter__dropdown-group">
+											<label class="form__checkbox" for="filter-leaf-color-1">
+												<input class="form__checkbox-control" type="checkbox" name="filter-leaf-color-1"
+													id="filter-leaf-color-1">
+												<span class="form__checkbox-emulator"></span>
+												<span class="catalog-filter__dropdown-icon">
+													<img src="/images/leaf-color/leaf-color-1.svg" alt="">
+												</span>
+												<span class="form__checkbox-label">
+													Зеленый
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+											<label class="form__checkbox" for="filter-leaf-color-2">
+												<input class="form__checkbox-control" type="checkbox" name="filter-leaf-color-2"
+													id="filter-leaf-color-2">
+												<span class="form__checkbox-emulator"></span>
+												<span class="catalog-filter__dropdown-icon">
+													<img src="/images/leaf-color/leaf-color-2.svg" alt="">
+												</span>
+												<span class="form__checkbox-label">
+													Желтый
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+											<label class="form__checkbox" for="filter-leaf-color-3">
+												<input class="form__checkbox-control" type="checkbox" name="filter-leaf-color-3"
+													id="filter-leaf-color-3">
+												<span class="form__checkbox-emulator"></span>
+												<span class="catalog-filter__dropdown-icon">
+													<img src="/images/leaf-color/leaf-color-3.svg" alt="">
+												</span>
+												<span class="form__checkbox-label">
+													Красный
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+											<label class="form__checkbox" for="filter-leaf-color-4">
+												<input class="form__checkbox-control" type="checkbox" name="filter-leaf-color-4"
+													id="filter-leaf-color-4">
+												<span class="form__checkbox-emulator"></span>
+												<span class="catalog-filter__dropdown-icon">
+													<img src="/images/leaf-color/leaf-color-4.svg" alt="">
+												</span>
+												<span class="form__checkbox-label">
+													Пестролистный
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
 
-						<div class="catalog-filter__group" id="filter-fruit-color">
-							<div class="catalog-filter__dropdown">
-								<div class="catalog-filter__dropdown-trigger js-filter-trigger">
-									<h3 class="catalog-filter__subtitle">Окрас плодов:</h3>
-									<div class="catalog-filter__dropdown-arrow">
-										<img src="/images/icons/arrow-down.svg" alt="">
+							<div class="catalog-filter__group" id="filter-needle-color">
+								<div class="catalog-filter__dropdown">
+									<div class="catalog-filter__dropdown-trigger js-filter-trigger">
+										<h3 class="catalog-filter__subtitle">Окрас хвои:</h3>
+										<div class="catalog-filter__dropdown-arrow">
+											<img src="/images/icons/arrow-down.svg" alt="">
+										</div>
 									</div>
-								</div>
-								<div class="catalog-filter__dropdown-options">
-									<div class="catalog-filter__dropdown-group">
-										<label class="form__checkbox" for="filter-fruit-color-1">
-											<input class="form__checkbox-control" type="checkbox" name="filter-fruit-color-1"
-												id="filter-fruit-color-1">
-											<span class="form__checkbox-emulator"></span>
-											<span class="catalog-filter__dropdown-icon">
-												<img src="/images/fruit-color/fruit-color-1.svg" alt="">
-											</span>
-											<span class="form__checkbox-label">
-												Зеленый
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
-										<label class="form__checkbox" for="filter-fruit-color-2">
-											<input class="form__checkbox-control" type="checkbox" name="filter-fruit-color-2"
-												id="filter-fruit-color-2">
-											<span class="form__checkbox-emulator"></span>
-											<span class="catalog-filter__dropdown-icon">
-												<img src="/images/fruit-color/fruit-color-2.svg" alt="">
-											</span>
-											<span class="form__checkbox-label">
-												Красный
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
-										<label class="form__checkbox" for="filter-fruit-color-3">
-											<input class="form__checkbox-control" type="checkbox" name="filter-fruit-color-3"
-												id="filter-fruit-color-3">
-											<span class="form__checkbox-emulator"></span>
-											<span class="catalog-filter__dropdown-icon">
-												<img src="/images/fruit-color/fruit-color-3.svg" alt="">
-											</span>
-											<span class="form__checkbox-label">
-												Голубой
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
-										<label class="form__checkbox" for="filter-fruit-color-4">
-											<input class="form__checkbox-control" type="checkbox" name="filter-fruit-color-4"
-												id="filter-fruit-color-4">
-											<span class="form__checkbox-emulator"></span>
-											<span class="catalog-filter__dropdown-icon">
-												<img src="/images/fruit-color/fruit-color-4.svg" alt="">
-											</span>
-											<span class="form__checkbox-label">
-												Желтый
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
-										<label class="form__checkbox" for="filter-fruit-color-5">
-											<input class="form__checkbox-control" type="checkbox" name="filter-fruit-color-5"
-												id="filter-fruit-color-5">
-											<span class="form__checkbox-emulator"></span>
-											<span class="catalog-filter__dropdown-icon">
-												<img src="/images/fruit-color/fruit-color-5.svg" alt="">
-											</span>
-											<span class="form__checkbox-label">
-												Фиолетовый
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
+									<div class="catalog-filter__dropdown-options">
+
+										<div class="form__select-container">
+											<select name="filter-season-needle" id="filter-season-needle" class="form__select-input"
+												aria-label="Сезон">
+												<option value="" selected disabled>Выберите сезон</option>
+												<option value="season-1">Зима</option>
+												<option value="season-2">Весна</option>
+												<option value="season-3">Лето</option>
+												<option value="season-4">Осень</option>
+											</select>
+											<div class="form__select-arrow">
+												<img src="/images/icons/arrow-down.svg" alt="">
+											</div>
+										</div>
+
+										<div class="catalog-filter__dropdown-group">
+											<label class="form__checkbox" for="filter-needle-color-1">
+												<input class="form__checkbox-control" type="checkbox" name="filter-needle-color-1"
+													id="filter-needle-color-1">
+												<span class="form__checkbox-emulator"></span>
+												<span class="catalog-filter__dropdown-icon">
+													<img src="/images/needle-color/needle-color-1.svg" alt="">
+												</span>
+												<span class="form__checkbox-label">
+													Зеленый
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+											<label class="form__checkbox" for="filter-needle-color-2">
+												<input class="form__checkbox-control" type="checkbox" name="filter-needle-color-2"
+													id="filter-needle-color-2">
+												<span class="form__checkbox-emulator"></span>
+												<span class="catalog-filter__dropdown-icon">
+													<img src="/images/needle-color/needle-color-2.svg" alt="">
+												</span>
+												<span class="form__checkbox-label">
+													Сизый
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+											<label class="form__checkbox" for="filter-needle-color-3">
+												<input class="form__checkbox-control" type="checkbox" name="filter-needle-color-3"
+													id="filter-needle-color-3">
+												<span class="form__checkbox-emulator"></span>
+												<span class="catalog-filter__dropdown-icon">
+													<img src="/images/needle-color/needle-color-3.svg" alt="">
+												</span>
+												<span class="form__checkbox-label">
+													Голубой
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+											<label class="form__checkbox" for="filter-needle-color-4">
+												<input class="form__checkbox-control" type="checkbox" name="filter-needle-color-4"
+													id="filter-needle-color-4">
+												<span class="form__checkbox-emulator"></span>
+												<span class="catalog-filter__dropdown-icon">
+													<img src="/images/needle-color/needle-color-4.svg" alt="">
+												</span>
+												<span class="form__checkbox-label">
+													Желтый
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+											<label class="form__checkbox" for="filter-needle-color-5">
+												<input class="form__checkbox-control" type="checkbox" name="filter-needle-color-5"
+													id="filter-needle-color-5">
+												<span class="form__checkbox-emulator"></span>
+												<span class="catalog-filter__dropdown-icon">
+													<img src="/images/needle-color/needle-color-5.svg" alt="">
+												</span>
+												<span class="form__checkbox-label">
+													Пестрый
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
 
-						<div class="catalog-filter__group" id="filter-blooming-period">
-							<div class="catalog-filter__dropdown">
-								<div class="catalog-filter__dropdown-trigger js-filter-trigger">
-									<h3 class="catalog-filter__subtitle">Период цветения:</h3>
-									<div class="catalog-filter__dropdown-arrow">
-										<img src="/images/icons/arrow-down.svg" alt="">
+							<div class="catalog-filter__group" id="filter-fruit-color">
+								<div class="catalog-filter__dropdown">
+									<div class="catalog-filter__dropdown-trigger js-filter-trigger">
+										<h3 class="catalog-filter__subtitle">Окрас плодов:</h3>
+										<div class="catalog-filter__dropdown-arrow">
+											<img src="/images/icons/arrow-down.svg" alt="">
+										</div>
 									</div>
-								</div>
-								<div class="catalog-filter__dropdown-options">
-									<div class="catalog-filter__dropdown-group">
-										<label class="form__checkbox" for="filter-blooming-period-1">
-											<input class="form__checkbox-control" type="checkbox" name="filter-blooming-period-1"
-												id="filter-blooming-period-1">
-											<span class="form__checkbox-emulator"></span>
-											<span class="form__checkbox-label">
-												Март
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
-										<label class="form__checkbox" for="filter-blooming-period-2">
-											<input class="form__checkbox-control" type="checkbox" name="filter-blooming-period-2"
-												id="filter-blooming-period-2">
-											<span class="form__checkbox-emulator"></span>
-											<span class="form__checkbox-label">
-												Апрель
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
-										<label class="form__checkbox" for="filter-blooming-period-3">
-											<input class="form__checkbox-control" type="checkbox" name="filter-blooming-period-3"
-												id="filter-blooming-period-3">
-											<span class="form__checkbox-emulator"></span>
-											<span class="form__checkbox-label">
-												Май
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
-										<label class="form__checkbox" for="filter-blooming-period-4">
-											<input class="form__checkbox-control" type="checkbox" name="filter-blooming-period-4"
-												id="filter-blooming-period-4">
-											<span class="form__checkbox-emulator"></span>
-											<span class="form__checkbox-label">
-												Июнь
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
-										<label class="form__checkbox" for="filter-blooming-period-5">
-											<input class="form__checkbox-control" type="checkbox" name="filter-blooming-period-5"
-												id="filter-blooming-period-5">
-											<span class="form__checkbox-emulator"></span>
-											<span class="form__checkbox-label">
-												Июль
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
-										<label class="form__checkbox" for="filter-blooming-period-6">
-											<input class="form__checkbox-control" type="checkbox" name="filter-blooming-period-6"
-												id="filter-blooming-period-6">
-											<span class="form__checkbox-emulator"></span>
-											<span class="form__checkbox-label">
-												Август
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
-										<label class="form__checkbox" for="filter-blooming-period-7">
-											<input class="form__checkbox-control" type="checkbox" name="filter-blooming-period-7"
-												id="filter-blooming-period-7">
-											<span class="form__checkbox-emulator"></span>
-											<span class="form__checkbox-label">
-												Сентябрь
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
-										<label class="form__checkbox" for="filter-blooming-period-8">
-											<input class="form__checkbox-control" type="checkbox" name="filter-blooming-period-8"
-												id="filter-blooming-period-8">
-											<span class="form__checkbox-emulator"></span>
-											<span class="form__checkbox-label">
-												Октябрь
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
+									<div class="catalog-filter__dropdown-options">
+										<div class="catalog-filter__dropdown-group">
+											<label class="form__checkbox" for="filter-fruit-color-1">
+												<input class="form__checkbox-control" type="checkbox" name="filter-fruit-color-1"
+													id="filter-fruit-color-1">
+												<span class="form__checkbox-emulator"></span>
+												<span class="catalog-filter__dropdown-icon">
+													<img src="/images/fruit-color/fruit-color-1.svg" alt="">
+												</span>
+												<span class="form__checkbox-label">
+													Зеленый
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+											<label class="form__checkbox" for="filter-fruit-color-2">
+												<input class="form__checkbox-control" type="checkbox" name="filter-fruit-color-2"
+													id="filter-fruit-color-2">
+												<span class="form__checkbox-emulator"></span>
+												<span class="catalog-filter__dropdown-icon">
+													<img src="/images/fruit-color/fruit-color-2.svg" alt="">
+												</span>
+												<span class="form__checkbox-label">
+													Красный
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+											<label class="form__checkbox" for="filter-fruit-color-3">
+												<input class="form__checkbox-control" type="checkbox" name="filter-fruit-color-3"
+													id="filter-fruit-color-3">
+												<span class="form__checkbox-emulator"></span>
+												<span class="catalog-filter__dropdown-icon">
+													<img src="/images/fruit-color/fruit-color-3.svg" alt="">
+												</span>
+												<span class="form__checkbox-label">
+													Голубой
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+											<label class="form__checkbox" for="filter-fruit-color-4">
+												<input class="form__checkbox-control" type="checkbox" name="filter-fruit-color-4"
+													id="filter-fruit-color-4">
+												<span class="form__checkbox-emulator"></span>
+												<span class="catalog-filter__dropdown-icon">
+													<img src="/images/fruit-color/fruit-color-4.svg" alt="">
+												</span>
+												<span class="form__checkbox-label">
+													Желтый
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+											<label class="form__checkbox" for="filter-fruit-color-5">
+												<input class="form__checkbox-control" type="checkbox" name="filter-fruit-color-5"
+													id="filter-fruit-color-5">
+												<span class="form__checkbox-emulator"></span>
+												<span class="catalog-filter__dropdown-icon">
+													<img src="/images/fruit-color/fruit-color-5.svg" alt="">
+												</span>
+												<span class="form__checkbox-label">
+													Фиолетовый
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
 
-						<div class="catalog-filter__group" id="filter-seedling-height">
-							<h3 class="catalog-filter__subtitle">Высота саженца:</h3>
-							<div class="form__slider-container">
-								<div id="seedling-height-slider" class="form__slider" data-min="1" data-max="500">
-									<span id="seedling-height-min" class="form__slider-value form__slider-min"></span>
-									<span id="seedling-height-max" class="form__slider-value form__slider-max"></span>
-								</div>
-							</div>
-						</div>
-
-						<div class="catalog-filter__group" id="filter-plant-height">
-							<h3 class="catalog-filter__subtitle">Высота взрослого растения:</h3>
-							<div class="form__slider-container">
-								<div id="plant-height-slider" class="form__slider" data-min="1" data-max="1000">
-									<span id="plant-height-min" class="form__slider-value form__slider-min"></span>
-									<span id="plant-height-max" class="form__slider-value form__slider-max"></span>
-								</div>
-							</div>
-						</div>
-
-						<div class="catalog-filter__group" id="filter-crown-shape">
-							<div class="catalog-filter__dropdown">
-								<div class="catalog-filter__dropdown-trigger js-filter-trigger">
-									<h3 class="catalog-filter__subtitle">Форма кроны:</h3>
-									<div class="catalog-filter__dropdown-arrow">
-										<img src="/images/icons/arrow-down.svg" alt="">
+							<div class="catalog-filter__group" id="filter-blooming-period">
+								<div class="catalog-filter__dropdown">
+									<div class="catalog-filter__dropdown-trigger js-filter-trigger">
+										<h3 class="catalog-filter__subtitle">Период цветения:</h3>
+										<div class="catalog-filter__dropdown-arrow">
+											<img src="/images/icons/arrow-down.svg" alt="">
+										</div>
 									</div>
-								</div>
-								<div class="catalog-filter__dropdown-options">
-									<div class="catalog-filter__dropdown-group">
-										<label class="form__checkbox" for="filter-crown-shape-1">
-											<input class="form__checkbox-control" type="checkbox" name="filter-crown-shape-1"
-												id="filter-crown-shape-1">
-											<span class="form__checkbox-emulator"></span>
-											<span class="catalog-filter__dropdown-icon">
-												<img src="/images/crown-shape/crown-shape-1.svg" alt="">
-											</span>
-											<span class="form__checkbox-label">
-												Зонтичная
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
-										<label class="form__checkbox" for="filter-crown-shape-2">
-											<input class="form__checkbox-control" type="checkbox" name="filter-crown-shape-2"
-												id="filter-crown-shape-2">
-											<span class="form__checkbox-emulator"></span>
-											<span class="catalog-filter__dropdown-icon">
-												<img src="/images/crown-shape/crown-shape-2.svg" alt="">
-											</span>
-											<span class="form__checkbox-label">
-												Колоновидная
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
-										<label class="form__checkbox" for="filter-crown-shape-3">
-											<input class="form__checkbox-control" type="checkbox" name="filter-crown-shape-3"
-												id="filter-crown-shape-3">
-											<span class="form__checkbox-emulator"></span>
-											<span class="catalog-filter__dropdown-icon">
-												<img src="/images/crown-shape/crown-shape-3.svg" alt="">
-											</span>
-											<span class="form__checkbox-label">
-												Подушечная
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
-										<label class="form__checkbox" for="filter-crown-shape-4">
-											<input class="form__checkbox-control" type="checkbox" name="filter-crown-shape-4"
-												id="filter-crown-shape-4">
-											<span class="form__checkbox-emulator"></span>
-											<span class="catalog-filter__dropdown-icon">
-												<img src="/images/crown-shape/crown-shape-4.svg" alt="">
-											</span>
-											<span class="form__checkbox-label">
-												Раскидистая
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
-										<label class="form__checkbox" for="filter-crown-shape-5">
-											<input class="form__checkbox-control" type="checkbox" name="filter-crown-shape-5"
-												id="filter-crown-shape-5">
-											<span class="form__checkbox-emulator"></span>
-											<span class="catalog-filter__dropdown-icon">
-												<img src="/images/crown-shape/crown-shape-5.svg" alt="">
-											</span>
-											<span class="form__checkbox-label">
-												Стелющаяся
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
-										<label class="form__checkbox" for="filter-crown-shape-6">
-											<input class="form__checkbox-control" type="checkbox" name="filter-crown-shape-6"
-												id="filter-crown-shape-6">
-											<span class="form__checkbox-emulator"></span>
-											<span class="catalog-filter__dropdown-icon">
-												<img src="/images/crown-shape/crown-shape-6.svg" alt="">
-											</span>
-											<span class="form__checkbox-label">
-												Шаровидная
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
-										<label class="form__checkbox" for="filter-crown-shape-7">
-											<input class="form__checkbox-control" type="checkbox" name="filter-crown-shape-7"
-												id="filter-crown-shape-7">
-											<span class="form__checkbox-emulator"></span>
-											<span class="catalog-filter__dropdown-icon">
-												<img src="/images/crown-shape/crown-shape-7.svg" alt="">
-											</span>
-											<span class="form__checkbox-label">
-												Шаровидная кустом
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
-										<label class="form__checkbox" for="filter-crown-shape-8">
-											<input class="form__checkbox-control" type="checkbox" name="filter-crown-shape-8"
-												id="filter-crown-shape-8">
-											<span class="form__checkbox-emulator"></span>
-											<span class="catalog-filter__dropdown-icon">
-												<img src="/images/crown-shape/crown-shape-8.svg" alt="">
-											</span>
-											<span class="form__checkbox-label">
-												Плакучая
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
-										<label class="form__checkbox" for="filter-crown-shape-9">
-											<input class="form__checkbox-control" type="checkbox" name="filter-crown-shape-9"
-												id="filter-crown-shape-9">
-											<span class="form__checkbox-emulator"></span>
-											<span class="catalog-filter__dropdown-icon">
-												<img src="/images/crown-shape/crown-shape-9.svg" alt="">
-											</span>
-											<span class="form__checkbox-label">
-												Кустовая
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
-										<label class="form__checkbox" for="filter-crown-shape-10">
-											<input class="form__checkbox-control" type="checkbox" name="filter-crown-shape-10"
-												id="filter-crown-shape-10">
-											<span class="form__checkbox-emulator"></span>
-											<span class="catalog-filter__dropdown-icon">
-												<img src="/images/crown-shape/crown-shape-10.svg" alt="">
-											</span>
-											<span class="form__checkbox-label">
-												Штамбовая
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
+									<div class="catalog-filter__dropdown-options">
+										<div class="catalog-filter__dropdown-group">
+											<label class="form__checkbox" for="filter-blooming-period-1">
+												<input class="form__checkbox-control" type="checkbox" name="filter-blooming-period-1"
+													id="filter-blooming-period-1">
+												<span class="form__checkbox-emulator"></span>
+												<span class="form__checkbox-label">
+													Март
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+											<label class="form__checkbox" for="filter-blooming-period-2">
+												<input class="form__checkbox-control" type="checkbox" name="filter-blooming-period-2"
+													id="filter-blooming-period-2">
+												<span class="form__checkbox-emulator"></span>
+												<span class="form__checkbox-label">
+													Апрель
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+											<label class="form__checkbox" for="filter-blooming-period-3">
+												<input class="form__checkbox-control" type="checkbox" name="filter-blooming-period-3"
+													id="filter-blooming-period-3">
+												<span class="form__checkbox-emulator"></span>
+												<span class="form__checkbox-label">
+													Май
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+											<label class="form__checkbox" for="filter-blooming-period-4">
+												<input class="form__checkbox-control" type="checkbox" name="filter-blooming-period-4"
+													id="filter-blooming-period-4">
+												<span class="form__checkbox-emulator"></span>
+												<span class="form__checkbox-label">
+													Июнь
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+											<label class="form__checkbox" for="filter-blooming-period-5">
+												<input class="form__checkbox-control" type="checkbox" name="filter-blooming-period-5"
+													id="filter-blooming-period-5">
+												<span class="form__checkbox-emulator"></span>
+												<span class="form__checkbox-label">
+													Июль
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+											<label class="form__checkbox" for="filter-blooming-period-6">
+												<input class="form__checkbox-control" type="checkbox" name="filter-blooming-period-6"
+													id="filter-blooming-period-6">
+												<span class="form__checkbox-emulator"></span>
+												<span class="form__checkbox-label">
+													Август
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+											<label class="form__checkbox" for="filter-blooming-period-7">
+												<input class="form__checkbox-control" type="checkbox" name="filter-blooming-period-7"
+													id="filter-blooming-period-7">
+												<span class="form__checkbox-emulator"></span>
+												<span class="form__checkbox-label">
+													Сентябрь
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+											<label class="form__checkbox" for="filter-blooming-period-8">
+												<input class="form__checkbox-control" type="checkbox" name="filter-blooming-period-8"
+													id="filter-blooming-period-8">
+												<span class="form__checkbox-emulator"></span>
+												<span class="form__checkbox-label">
+													Октябрь
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
 
-						<div class="catalog-filter__group" id="filter-soil-type">
-							<div class="catalog-filter__dropdown">
-								<div class="catalog-filter__dropdown-trigger js-filter-trigger">
-									<h3 class="catalog-filter__subtitle">Тип почвы:</h3>
-									<div class="catalog-filter__dropdown-arrow">
-										<img src="/images/icons/arrow-down.svg" alt="">
-									</div>
-								</div>
-								<div class="catalog-filter__dropdown-options">
-									<div class="catalog-filter__dropdown-group">
-										<label class="form__checkbox" for="filter-soil-type-1">
-											<input class="form__checkbox-control" type="checkbox" name="filter-soil-type-1"
-												id="filter-soil-type-1">
-											<span class="form__checkbox-emulator"></span>
-											<span class="form__checkbox-label">
-												Легкие
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
-										<label class="form__checkbox" for="filter-soil-type-2">
-											<input class="form__checkbox-control" type="checkbox" name="filter-soil-type-2"
-												id="filter-soil-type-2">
-											<span class="form__checkbox-emulator"></span>
-											<span class="form__checkbox-label">
-												Тяжелые
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
-										<label class="form__checkbox" for="filter-soil-type-3">
-											<input class="form__checkbox-control" type="checkbox" name="filter-soil-type-3"
-												id="filter-soil-type-3">
-											<span class="form__checkbox-emulator"></span>
-											<span class="form__checkbox-label">
-												Кислые
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
-										<label class="form__checkbox" for="filter-soil-type-4">
-											<input class="form__checkbox-control" type="checkbox" name="filter-soil-type-4"
-												id="filter-soil-type-4">
-											<span class="form__checkbox-emulator"></span>
-											<span class="form__checkbox-label">
-												Известковые
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
-										<label class="form__checkbox" for="filter-soil-type-5">
-											<input class="form__checkbox-control" type="checkbox" name="filter-soil-type-5"
-												id="filter-soil-type-5">
-											<span class="form__checkbox-emulator"></span>
-											<span class="form__checkbox-label">
-												Плодородные
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
-
+							<div class="catalog-filter__group" id="filter-seedling-height">
+								<h3 class="catalog-filter__subtitle">Высота саженца:</h3>
+								<div class="form__slider-container">
+									<div id="seedling-height-slider" class="form__slider" data-min="1" data-max="500">
+										<span id="seedling-height-min" class="form__slider-value form__slider-min"></span>
+										<span id="seedling-height-max" class="form__slider-value form__slider-max"></span>
 									</div>
 								</div>
 							</div>
-						</div>
 
-						<div class="catalog-filter__group" id="filter-root-system">
-							<div class="catalog-filter__dropdown">
-								<div class="catalog-filter__dropdown-trigger js-filter-trigger">
-									<h3 class="catalog-filter__subtitle">Тип корневой системы:</h3>
-									<div class="catalog-filter__dropdown-arrow">
-										<img src="/images/icons/arrow-down.svg" alt="">
-									</div>
-								</div>
-								<div class="catalog-filter__dropdown-options">
-									<div class="catalog-filter__dropdown-group">
-										<label class="form__checkbox" for="filter-root-system-1">
-											<input class="form__checkbox-control" type="checkbox" name="filter-root-system-1"
-												id="filter-root-system-1">
-											<span class="form__checkbox-emulator"></span>
-											<span class="catalog-filter__dropdown-icon">
-												<img src="/images/root-system/root-system-1.svg" alt="">
-											</span>
-											<span class="form__checkbox-label">
-												Клубневидная
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
-										<label class="form__checkbox" for="filter-root-system-2">
-											<input class="form__checkbox-control" type="checkbox" name="filter-root-system-2"
-												id="filter-root-system-2">
-											<span class="form__checkbox-emulator"></span>
-											<span class="catalog-filter__dropdown-icon">
-												<img src="/images/root-system/root-system-2.svg" alt="">
-											</span>
-											<span class="form__checkbox-label">
-												Луковица
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
-										<label class="form__checkbox" for="filter-root-system-3">
-											<input class="form__checkbox-control" type="checkbox" name="filter-root-system-3"
-												id="filter-root-system-3">
-											<span class="form__checkbox-emulator"></span>
-											<span class="catalog-filter__dropdown-icon">
-												<img src="/images/root-system/root-system-3.svg" alt="">
-											</span>
-											<span class="form__checkbox-label">
-												Мочковатая
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
-										<label class="form__checkbox" for="filter-root-system-4">
-											<input class="form__checkbox-control" type="checkbox" name="filter-root-system-4"
-												id="filter-root-system-4">
-											<span class="form__checkbox-emulator"></span>
-											<span class="catalog-filter__dropdown-icon">
-												<img src="/images/root-system/root-system-4.svg" alt="">
-											</span>
-											<span class="form__checkbox-label">
-												Поверхностная
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
-										<label class="form__checkbox" for="filter-root-system-5">
-											<input class="form__checkbox-control" type="checkbox" name="filter-root-system-5"
-												id="filter-root-system-5">
-											<span class="form__checkbox-emulator"></span>
-											<span class="catalog-filter__dropdown-icon">
-												<img src="/images/root-system/root-system-5.svg" alt="">
-											</span>
-											<span class="form__checkbox-label">
-												Стержневая разветвленная
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
-										<label class="form__checkbox" for="filter-root-system-6">
-											<input class="form__checkbox-control" type="checkbox" name="filter-root-system-6"
-												id="filter-root-system-6">
-											<span class="form__checkbox-emulator"></span>
-											<span class="catalog-filter__dropdown-icon">
-												<img src="/images/root-system/root-system-6.svg" alt="">
-											</span>
-											<span class="form__checkbox-label">
-												Стержневая средняя
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
-										<label class="form__checkbox" for="filter-root-system-7">
-											<input class="form__checkbox-control" type="checkbox" name="filter-root-system-7"
-												id="filter-root-system-7">
-											<span class="form__checkbox-emulator"></span>
-											<span class="catalog-filter__dropdown-icon">
-												<img src="/images/root-system/root-system-7.svg" alt="">
-											</span>
-											<span class="form__checkbox-label">
-												Стержневая узкая
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
-										<label class="form__checkbox" for="filter-root-system-8">
-											<input class="form__checkbox-control" type="checkbox" name="filter-root-system-8"
-												id="filter-root-system-8">
-											<span class="form__checkbox-emulator"></span>
-											<span class="catalog-filter__dropdown-icon">
-												<img src="/images/root-system/root-system-8.svg" alt="">
-											</span>
-											<span class="form__checkbox-label">
-												Стержневая широкая
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
+							<div class="catalog-filter__group" id="filter-plant-height">
+								<h3 class="catalog-filter__subtitle">Высота взрослого растения:</h3>
+								<div class="form__slider-container">
+									<div id="plant-height-slider" class="form__slider" data-min="1" data-max="1000">
+										<span id="plant-height-min" class="form__slider-value form__slider-min"></span>
+										<span id="plant-height-max" class="form__slider-value form__slider-max"></span>
 									</div>
 								</div>
 							</div>
-						</div>
 
-						<div class="catalog-filter__group" id="filter-planting-location">
-							<div class="catalog-filter__dropdown">
-								<div class="catalog-filter__dropdown-trigger js-filter-trigger">
-									<h3 class="catalog-filter__subtitle">Место посадки:</h3>
-									<div class="catalog-filter__dropdown-arrow">
-										<img src="/images/icons/arrow-down.svg" alt="">
+							<div class="catalog-filter__group" id="filter-crown-shape">
+								<div class="catalog-filter__dropdown">
+									<div class="catalog-filter__dropdown-trigger js-filter-trigger">
+										<h3 class="catalog-filter__subtitle">Форма кроны:</h3>
+										<div class="catalog-filter__dropdown-arrow">
+											<img src="/images/icons/arrow-down.svg" alt="">
+										</div>
 									</div>
-								</div>
-								<div class="catalog-filter__dropdown-options">
-									<div class="catalog-filter__dropdown-group">
-										<label class="form__checkbox" for="filter-planting-location-1">
-											<input class="form__checkbox-control" type="checkbox" name="filter-planting-location-1"
-												id="filter-planting-location-1">
-											<span class="form__checkbox-emulator"></span>
-											<span class="form__checkbox-label">
-												Солнце
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
-										<label class="form__checkbox" for="filter-planting-location-2">
-											<input class="form__checkbox-control" type="checkbox" name="filter-planting-location-2"
-												id="filter-planting-location-2">
-											<span class="form__checkbox-emulator"></span>
-											<span class="form__checkbox-label">
-												Тень
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
-										<label class="form__checkbox" for="filter-planting-location-3">
-											<input class="form__checkbox-control" type="checkbox" name="filter-planting-location-3"
-												id="filter-planting-location-3">
-											<span class="form__checkbox-emulator"></span>
-											<span class="form__checkbox-label">
-												Полутень
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="catalog-filter__group" id="filter-hardiness-zone">
-							<div class="catalog-filter__dropdown">
-								<div class="catalog-filter__dropdown-trigger js-filter-trigger">
-									<h3 class="catalog-filter__subtitle">Зона морозоустойчивости:</h3>
-									<div class="catalog-filter__dropdown-arrow">
-										<img src="/images/icons/arrow-down.svg" alt="">
-									</div>
-								</div>
-								<div class="catalog-filter__dropdown-options">
-									<div class="catalog-filter__dropdown-group">
-										<label class="form__checkbox" for="filter-hardiness-zone-1">
-											<input class="form__checkbox-control" type="checkbox" name="filter-hardiness-zone-1"
-												id="filter-hardiness-zone-1">
-											<span class="form__checkbox-emulator"></span>
-											<span class="form__checkbox-label">
-												1
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
-										<label class="form__checkbox" for="filter-hardiness-zone-2">
-											<input class="form__checkbox-control" type="checkbox" name="filter-hardiness-zone-2"
-												id="filter-hardiness-zone-2">
-											<span class="form__checkbox-emulator"></span>
-											<span class="form__checkbox-label">
-												2
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
-										<label class="form__checkbox" for="filter-hardiness-zone-3">
-											<input class="form__checkbox-control" type="checkbox" name="filter-hardiness-zone-3"
-												id="filter-hardiness-zone-3">
-											<span class="form__checkbox-emulator"></span>
-											<span class="form__checkbox-label">
-												3
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
-										<label class="form__checkbox" for="filter-hardiness-zone-4">
-											<input class="form__checkbox-control" type="checkbox" name="filter-hardiness-zone-4"
-												id="filter-hardiness-zone-4">
-											<span class="form__checkbox-emulator"></span>
-											<span class="form__checkbox-label">
-												4
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
-										<label class="form__checkbox" for="filter-hardiness-zone-5">
-											<input class="form__checkbox-control" type="checkbox" name="filter-hardiness-zone-5"
-												id="filter-hardiness-zone-5">
-											<span class="form__checkbox-emulator"></span>
-											<span class="form__checkbox-label">
-												5
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
-										<label class="form__checkbox" for="filter-hardiness-zone-6">
-											<input class="form__checkbox-control" type="checkbox" name="filter-hardiness-zone-6"
-												id="filter-hardiness-zone-6">
-											<span class="form__checkbox-emulator"></span>
-											<span class="form__checkbox-label">
-												6
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
-										<label class="form__checkbox" for="filter-hardiness-zone-7">
-											<input class="form__checkbox-control" type="checkbox" name="filter-hardiness-zone-7"
-												id="filter-hardiness-zone-7">
-											<span class="form__checkbox-emulator"></span>
-											<span class="form__checkbox-label">
-												7
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
-
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="catalog-filter__group" id="filter-watering">
-							<div class="catalog-filter__dropdown">
-								<div class="catalog-filter__dropdown-trigger js-filter-trigger">
-									<h3 class="catalog-filter__subtitle">Полив:</h3>
-									<div class="catalog-filter__dropdown-arrow">
-										<img src="/images/icons/arrow-down.svg" alt="">
-									</div>
-								</div>
-								<div class="catalog-filter__dropdown-options">
-									<div class="catalog-filter__dropdown-group">
-										<label class="form__checkbox" for="filter-watering-1">
-											<input class="form__checkbox-control" type="checkbox" name="filter-watering-1"
-												id="filter-watering-1">
-											<span class="form__checkbox-emulator"></span>
-											<span class="form__checkbox-label">
-												Влаголюбивое
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
-										<label class="form__checkbox" for="filter-watering-2">
-											<input class="form__checkbox-control" type="checkbox" name="filter-watering-2"
-												id="filter-watering-2">
-											<span class="form__checkbox-emulator"></span>
-											<span class="form__checkbox-label">
-												Умеренный полив
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
-										<label class="form__checkbox" for="filter-watering-3">
-											<input class="form__checkbox-control" type="checkbox" name="filter-watering-3"
-												id="filter-watering-3">
-											<span class="form__checkbox-emulator"></span>
-											<span class="form__checkbox-label">
-												Засухоустойчивое
-											</span>
-											<span class="catalog-filter__dropdown-count">11</span>
-										</label>
+									<div class="catalog-filter__dropdown-options">
+										<div class="catalog-filter__dropdown-group">
+											<label class="form__checkbox" for="filter-crown-shape-1">
+												<input class="form__checkbox-control" type="checkbox" name="filter-crown-shape-1"
+													id="filter-crown-shape-1">
+												<span class="form__checkbox-emulator"></span>
+												<span class="catalog-filter__dropdown-icon">
+													<img src="/images/crown-shape/crown-shape-1.svg" alt="">
+												</span>
+												<span class="form__checkbox-label">
+													Зонтичная
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+											<label class="form__checkbox" for="filter-crown-shape-2">
+												<input class="form__checkbox-control" type="checkbox" name="filter-crown-shape-2"
+													id="filter-crown-shape-2">
+												<span class="form__checkbox-emulator"></span>
+												<span class="catalog-filter__dropdown-icon">
+													<img src="/images/crown-shape/crown-shape-2.svg" alt="">
+												</span>
+												<span class="form__checkbox-label">
+													Колоновидная
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+											<label class="form__checkbox" for="filter-crown-shape-3">
+												<input class="form__checkbox-control" type="checkbox" name="filter-crown-shape-3"
+													id="filter-crown-shape-3">
+												<span class="form__checkbox-emulator"></span>
+												<span class="catalog-filter__dropdown-icon">
+													<img src="/images/crown-shape/crown-shape-3.svg" alt="">
+												</span>
+												<span class="form__checkbox-label">
+													Подушечная
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+											<label class="form__checkbox" for="filter-crown-shape-4">
+												<input class="form__checkbox-control" type="checkbox" name="filter-crown-shape-4"
+													id="filter-crown-shape-4">
+												<span class="form__checkbox-emulator"></span>
+												<span class="catalog-filter__dropdown-icon">
+													<img src="/images/crown-shape/crown-shape-4.svg" alt="">
+												</span>
+												<span class="form__checkbox-label">
+													Раскидистая
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+											<label class="form__checkbox" for="filter-crown-shape-5">
+												<input class="form__checkbox-control" type="checkbox" name="filter-crown-shape-5"
+													id="filter-crown-shape-5">
+												<span class="form__checkbox-emulator"></span>
+												<span class="catalog-filter__dropdown-icon">
+													<img src="/images/crown-shape/crown-shape-5.svg" alt="">
+												</span>
+												<span class="form__checkbox-label">
+													Стелющаяся
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+											<label class="form__checkbox" for="filter-crown-shape-6">
+												<input class="form__checkbox-control" type="checkbox" name="filter-crown-shape-6"
+													id="filter-crown-shape-6">
+												<span class="form__checkbox-emulator"></span>
+												<span class="catalog-filter__dropdown-icon">
+													<img src="/images/crown-shape/crown-shape-6.svg" alt="">
+												</span>
+												<span class="form__checkbox-label">
+													Шаровидная
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+											<label class="form__checkbox" for="filter-crown-shape-7">
+												<input class="form__checkbox-control" type="checkbox" name="filter-crown-shape-7"
+													id="filter-crown-shape-7">
+												<span class="form__checkbox-emulator"></span>
+												<span class="catalog-filter__dropdown-icon">
+													<img src="/images/crown-shape/crown-shape-7.svg" alt="">
+												</span>
+												<span class="form__checkbox-label">
+													Шаровидная кустом
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+											<label class="form__checkbox" for="filter-crown-shape-8">
+												<input class="form__checkbox-control" type="checkbox" name="filter-crown-shape-8"
+													id="filter-crown-shape-8">
+												<span class="form__checkbox-emulator"></span>
+												<span class="catalog-filter__dropdown-icon">
+													<img src="/images/crown-shape/crown-shape-8.svg" alt="">
+												</span>
+												<span class="form__checkbox-label">
+													Плакучая
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+											<label class="form__checkbox" for="filter-crown-shape-9">
+												<input class="form__checkbox-control" type="checkbox" name="filter-crown-shape-9"
+													id="filter-crown-shape-9">
+												<span class="form__checkbox-emulator"></span>
+												<span class="catalog-filter__dropdown-icon">
+													<img src="/images/crown-shape/crown-shape-9.svg" alt="">
+												</span>
+												<span class="form__checkbox-label">
+													Кустовая
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+											<label class="form__checkbox" for="filter-crown-shape-10">
+												<input class="form__checkbox-control" type="checkbox" name="filter-crown-shape-10"
+													id="filter-crown-shape-10">
+												<span class="form__checkbox-emulator"></span>
+												<span class="catalog-filter__dropdown-icon">
+													<img src="/images/crown-shape/crown-shape-10.svg" alt="">
+												</span>
+												<span class="form__checkbox-label">
+													Штамбовая
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+										</div>
 									</div>
 								</div>
 							</div>
-						</div>
 
-						<div class="catalog-filter__bottom">
-							<a href="#" class="catalog-filter__found button">
-								Найден <span>(25)</span>
-							</a>
-							<a href="#" class="catalog-filter__reset">Сбросить фильтр</a>
-						</div>
+							<div class="catalog-filter__group" id="filter-soil-type">
+								<div class="catalog-filter__dropdown">
+									<div class="catalog-filter__dropdown-trigger js-filter-trigger">
+										<h3 class="catalog-filter__subtitle">Тип почвы:</h3>
+										<div class="catalog-filter__dropdown-arrow">
+											<img src="/images/icons/arrow-down.svg" alt="">
+										</div>
+									</div>
+									<div class="catalog-filter__dropdown-options">
+										<div class="catalog-filter__dropdown-group">
+											<label class="form__checkbox" for="filter-soil-type-1">
+												<input class="form__checkbox-control" type="checkbox" name="filter-soil-type-1"
+													id="filter-soil-type-1">
+												<span class="form__checkbox-emulator"></span>
+												<span class="form__checkbox-label">
+													Легкие
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+											<label class="form__checkbox" for="filter-soil-type-2">
+												<input class="form__checkbox-control" type="checkbox" name="filter-soil-type-2"
+													id="filter-soil-type-2">
+												<span class="form__checkbox-emulator"></span>
+												<span class="form__checkbox-label">
+													Тяжелые
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+											<label class="form__checkbox" for="filter-soil-type-3">
+												<input class="form__checkbox-control" type="checkbox" name="filter-soil-type-3"
+													id="filter-soil-type-3">
+												<span class="form__checkbox-emulator"></span>
+												<span class="form__checkbox-label">
+													Кислые
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+											<label class="form__checkbox" for="filter-soil-type-4">
+												<input class="form__checkbox-control" type="checkbox" name="filter-soil-type-4"
+													id="filter-soil-type-4">
+												<span class="form__checkbox-emulator"></span>
+												<span class="form__checkbox-label">
+													Известковые
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+											<label class="form__checkbox" for="filter-soil-type-5">
+												<input class="form__checkbox-control" type="checkbox" name="filter-soil-type-5"
+													id="filter-soil-type-5">
+												<span class="form__checkbox-emulator"></span>
+												<span class="form__checkbox-label">
+													Плодородные
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
 
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="catalog-filter__group" id="filter-root-system">
+								<div class="catalog-filter__dropdown">
+									<div class="catalog-filter__dropdown-trigger js-filter-trigger">
+										<h3 class="catalog-filter__subtitle">Тип корневой системы:</h3>
+										<div class="catalog-filter__dropdown-arrow">
+											<img src="/images/icons/arrow-down.svg" alt="">
+										</div>
+									</div>
+									<div class="catalog-filter__dropdown-options">
+										<div class="catalog-filter__dropdown-group">
+											<label class="form__checkbox" for="filter-root-system-1">
+												<input class="form__checkbox-control" type="checkbox" name="filter-root-system-1"
+													id="filter-root-system-1">
+												<span class="form__checkbox-emulator"></span>
+												<span class="catalog-filter__dropdown-icon">
+													<img src="/images/root-system/root-system-1.svg" alt="">
+												</span>
+												<span class="form__checkbox-label">
+													Клубневидная
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+											<label class="form__checkbox" for="filter-root-system-2">
+												<input class="form__checkbox-control" type="checkbox" name="filter-root-system-2"
+													id="filter-root-system-2">
+												<span class="form__checkbox-emulator"></span>
+												<span class="catalog-filter__dropdown-icon">
+													<img src="/images/root-system/root-system-2.svg" alt="">
+												</span>
+												<span class="form__checkbox-label">
+													Луковица
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+											<label class="form__checkbox" for="filter-root-system-3">
+												<input class="form__checkbox-control" type="checkbox" name="filter-root-system-3"
+													id="filter-root-system-3">
+												<span class="form__checkbox-emulator"></span>
+												<span class="catalog-filter__dropdown-icon">
+													<img src="/images/root-system/root-system-3.svg" alt="">
+												</span>
+												<span class="form__checkbox-label">
+													Мочковатая
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+											<label class="form__checkbox" for="filter-root-system-4">
+												<input class="form__checkbox-control" type="checkbox" name="filter-root-system-4"
+													id="filter-root-system-4">
+												<span class="form__checkbox-emulator"></span>
+												<span class="catalog-filter__dropdown-icon">
+													<img src="/images/root-system/root-system-4.svg" alt="">
+												</span>
+												<span class="form__checkbox-label">
+													Поверхностная
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+											<label class="form__checkbox" for="filter-root-system-5">
+												<input class="form__checkbox-control" type="checkbox" name="filter-root-system-5"
+													id="filter-root-system-5">
+												<span class="form__checkbox-emulator"></span>
+												<span class="catalog-filter__dropdown-icon">
+													<img src="/images/root-system/root-system-5.svg" alt="">
+												</span>
+												<span class="form__checkbox-label">
+													Стержневая разветвленная
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+											<label class="form__checkbox" for="filter-root-system-6">
+												<input class="form__checkbox-control" type="checkbox" name="filter-root-system-6"
+													id="filter-root-system-6">
+												<span class="form__checkbox-emulator"></span>
+												<span class="catalog-filter__dropdown-icon">
+													<img src="/images/root-system/root-system-6.svg" alt="">
+												</span>
+												<span class="form__checkbox-label">
+													Стержневая средняя
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+											<label class="form__checkbox" for="filter-root-system-7">
+												<input class="form__checkbox-control" type="checkbox" name="filter-root-system-7"
+													id="filter-root-system-7">
+												<span class="form__checkbox-emulator"></span>
+												<span class="catalog-filter__dropdown-icon">
+													<img src="/images/root-system/root-system-7.svg" alt="">
+												</span>
+												<span class="form__checkbox-label">
+													Стержневая узкая
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+											<label class="form__checkbox" for="filter-root-system-8">
+												<input class="form__checkbox-control" type="checkbox" name="filter-root-system-8"
+													id="filter-root-system-8">
+												<span class="form__checkbox-emulator"></span>
+												<span class="catalog-filter__dropdown-icon">
+													<img src="/images/root-system/root-system-8.svg" alt="">
+												</span>
+												<span class="form__checkbox-label">
+													Стержневая широкая
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="catalog-filter__group" id="filter-planting-location">
+								<div class="catalog-filter__dropdown">
+									<div class="catalog-filter__dropdown-trigger js-filter-trigger">
+										<h3 class="catalog-filter__subtitle">Место посадки:</h3>
+										<div class="catalog-filter__dropdown-arrow">
+											<img src="/images/icons/arrow-down.svg" alt="">
+										</div>
+									</div>
+									<div class="catalog-filter__dropdown-options">
+										<div class="catalog-filter__dropdown-group">
+											<label class="form__checkbox" for="filter-planting-location-1">
+												<input class="form__checkbox-control" type="checkbox" name="filter-planting-location-1"
+													id="filter-planting-location-1">
+												<span class="form__checkbox-emulator"></span>
+												<span class="form__checkbox-label">
+													Солнце
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+											<label class="form__checkbox" for="filter-planting-location-2">
+												<input class="form__checkbox-control" type="checkbox" name="filter-planting-location-2"
+													id="filter-planting-location-2">
+												<span class="form__checkbox-emulator"></span>
+												<span class="form__checkbox-label">
+													Тень
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+											<label class="form__checkbox" for="filter-planting-location-3">
+												<input class="form__checkbox-control" type="checkbox" name="filter-planting-location-3"
+													id="filter-planting-location-3">
+												<span class="form__checkbox-emulator"></span>
+												<span class="form__checkbox-label">
+													Полутень
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="catalog-filter__group" id="filter-hardiness-zone">
+								<div class="catalog-filter__dropdown">
+									<div class="catalog-filter__dropdown-trigger js-filter-trigger">
+										<h3 class="catalog-filter__subtitle">Зона морозоустойчивости:</h3>
+										<div class="catalog-filter__dropdown-arrow">
+											<img src="/images/icons/arrow-down.svg" alt="">
+										</div>
+									</div>
+									<div class="catalog-filter__dropdown-options">
+										<div class="catalog-filter__dropdown-group">
+											<label class="form__checkbox" for="filter-hardiness-zone-1">
+												<input class="form__checkbox-control" type="checkbox" name="filter-hardiness-zone-1"
+													id="filter-hardiness-zone-1">
+												<span class="form__checkbox-emulator"></span>
+												<span class="form__checkbox-label">
+													1
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+											<label class="form__checkbox" for="filter-hardiness-zone-2">
+												<input class="form__checkbox-control" type="checkbox" name="filter-hardiness-zone-2"
+													id="filter-hardiness-zone-2">
+												<span class="form__checkbox-emulator"></span>
+												<span class="form__checkbox-label">
+													2
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+											<label class="form__checkbox" for="filter-hardiness-zone-3">
+												<input class="form__checkbox-control" type="checkbox" name="filter-hardiness-zone-3"
+													id="filter-hardiness-zone-3">
+												<span class="form__checkbox-emulator"></span>
+												<span class="form__checkbox-label">
+													3
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+											<label class="form__checkbox" for="filter-hardiness-zone-4">
+												<input class="form__checkbox-control" type="checkbox" name="filter-hardiness-zone-4"
+													id="filter-hardiness-zone-4">
+												<span class="form__checkbox-emulator"></span>
+												<span class="form__checkbox-label">
+													4
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+											<label class="form__checkbox" for="filter-hardiness-zone-5">
+												<input class="form__checkbox-control" type="checkbox" name="filter-hardiness-zone-5"
+													id="filter-hardiness-zone-5">
+												<span class="form__checkbox-emulator"></span>
+												<span class="form__checkbox-label">
+													5
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+											<label class="form__checkbox" for="filter-hardiness-zone-6">
+												<input class="form__checkbox-control" type="checkbox" name="filter-hardiness-zone-6"
+													id="filter-hardiness-zone-6">
+												<span class="form__checkbox-emulator"></span>
+												<span class="form__checkbox-label">
+													6
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+											<label class="form__checkbox" for="filter-hardiness-zone-7">
+												<input class="form__checkbox-control" type="checkbox" name="filter-hardiness-zone-7"
+													id="filter-hardiness-zone-7">
+												<span class="form__checkbox-emulator"></span>
+												<span class="form__checkbox-label">
+													7
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="catalog-filter__group" id="filter-watering">
+								<div class="catalog-filter__dropdown">
+									<div class="catalog-filter__dropdown-trigger js-filter-trigger">
+										<h3 class="catalog-filter__subtitle">Полив:</h3>
+										<div class="catalog-filter__dropdown-arrow">
+											<img src="/images/icons/arrow-down.svg" alt="">
+										</div>
+									</div>
+									<div class="catalog-filter__dropdown-options">
+										<div class="catalog-filter__dropdown-group">
+											<label class="form__checkbox" for="filter-watering-1">
+												<input class="form__checkbox-control" type="checkbox" name="filter-watering-1"
+													id="filter-watering-1">
+												<span class="form__checkbox-emulator"></span>
+												<span class="form__checkbox-label">
+													Влаголюбивое
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+											<label class="form__checkbox" for="filter-watering-2">
+												<input class="form__checkbox-control" type="checkbox" name="filter-watering-2"
+													id="filter-watering-2">
+												<span class="form__checkbox-emulator"></span>
+												<span class="form__checkbox-label">
+													Умеренный полив
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+											<label class="form__checkbox" for="filter-watering-3">
+												<input class="form__checkbox-control" type="checkbox" name="filter-watering-3"
+													id="filter-watering-3">
+												<span class="form__checkbox-emulator"></span>
+												<span class="form__checkbox-label">
+													Засухоустойчивое
+												</span>
+												<span class="catalog-filter__dropdown-count">11</span>
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="catalog-filter__bottom">
+								<a href="#" class="catalog-filter__found button">
+									Найден <span>(25)</span>
+								</a>
+								<a href="#" class="catalog-filter__reset">Сбросить фильтр</a>
+							</div>
+
+						</div>
 					</div>
 				</aside>
 
@@ -1424,11 +1514,20 @@
 								</a>
 							</li>
 						</ul>
+						<a href="javascript:void(0);" class="catalog-section__all js-section-all"> Развернуть все</a>
 					</div>
 
 					<div class="catalog-sort">
+						<button type="button" class="catalog-sort__filter-button js-modal-filter">
+							<svg xmlns="http://www.w3.org/2000/svg" width="21" height="17" viewBox="0 0 21 17" fill="none">
+								<path
+									d="M2.31982 12.639C3.42439 12.639 4.31982 13.5405 4.31982 14.6526C4.31971 15.7647 3.42432 16.6663 2.31982 16.6663C1.21533 16.6663 0.319941 15.7647 0.319824 14.6526C0.319824 13.5405 1.21525 12.639 2.31982 12.639ZM20.3198 15.6595H6.31982V13.6458H20.3198V15.6595ZM2.31982 6.59698C3.42425 6.59698 4.31959 7.49868 4.31982 8.61066C4.31982 9.72284 3.42439 10.6253 2.31982 10.6253C1.21525 10.6253 0.319824 9.72284 0.319824 8.61066C0.320057 7.49868 1.2154 6.59698 2.31982 6.59698ZM20.3198 9.61847H6.31982V7.60382H20.3198V9.61847ZM2.31982 0.555969C3.42436 0.555969 4.31977 1.45751 4.31982 2.56964C4.31982 3.68182 3.42439 4.58331 2.31982 4.58331C1.21525 4.58331 0.319824 3.68182 0.319824 2.56964C0.319882 1.45751 1.21529 0.555969 2.31982 0.555969ZM20.3198 3.57648H6.31982V1.56281H20.3198V3.57648Z"
+									fill="#5E710C" />
+							</svg>
+						</button>
+
 						<div class="catalog-sort__group">
-							<label class="catalog-sort__name">Сортировать</label>
+							<label class="catalog-sort__name" for="sort-type">Сортировать</label>
 							<div class="form__select-container">
 								<select name="sort-type" id="sort-type" class="form__select-input" aria-label="Тип сортировки">
 									<option value="popular" selected>Популярные</option>
@@ -1442,9 +1541,10 @@
 							</div>
 						</div>
 						<div class="catalog-sort__group">
-							<label class="catalog-sort__name">Показывать по</label>
+							<label class="catalog-sort__name" for="sort-count">Показывать по</label>
 							<div class="form__select-container">
-								<select name="sort-count" id="sort-count" class="form__select-input" aria-label="Количество">
+								<select name="sort-count" id="sort-count" class="form__select-input form__select-input--count"
+									aria-label="Количество">
 									<option value="20" selected>20</option>
 									<option value="50">50</option>
 									<option value="100">100</option>
@@ -1489,7 +1589,7 @@
 									</div>
 									<p class="catalog-card__availability">В наличии</p>
 									<p class="catalog-card__price">
-										Цена
+										<span class="catalog-card__price-text">Цена</span>
 										<span class="catalog-card__price-current">16 000 ₽</span>
 										<span class="catalog-card__price-old">25 000 ₽</span>
 									</p>
@@ -2677,7 +2777,7 @@
 									</div>
 									<p class="catalog-card__availability catalog-card__availability--for-order">Под заказ</p>
 									<p class="catalog-card__price">
-										Цена
+										<span class="catalog-card__price-text">Цена</span>
 										<span class="catalog-card__price-current">16 000 ₽</span>
 										<span class="catalog-card__price-old">25 000 ₽</span>
 									</p>
@@ -2970,7 +3070,7 @@
 									</div>
 									<p class="catalog-card__availability">В наличии</p>
 									<p class="catalog-card__price">
-										Цена
+										<span class="catalog-card__price-text">Цена</span>
 										<span class="catalog-card__price-current">16 000 ₽</span>
 										<span class="catalog-card__price-old">25 000 ₽</span>
 									</p>
@@ -4158,7 +4258,7 @@
 									</div>
 									<p class="catalog-card__availability catalog-card__availability--for-order">Под заказ</p>
 									<p class="catalog-card__price">
-										Цена
+										<span class="catalog-card__price-text">Цена</span>
 										<span class="catalog-card__price-current">16 000 ₽</span>
 										<span class="catalog-card__price-old">25 000 ₽</span>
 									</p>
@@ -4451,7 +4551,7 @@
 									</div>
 									<p class="catalog-card__availability">В наличии</p>
 									<p class="catalog-card__price">
-										Цена
+										<span class="catalog-card__price-text">Цена</span>
 										<span class="catalog-card__price-current">16 000 ₽</span>
 										<span class="catalog-card__price-old">25 000 ₽</span>
 									</p>
@@ -5639,7 +5739,7 @@
 									</div>
 									<p class="catalog-card__availability catalog-card__availability--for-order">Под заказ</p>
 									<p class="catalog-card__price">
-										Цена
+										<span class="catalog-card__price-text">Цена</span>
 										<span class="catalog-card__price-current">16 000 ₽</span>
 										<span class="catalog-card__price-old">25 000 ₽</span>
 									</p>
@@ -5932,7 +6032,7 @@
 									</div>
 									<p class="catalog-card__availability">В наличии</p>
 									<p class="catalog-card__price">
-										Цена
+										<span class="catalog-card__price-text">Цена</span>
 										<span class="catalog-card__price-current">16 000 ₽</span>
 										<span class="catalog-card__price-old">25 000 ₽</span>
 									</p>
@@ -7120,7 +7220,7 @@
 									</div>
 									<p class="catalog-card__availability catalog-card__availability--for-order">Под заказ</p>
 									<p class="catalog-card__price">
-										Цена
+										<span class="catalog-card__price-text">Цена</span>
 										<span class="catalog-card__price-current">16 000 ₽</span>
 										<span class="catalog-card__price-old">25 000 ₽</span>
 									</p>
@@ -10135,85 +10235,94 @@
 						</div>
 						<ul class="cart__list">
 							<li class="cart__item">
-								<label class="form__checkbox" for="cart-item-1">
-									<input class="form__checkbox-control" type="checkbox" name="cart-item-1" id="cart-item-1" checked>
-									<span class="form__checkbox-emulator"></span>
-								</label>
-								<div class="cart__image">
-									<img src="/images/catalog/catalog-1.jpg" alt="Яблоня Ред Кетти" loading="lazy">
-								</div>
-								<div class="cart__info">
-									<div class="cart__articul">Арт. 103296706</div>
-									<div class="cart__info-name">
-										<a href="#" class="cart__title">Яблоня Ред Кетти</a>
-										<div class="cart__subtitle">Malus Red Katie</div>
+								<div class="cart__item-left">
+									<label class="form__checkbox" for="cart-item-1">
+										<input class="form__checkbox-control" type="checkbox" name="cart-item-1" id="cart-item-1" checked>
+										<span class="form__checkbox-emulator"></span>
+									</label>
+									<div class="cart__image">
+										<img src="/images/catalog/catalog-1.jpg" alt="Яблоня Ред Кетти" loading="lazy">
 									</div>
-									<div class="cart__desc">С-10,РА 160-180 см + крона</div>
+									<div class="cart__info">
+										<div class="cart__articul">Арт. 103296706</div>
+										<div class="cart__info-name">
+											<a href="#" class="cart__title">Яблоня Ред Кетти</a>
+											<div class="cart__subtitle">Malus Red Katie</div>
+										</div>
+										<div class="cart__desc">С-10,РА 160-180 см + крона</div>
+									</div>
 								</div>
-								<div class="cart__price-block">
-									<div class="cart__price">
-										<div class="cart__price-text">Цена</div>
-										<div class="cart__price-row">
-											<span class="cart__price-current">2 000 ₽</span>
-											<span class="cart__price-old">5 000 ₽</span>
+								<div class="cart__item-right">
+									<div class="cart__price-block">
+										<div class="cart__price">
+											<div class="cart__price-text">Цена</div>
+											<div class="cart__price-row">
+												<span class="cart__price-current">2 000 ₽</span>
+												<span class="cart__price-old">5 000 ₽</span>
+											</div>
+										</div>
+										<div class="cart__quantity">
+											<button class="cart__quantity-button cart__quantity-button-minus" type="button">-</button>
+											<input type="number" name="cart__quantity-1" id="cart__quantity-1" class="cart__quantity-value"
+												value="1" min="1">
+											<button class="cart__quantity-button cart__quantity-button-plus" type="button">+</button>
+										</div>
+										<div class="cart__total">
+											<div class="cart__total-text">Цена</div>
+											<div class="cart__total-row">
+												<span class="cart__total-current">16 000 ₽</span>
+												<span class="cart__total-old">25 000 ₽</span>
+											</div>
 										</div>
 									</div>
-									<div class="cart__quantity">
-										<button class="cart__quantity-button cart__quantity-button-minus" type="button">-</button>
-										<input type="number" name="cart__quantity-1" id="cart__quantity-1" class="cart__quantity-value"
-											value="1" min="1">
-										<button class="cart__quantity-button cart__quantity-button-plus" type="button">+</button>
-									</div>
-									<div class="cart__total">
-										<div class="cart__total-text">Цена</div>
-										<div class="cart__total-row">
-											<span class="cart__total-current">16 000 ₽</span>
-											<span class="cart__total-old">25 000 ₽</span>
-										</div>
-									</div>
+									<button class="cart__remove" type="button">×</button>
 								</div>
-								<button class="cart__remove" type="button">×</button>
 							</li>
 							<li class="cart__item">
-								<label class="form__checkbox" for="cart-item-2">
-									<input class="form__checkbox-control" type="checkbox" name="cart-item-2" id="cart-item-2" checked>
-									<span class="form__checkbox-emulator"></span>
-								</label>
-								<div class="cart__image">
-									<img src="/images/catalog/catalog-2.jpg" alt="Яблоня Ред Кетти" loading="lazy">
-								</div>
-								<div class="cart__info">
-									<div class="cart__articul">Арт. 103296706</div>
-									<div class="cart__info-name">
-										<a href="#" class="cart__title">Яблоня Ред Кетти</a>
-										<div class="cart__subtitle">Malus Red Katie</div>
+								<div class="cart__item-left">
+									<label class="form__checkbox" for="cart-item-2">
+										<input class="form__checkbox-control" type="checkbox" name="cart-item-2" id="cart-item-2" checked>
+										<span class="form__checkbox-emulator"></span>
+									</label>
+									<div class="cart__image">
+										<img src="/images/catalog/catalog-1.jpg" alt="Яблоня Ред Кетти" loading="lazy">
 									</div>
-									<div class="cart__desc">С-10,РА 160-180 см + крона</div>
+									<div class="cart__info">
+										<div class="cart__articul">Арт. 103296706</div>
+										<div class="cart__info-name">
+											<a href="#" class="cart__title">Яблоня Ред Кетти</a>
+											<div class="cart__subtitle">Malus Red Katie</div>
+										</div>
+										<div class="cart__desc">С-10,РА 160-180 см + крона</div>
+									</div>
 								</div>
-								<div class="cart__price-block">
-									<div class="cart__price">
-										<div class="cart__price-text">Цена</div>
-										<div class="cart__price-row">
-											<span class="cart__price-current">2 000 ₽</span>
-											<span class="cart__price-old">5 000 ₽</span>
+								<div class="cart__item-right">
+									<div class="cart__price-block">
+										<div class="cart__price">
+											<div class="cart__price-text">Цена</div>
+											<div class="cart__price-row">
+												<span class="cart__price-current">2 000 ₽</span>
+												<span class="cart__price-old">5 000 ₽</span>
+											</div>
+										</div>
+										<div class="cart__quantity">
+											<button class="cart__quantity-button cart__quantity-button-minus" type="button">-</button>
+											<input type="number" name="cart__quantity-2" id="cart__quantity-2" class="cart__quantity-value"
+												value="1" min="1">
+											<button class="cart__quantity-button cart__quantity-button-plus" type="button">+</button>
+										</div>
+										<div class="cart__total">
+											<div class="cart__total-text">Цена</div>
+											<div class="cart__total-row">
+												<span class="cart__total-current">16 000 ₽</span>
+												<span class="cart__total-old">25 000 ₽</span>
+											</div>
 										</div>
 									</div>
-									<div class="cart__quantity">
-										<button class="cart__quantity-button cart__quantity-button-minus" type="button">-</button>
-										<input type="number" name="cart__quantity-2" id="cart__quantity-2" class="cart__quantity-value"
-											value="1" min="1">
-										<button class="cart__quantity-button cart__quantity-button-plus" type="button">+</button>
-									</div>
-									<div class="cart__total">
-										<div class="cart__total-text">Цена</div>
-										<div class="cart__total-row">
-											<span class="cart__total-current">16 000 ₽</span>
-											<span class="cart__total-old">25 000 ₽</span>
-										</div>
-									</div>
+									<button class="cart__remove" type="button">×</button>
 								</div>
-								<button class="cart__remove" type="button">×</button>
 							</li>
+
 						</ul>
 						<div class="cart__checkbox-group">
 							<label class="form__checkbox" for="cart-select-all-bottom">
@@ -10285,6 +10394,21 @@
 							<button type="submit" class="button">Отправить</button>
 						</div>
 					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal micromodal-slide" id="modal-filter" aria-hidden="true">
+		<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+			<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-filter-title">
+				<header class="modal__header">
+					<div></div>
+					<button class="modal__close" aria-label="Закрыть" data-micromodal-close></button>
+				</header>
+				<div class="modal__content" id="modal-filter-content">
+					<h3 class="visually-hidden" id="modal-filter-title">Подбор по параметрам</h3>
+					<div id="catalog-filter__modal-container"></div>
 				</div>
 			</div>
 		</div>

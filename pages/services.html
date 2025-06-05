@@ -44,7 +44,7 @@
 							<button class="header__button button button--outline js-modal-askQuestion">Задать вопрос</button>
 						</div>
 					</div>
-					<a href="#" class="header__cart js-modal-cart">
+					<a href="javascript:void(0);" class="header__cart js-modal-cart">
 						<div class="header__cart-icon-wrapper">
 							<img src="/images/icons/cart.svg" alt="Корзина">
 							<span class="header__cart-number">0</span>
@@ -63,7 +63,7 @@
 						<li><a href="#">Полезно знать</a></li>
 						<li><a href="#">Контакты</a></li>
 						<li>
-							<a href="#" class="header__search">
+							<a href="javascript:void(0);" class="header__search">
 								<span class="header__search-icon">
 									<img src="/images/icons/search.svg" alt="Поиск">
 								</span>
@@ -74,6 +74,93 @@
 				</nav>
 			</div>
 		</div>
+
+		<div class="header__mobile container">
+			<div class="header__mobile-menu">
+				<nav class="header__nav">
+					<ul class="header__menu">
+						<li>
+							<a href="#" class="header__catalog"><img src="/images/icons/catalog-icon.svg" alt="Каталог">Каталог</a>
+						</li>
+						<li><a href="#">Наши услуги</a></li>
+						<li><a href="#">Портфолио</a></li>
+						<li><a href="#">Питомник</a></li>
+						<li><a href="#">Доставка и оплата</a></li>
+						<li><a href="#">Полезно знать</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+				<div class="header__contacts">
+					<div class="header__contacts-group">
+						<a href="tel:88000000009" class="header__phone">
+							<img src="/images/icons/phone.svg" alt="Телефон">
+							<span>8 (800) 000-00-09</span>
+						</a>
+						<div class="header__socials">
+							<a href="#" class="header__social" aria-label="ВКонтакте"><img src="/images/icons/vkontakte.svg"
+									alt="VK"></a>
+							<a href="#" class="header__social" aria-label="WhatsApp"><img src="/images/icons/whatsapp.svg"
+									alt="WhatsApp"></a>
+							<a href="#" class="header__social" aria-label="Telegram"><img src="/images/icons/telegram.svg"
+									alt="Telegram"></a>
+						</div>
+					</div>
+					<div class="header__schedule">
+						<img src="/images/icons/dashboard.svg" alt="">
+						<span>Режим работы с 9:00 до 19:00</span>
+					</div>
+					<div class="header__actions">
+						<button class="header__button button button--outline js-modal-callback">Перезвонить</button>
+						<button class="header__button button button--outline js-modal-askQuestion">Задать вопрос</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="header__mobile-content">
+				<div class="header__mobile-top">
+					<div class="header__mobile-left">
+						<div class="header__mobile-burger js-menu-toggle">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<a href="#" class="header__mobile-logo">
+							<img src="/images/logo-mobile.svg" alt="">
+						</a>
+					</div>
+					<div class="header__mobile-right">
+						<a href="tel:88000000009" class="header__phone">
+							<img src="/images/icons/phone-black.svg" alt="Телефон">
+						</a>
+						<div class="header__socials">
+							<a href="#" class="header__social" aria-label="ВКонтакте"><img src="/images/icons/vkontakte.svg"
+									alt="VK"></a>
+							<a href="#" class="header__social" aria-label="WhatsApp"><img src="/images/icons/whatsapp.svg"
+									alt="WhatsApp"></a>
+							<a href="#" class="header__social" aria-label="Telegram"><img src="/images/icons/telegram.svg"
+									alt="Telegram"></a>
+						</div>
+						<a href="javascript:void(0);" class="header__search">
+							<span class="header__search-icon">
+								<img src="/images/icons/search.svg" alt="Поиск">
+							</span>
+						</a>
+						<a href="javascript:void(0);" class="header__cart js-modal-cart">
+							<div class="header__cart-icon-wrapper">
+								<img src="/images/icons/cart.svg" alt="Корзина">
+								<span class="header__cart-number">0</span>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="header__mobile-bottom">
+					<a href="#" class="header__mobile-button header__catalog button"><img src="/images/icons/catalog-icon.svg"
+							alt="Каталог">Каталог</a>
+					<button class="header__mobile-button button button--outline js-modal-callback">Перезвонить</button>
+					<button class="header__mobile-button button button--outline js-modal-askQuestion">Задать вопрос</button>
+				</div>
+			</div>
+		</div>
 	</header>
 
 	<nav class="breadcrumbs container">
@@ -81,8 +168,8 @@
 			<li class="breadcrumbs__item"><a href="#">Услуги</a></li>
 		</ul>
 	</nav>
-	<main class="main">
 
+	<main class="main">
 		<section class="catalog">
 			<div class="catalog__container container">
 				<aside class="catalog__aside">
@@ -190,7 +277,7 @@
 
 				<div class="catalog__main">
 
-					<h1 class="catalog__title h2 bottom-line"><span>Хвойные</span></h1>
+					<h1 class="catalog__title h2 bottom-line"><span>Наши</span> услуги</h1>
 
 					<div class="catalog-top-categories catalog-top-categories--services">
 						<a href="#" class="catalog-top-categories__item">
@@ -448,6 +535,7 @@
 		</div>
 	</footer>
 
+
 	<script src="/scripts/jquery-3.7.1.min.js"></script>
 	<script src="/scripts/jquery-ui.min.js"></script>
 	<script src="/scripts/jquery.mask.min.js"></script>
@@ -618,85 +706,94 @@
 						</div>
 						<ul class="cart__list">
 							<li class="cart__item">
-								<label class="form__checkbox" for="cart-item-1">
-									<input class="form__checkbox-control" type="checkbox" name="cart-item-1" id="cart-item-1" checked>
-									<span class="form__checkbox-emulator"></span>
-								</label>
-								<div class="cart__image">
-									<img src="/images/catalog/catalog-1.jpg" alt="Яблоня Ред Кетти" loading="lazy">
-								</div>
-								<div class="cart__info">
-									<div class="cart__articul">Арт. 103296706</div>
-									<div class="cart__info-name">
-										<a href="#" class="cart__title">Яблоня Ред Кетти</a>
-										<div class="cart__subtitle">Malus Red Katie</div>
+								<div class="cart__item-left">
+									<label class="form__checkbox" for="cart-item-1">
+										<input class="form__checkbox-control" type="checkbox" name="cart-item-1" id="cart-item-1" checked>
+										<span class="form__checkbox-emulator"></span>
+									</label>
+									<div class="cart__image">
+										<img src="/images/catalog/catalog-1.jpg" alt="Яблоня Ред Кетти" loading="lazy">
 									</div>
-									<div class="cart__desc">С-10,РА 160-180 см + крона</div>
+									<div class="cart__info">
+										<div class="cart__articul">Арт. 103296706</div>
+										<div class="cart__info-name">
+											<a href="#" class="cart__title">Яблоня Ред Кетти</a>
+											<div class="cart__subtitle">Malus Red Katie</div>
+										</div>
+										<div class="cart__desc">С-10,РА 160-180 см + крона</div>
+									</div>
 								</div>
-								<div class="cart__price-block">
-									<div class="cart__price">
-										<div class="cart__price-text">Цена</div>
-										<div class="cart__price-row">
-											<span class="cart__price-current">2 000 ₽</span>
-											<span class="cart__price-old">5 000 ₽</span>
+								<div class="cart__item-right">
+									<div class="cart__price-block">
+										<div class="cart__price">
+											<div class="cart__price-text">Цена</div>
+											<div class="cart__price-row">
+												<span class="cart__price-current">2 000 ₽</span>
+												<span class="cart__price-old">5 000 ₽</span>
+											</div>
+										</div>
+										<div class="cart__quantity">
+											<button class="cart__quantity-button cart__quantity-button-minus" type="button">-</button>
+											<input type="number" name="cart__quantity-1" id="cart__quantity-1" class="cart__quantity-value"
+												value="1" min="1">
+											<button class="cart__quantity-button cart__quantity-button-plus" type="button">+</button>
+										</div>
+										<div class="cart__total">
+											<div class="cart__total-text">Цена</div>
+											<div class="cart__total-row">
+												<span class="cart__total-current">16 000 ₽</span>
+												<span class="cart__total-old">25 000 ₽</span>
+											</div>
 										</div>
 									</div>
-									<div class="cart__quantity">
-										<button class="cart__quantity-button cart__quantity-button-minus" type="button">-</button>
-										<input type="number" name="cart__quantity-1" id="cart__quantity-1" class="cart__quantity-value"
-											value="1" min="1">
-										<button class="cart__quantity-button cart__quantity-button-plus" type="button">+</button>
-									</div>
-									<div class="cart__total">
-										<div class="cart__total-text">Цена</div>
-										<div class="cart__total-row">
-											<span class="cart__total-current">16 000 ₽</span>
-											<span class="cart__total-old">25 000 ₽</span>
-										</div>
-									</div>
+									<button class="cart__remove" type="button">×</button>
 								</div>
-								<button class="cart__remove" type="button">×</button>
 							</li>
 							<li class="cart__item">
-								<label class="form__checkbox" for="cart-item-2">
-									<input class="form__checkbox-control" type="checkbox" name="cart-item-2" id="cart-item-2" checked>
-									<span class="form__checkbox-emulator"></span>
-								</label>
-								<div class="cart__image">
-									<img src="/images/catalog/catalog-2.jpg" alt="Яблоня Ред Кетти" loading="lazy">
-								</div>
-								<div class="cart__info">
-									<div class="cart__articul">Арт. 103296706</div>
-									<div class="cart__info-name">
-										<a href="#" class="cart__title">Яблоня Ред Кетти</a>
-										<div class="cart__subtitle">Malus Red Katie</div>
+								<div class="cart__item-left">
+									<label class="form__checkbox" for="cart-item-2">
+										<input class="form__checkbox-control" type="checkbox" name="cart-item-2" id="cart-item-2" checked>
+										<span class="form__checkbox-emulator"></span>
+									</label>
+									<div class="cart__image">
+										<img src="/images/catalog/catalog-1.jpg" alt="Яблоня Ред Кетти" loading="lazy">
 									</div>
-									<div class="cart__desc">С-10,РА 160-180 см + крона</div>
+									<div class="cart__info">
+										<div class="cart__articul">Арт. 103296706</div>
+										<div class="cart__info-name">
+											<a href="#" class="cart__title">Яблоня Ред Кетти</a>
+											<div class="cart__subtitle">Malus Red Katie</div>
+										</div>
+										<div class="cart__desc">С-10,РА 160-180 см + крона</div>
+									</div>
 								</div>
-								<div class="cart__price-block">
-									<div class="cart__price">
-										<div class="cart__price-text">Цена</div>
-										<div class="cart__price-row">
-											<span class="cart__price-current">2 000 ₽</span>
-											<span class="cart__price-old">5 000 ₽</span>
+								<div class="cart__item-right">
+									<div class="cart__price-block">
+										<div class="cart__price">
+											<div class="cart__price-text">Цена</div>
+											<div class="cart__price-row">
+												<span class="cart__price-current">2 000 ₽</span>
+												<span class="cart__price-old">5 000 ₽</span>
+											</div>
+										</div>
+										<div class="cart__quantity">
+											<button class="cart__quantity-button cart__quantity-button-minus" type="button">-</button>
+											<input type="number" name="cart__quantity-2" id="cart__quantity-2" class="cart__quantity-value"
+												value="1" min="1">
+											<button class="cart__quantity-button cart__quantity-button-plus" type="button">+</button>
+										</div>
+										<div class="cart__total">
+											<div class="cart__total-text">Цена</div>
+											<div class="cart__total-row">
+												<span class="cart__total-current">16 000 ₽</span>
+												<span class="cart__total-old">25 000 ₽</span>
+											</div>
 										</div>
 									</div>
-									<div class="cart__quantity">
-										<button class="cart__quantity-button cart__quantity-button-minus" type="button">-</button>
-										<input type="number" name="cart__quantity-2" id="cart__quantity-2" class="cart__quantity-value"
-											value="1" min="1">
-										<button class="cart__quantity-button cart__quantity-button-plus" type="button">+</button>
-									</div>
-									<div class="cart__total">
-										<div class="cart__total-text">Цена</div>
-										<div class="cart__total-row">
-											<span class="cart__total-current">16 000 ₽</span>
-											<span class="cart__total-old">25 000 ₽</span>
-										</div>
-									</div>
+									<button class="cart__remove" type="button">×</button>
 								</div>
-								<button class="cart__remove" type="button">×</button>
 							</li>
+
 						</ul>
 						<div class="cart__checkbox-group">
 							<label class="form__checkbox" for="cart-select-all-bottom">

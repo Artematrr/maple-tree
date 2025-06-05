@@ -6,10 +6,9 @@
 		width: 100%;
 		margin-bottom: var(--section-margin-bottom);
 
-		@include mobile {
+		@include tablet {
 			display: flex;
 			flex-direction: column;
-			// margin-bottom: 15px;
 		}
 	}
 
@@ -18,6 +17,10 @@
 		flex-direction: column;
 		align-items: center;
 		row-gap: 15px;
+
+		@include tablet {
+			order: 1;
+		}
 
 		@include mobile {
 			row-gap: 10px;
@@ -40,7 +43,11 @@
 
 	&__swiper-preview {
 		height: 575px;
-		max-width: clamp(280px, 47.6vw, 690px);
+		max-width: clamp(280px, 47.6dvw, 690px);
+
+		@include tablet {
+			max-width: 700px;
+		}
 
 		@include mobile {
 			height: 326px;
@@ -57,7 +64,11 @@
 	&__swiper-container {
 		position: relative;
 		width: 100%;
-		max-width: clamp(280px, 47.6vw, 690px);
+		max-width: clamp(280px, 47.6dvw, 690px);
+
+		@include tablet {
+			max-width: 700px;
+		}
 
 		@include mobile {
 			max-width: 500px;
@@ -79,9 +90,17 @@
 	}
 
 	&__swiper-prev {
+		@include mobile {
+			left: 2px;
+			transform: translateY(50%);
+		}
 	}
 
 	&__swiper-next {
+		@include mobile {
+			right: 2px;
+			transform: translateY(50%);
+		}
 	}
 
 	&__contents {
@@ -89,6 +108,10 @@
 		flex-direction: column;
 		justify-content: space-between;
 		gap: 15px;
+
+		@include tablet {
+			display: contents;
+		}
 	}
 
 	&__header {
@@ -97,6 +120,10 @@
 		gap: 15px;
 		border-bottom: 1px solid var(--gray-500);
 		padding-bottom: 15px;
+
+		@include tablet {
+			order: 0;
+		}
 	}
 
 	&__header-top {
@@ -128,14 +155,10 @@
 		flex-wrap: wrap;
 		gap: 10px;
 
-		@include tablet {
-			flex-direction: column;
-			align-items: flex-start;
-		}
-
 		@include mobile {
 			flex-direction: row;
 			align-items: flex-end;
+			gap: 5px;
 		}
 
 		@include mobile-s {
@@ -237,6 +260,10 @@
 		display: flex;
 		flex-direction: column;
 		gap: 15px;
+
+		@include tablet {
+			order: 2;
+		}
 	}
 
 	&__description-title {
@@ -288,6 +315,10 @@
 		@extend .product__description;
 		align-items: flex-start;
 
+		@include tablet {
+			order: 3;
+		}
+
 		.form__checkbox {
 			@include hover {
 				.form__checkbox-emulator {
@@ -318,10 +349,14 @@
 		position: relative;
 		width: 100%;
 		padding-right: 45px;
-		max-width: clamp(280px, 47.2vw, 690px);
+		max-width: clamp(280px, 47.2dvw, 690px);
+
+		@include desktop {
+			max-width: clamp(280px, 45dvw, 690px);
+		}
 
 		@include tablet {
-			max-width: clamp(280px, 45vw, 690px);
+			max-width: calc(100dvw - var(--container-padding-x) * 2);
 		}
 
 		@include mobile {
@@ -333,6 +368,9 @@
 	&__type-swiper {
 		@include mobile {
 			height: 308px;
+		}
+		@include mobile-s {
+			height: 408px;
 		}
 	}
 
@@ -361,6 +399,7 @@
 		border: 1px solid var(--white);
 		background: var(--white);
 		overflow: hidden;
+		line-height: 1.35;
 
 		@include hover {
 			border-color: var(--secondary-900);
@@ -370,6 +409,11 @@
 			flex-direction: row;
 			min-height: 96px;
 			padding: 10px;
+			line-height: 1.15;
+		}
+
+		@include mobile-s {
+			min-height: 126px;
 		}
 	}
 
@@ -402,6 +446,10 @@
 			flex-direction: row;
 			justify-content: space-between;
 			width: 100%;
+		}
+
+		@include mobile-s {
+			flex-direction: column;
 		}
 	}
 
@@ -453,6 +501,10 @@
 		@include desktop {
 			flex-direction: column;
 		}
+
+		@include tablet {
+			order: 4;
+		}
 	}
 
 	&__price {
@@ -462,6 +514,24 @@
 
 		@include desktop {
 			text-align: center;
+		}
+
+		@include mobile {
+			.catalog-card__price {
+			}
+
+			.catalog-card__price-text {
+				width: auto;
+				font-size: 14px;
+			}
+
+			.catalog-card__price-current {
+				font-size: 24px;
+			}
+
+			.catalog-card__price-old {
+				font-size: 14px;
+			}
 		}
 	}
 
@@ -483,6 +553,7 @@
 
 		@include mobile {
 			height: 32px;
+			padding: 1px 10px;
 
 			img {
 				@include square(20px);
@@ -506,6 +577,8 @@
 		.form__input {
 			height: 54px;
 			padding: 10px 15px;
+			background-color: var(--white);
+			border-color: var(--primary-500);
 		}
 
 		@include tablet {
@@ -519,10 +592,36 @@
 
 	&__additional {
 		margin-bottom: var(--section-margin-bottom);
+	}
+
+	&__tabs-container {
+		position: relative;
 
 		&:has(.ui-tabs-active:first-child) {
 			.product__info {
 				border-radius: 0px 28px 28px 28px;
+			}
+		}
+
+		@include mobile {
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 10px;
+
+			&:has(.ui-tabs-active) {
+				.product__info {
+					border-radius: 0px 28px 28px 28px;
+				}
+			}
+		}
+
+		@include mobile-s {
+			&:has(.ui-tabs-active),
+			&:has(.ui-tabs-active:first-child) {
+				.product__info {
+					border-radius: 0px 0px 28px 28px;
+				}
 			}
 		}
 	}
@@ -532,6 +631,7 @@
 		gap: 10px;
 
 		.ui-tabs-tab {
+			position: relative;
 			display: flex;
 			align-items: center;
 			padding: 20px 30px;
@@ -543,12 +643,36 @@
 			@include tablet {
 				padding: 10px 15px;
 			}
+
+			@include mobile {
+				padding: 20px 15px;
+				border-radius: 25px;
+				background: var(--white);
+				width: 100%;
+				text-align: left;
+
+				a {
+					width: 100%;
+				}
+			}
 		}
 
 		.ui-tabs-active {
 			color: var(--primary-500);
 			border-radius: 28px 28px 0px 0px;
 			background: var(--white);
+
+			@include mobile {
+				width: auto;
+			}
+
+			@include mobile-s {
+				width: 100%;
+			}
+		}
+
+		@include mobile {
+			display: contents;
 		}
 	}
 
@@ -557,6 +681,12 @@
 		padding: 30px;
 		border-radius: 28px;
 		background: var(--white);
+
+		@include mobile {
+			padding: 15px;
+			margin-top: -10px;
+			width: 100%;
+		}
 	}
 
 	&__item {
@@ -568,7 +698,12 @@
 
 		b {
 			@include fluid-text(16, 14);
+
 			font-weight: 700;
+		}
+
+		@include mobile {
+			gap: 15px;
 		}
 	}
 
@@ -588,14 +723,32 @@
 		display: flex;
 		gap: 30px;
 
+		@include mobile {
+			display: flex;
+			flex-direction: column;
+			gap: 5px;
+		}
+
 		&--three {
 			display: grid;
 			grid-template-columns: repeat(3, 1fr);
+
+			@include mobile {
+				display: flex;
+				flex-direction: column;
+				gap: 15px;
+			}
 		}
 
 		&--two {
 			display: grid;
 			grid-template-columns: repeat(2, 1fr);
+
+			@include mobile {
+				display: flex;
+				flex-direction: column;
+				gap: 15px;
+			}
 		}
 
 		&--font-sm {
@@ -607,6 +760,10 @@
 		display: flex;
 		flex-direction: column;
 		gap: 15px;
+
+		@include mobile {
+			gap: 10px;
+		}
 	}
 
 	&__item-subtitle {
@@ -620,10 +777,30 @@
 		flex-direction: column;
 		gap: 10px;
 
+		@include mobile {
+			gap: 5px;
+		}
+
 		li {
 			display: inline-flex;
 			align-items: flex-start;
-			gap: 10px;
+			gap: 0 10px;
+
+			@include mobile {
+				justify-content: space-between;
+
+				> :nth-child(2) {
+					text-align: right;
+				}
+			}
+
+			@include mobile-s {
+				flex-direction: column;
+
+				> :nth-child(2) {
+					text-align: left;
+				}
+			}
 		}
 	}
 
@@ -640,6 +817,30 @@
 		display: flex;
 		align-items: stretch;
 		justify-content: center;
-		gap: 48px;
+		gap: 10px 48px;
+
+		.button {
+			height: var(--button-height);
+		}
+
+		@include mobile {
+			gap: 10px;
+
+			.button {
+				padding: 8px 30px;
+				height: auto;
+
+				img {
+					@include square(20px);
+				}
+			}
+		}
+
+		@include mobile-m {
+			flex-direction: column;
+			max-width: 250px;
+			min-width: max-content;
+			margin-inline: auto;
+		}
 	}
 }

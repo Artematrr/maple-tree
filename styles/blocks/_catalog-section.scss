@@ -1,5 +1,7 @@
 .catalog-section {
 	position: relative;
+	display: flex;
+	flex-direction: column;
 	padding-bottom: 15px;
 
 	&::after {
@@ -15,10 +17,21 @@
 	}
 
 	&__list {
-		@extend .catalog-search__nomenclature;
+		@extend .catalog-search__list;
+
+		@include mobile {
+			max-height: 100px;
+		}
 	}
 
 	.catalog-search__card {
 		background-color: var(--white);
+	}
+
+	.catalog-section__all {
+		@extend .catalog-search__all;
+
+		text-align: center;
+		margin-top: 15px;
 	}
 }

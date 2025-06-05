@@ -1,22 +1,6 @@
 .text-block {
 	margin-bottom: var(--section-margin-bottom);
 
-	&--sm-padding {
-		.text-block__inner {
-			padding: 30px;
-
-			@include mobile {
-				padding: 15px;
-			}
-		}
-	}
-
-	&--sm-gap {
-		.text-block__col {
-			gap: 10px;
-		}
-	}
-
 	&__inner {
 		display: flex;
 		flex-direction: column;
@@ -99,15 +83,28 @@
 	.article {
 		display: flex;
 		flex-direction: column;
-		gap: 10px;
+		gap: 15px;
 	}
 
 	h2,
 	.h2 {
+		@include fluid-text(60, 34);
+
+		text-align: center;
+		hyphens: auto;
+
+		@include mobile {
+			text-align: left;
+		}
+	}
+
+	.h2--sm {
 		@include fluid-text(34, 24);
 
 		font-weight: 700;
 		line-height: 1.15;
+		text-align: left;
+		hyphens: auto;
 
 		@include mobile {
 			font-weight: 500;
@@ -121,6 +118,7 @@
 
 		font-weight: 500;
 		line-height: 1.45;
+		hyphens: auto;
 
 		@include mobile {
 			font-weight: 700;
@@ -147,7 +145,7 @@
 	footer {
 		display: flex;
 		justify-content: center;
-		gap: 48px;
+		gap: 10px 48px;
 
 		.button {
 			height: var(--button-height);
@@ -155,6 +153,24 @@
 
 		@include mobile {
 			flex-direction: column;
+			gap: 10px;
+		}
+	}
+
+	&--sm-padding {
+		.text-block__inner {
+			padding: 30px;
+
+			@include mobile {
+				padding: 15px;
+			}
+		}
+	}
+
+	&--sm-gap {
+		.text-block__col,
+		article,
+		.article {
 			gap: 10px;
 		}
 	}

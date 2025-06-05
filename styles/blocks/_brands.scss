@@ -18,7 +18,11 @@
 	&__title {
 		@include fluid-text(48, 34);
 
-		padding-bottom: 15px;
+		padding-bottom: 10px;
+
+		@include mobile {
+			padding-bottom: 15px;
+		}
 	}
 
 	&__swiper {

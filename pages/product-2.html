@@ -43,7 +43,7 @@
 							<button class="header__button button button--outline js-modal-askQuestion">Задать вопрос</button>
 						</div>
 					</div>
-					<a href="#" class="header__cart js-modal-cart">
+					<a href="javascript:void(0);" class="header__cart js-modal-cart">
 						<div class="header__cart-icon-wrapper">
 							<img src="/images/icons/cart.svg" alt="Корзина">
 							<span class="header__cart-number">0</span>
@@ -62,7 +62,7 @@
 						<li><a href="#">Полезно знать</a></li>
 						<li><a href="#">Контакты</a></li>
 						<li>
-							<a href="#" class="header__search">
+							<a href="javascript:void(0);" class="header__search">
 								<span class="header__search-icon">
 									<img src="/images/icons/search.svg" alt="Поиск">
 								</span>
@@ -71,6 +71,93 @@
 						</li>
 					</ul>
 				</nav>
+			</div>
+		</div>
+
+		<div class="header__mobile container">
+			<div class="header__mobile-menu">
+				<nav class="header__nav">
+					<ul class="header__menu">
+						<li>
+							<a href="#" class="header__catalog"><img src="/images/icons/catalog-icon.svg" alt="Каталог">Каталог</a>
+						</li>
+						<li><a href="#">Наши услуги</a></li>
+						<li><a href="#">Портфолио</a></li>
+						<li><a href="#">Питомник</a></li>
+						<li><a href="#">Доставка и оплата</a></li>
+						<li><a href="#">Полезно знать</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+				<div class="header__contacts">
+					<div class="header__contacts-group">
+						<a href="tel:88000000009" class="header__phone">
+							<img src="/images/icons/phone.svg" alt="Телефон">
+							<span>8 (800) 000-00-09</span>
+						</a>
+						<div class="header__socials">
+							<a href="#" class="header__social" aria-label="ВКонтакте"><img src="/images/icons/vkontakte.svg"
+									alt="VK"></a>
+							<a href="#" class="header__social" aria-label="WhatsApp"><img src="/images/icons/whatsapp.svg"
+									alt="WhatsApp"></a>
+							<a href="#" class="header__social" aria-label="Telegram"><img src="/images/icons/telegram.svg"
+									alt="Telegram"></a>
+						</div>
+					</div>
+					<div class="header__schedule">
+						<img src="/images/icons/dashboard.svg" alt="">
+						<span>Режим работы с 9:00 до 19:00</span>
+					</div>
+					<div class="header__actions">
+						<button class="header__button button button--outline js-modal-callback">Перезвонить</button>
+						<button class="header__button button button--outline js-modal-askQuestion">Задать вопрос</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="header__mobile-content">
+				<div class="header__mobile-top">
+					<div class="header__mobile-left">
+						<div class="header__mobile-burger js-menu-toggle">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+						<a href="#" class="header__mobile-logo">
+							<img src="/images/logo-mobile.svg" alt="">
+						</a>
+					</div>
+					<div class="header__mobile-right">
+						<a href="tel:88000000009" class="header__phone">
+							<img src="/images/icons/phone-black.svg" alt="Телефон">
+						</a>
+						<div class="header__socials">
+							<a href="#" class="header__social" aria-label="ВКонтакте"><img src="/images/icons/vkontakte.svg"
+									alt="VK"></a>
+							<a href="#" class="header__social" aria-label="WhatsApp"><img src="/images/icons/whatsapp.svg"
+									alt="WhatsApp"></a>
+							<a href="#" class="header__social" aria-label="Telegram"><img src="/images/icons/telegram.svg"
+									alt="Telegram"></a>
+						</div>
+						<a href="javascript:void(0);" class="header__search">
+							<span class="header__search-icon">
+								<img src="/images/icons/search.svg" alt="Поиск">
+							</span>
+						</a>
+						<a href="javascript:void(0);" class="header__cart js-modal-cart">
+							<div class="header__cart-icon-wrapper">
+								<img src="/images/icons/cart.svg" alt="Корзина">
+								<span class="header__cart-number">0</span>
+							</div>
+						</a>
+					</div>
+				</div>
+				<div class="header__mobile-bottom">
+					<a href="#" class="header__mobile-button header__catalog button"><img src="/images/icons/catalog-icon.svg"
+							alt="Каталог">Каталог</a>
+					<button class="header__mobile-button button button--outline js-modal-callback">Перезвонить</button>
+					<button class="header__mobile-button button button--outline js-modal-askQuestion">Задать вопрос</button>
+				</div>
 			</div>
 		</div>
 	</header>
@@ -83,7 +170,6 @@
 			<li class="breadcrumbs__item"><a href="#">Смородина черная Геркулес</a></li>
 		</ul>
 	</nav>
-
 
 	<main class="main">
 		<section class="product container">
@@ -188,7 +274,6 @@
 								описание</a>
 						</div>
 					</div>
-
 
 					<fieldset class="product__type">
 						<h2 class="product__type-title">Саженец</h2>
@@ -315,143 +400,144 @@
 
 					<div class="product__bottom">
 						<form action="#" class="product__bottom-form">
-
 							<input type="tel" id="product__bottom-phone" name="product__bottom-phone" class="form__input"
 								placeholder="Введите телефон" maxlength="18" required="">
-
 							<button type="submit" class="product__bottom-button button" data-label="Запросить цену">
 								Запросить цену
 							</button>
 						</form>
 					</div>
+
 				</div>
 			</div>
 
 			<div class="product__additional" id="product-tabs">
-				<ul class="product__tabs">
-					<li><a href="#tab-1">Полное описание</a></li>
-					<li><a href="#tab-2">Рекомендации по высадке и уходу</a></li>
-					<li><a href="#tab-3">Гарантии</a></li>
-					<li><a href="#tab-4">Вопросы и ответы</a></li>
-					<li><a href="#tab-5">Отзывы</a></li>
-				</ul>
-				<div class="product__info">
-					<div class="product__item" id="tab-1">
-						<div class="product__item-group">
-							<p>Саженцы смородины черной Геркулес – кустарник с высокими прямостоячими ветвями, что помогает ягодам
-								быстрее созревать, так как ничто не мешает попаданию солнечных лучей на них. Собирать плоды с таких
-								веток
-								также намного удобнее.</p>
-							<p>Крупномер Геркулес славится своей большой урожайностью и неприхотливостью к условиям окружающей среды.
-								Это повышает спрос садоводов на растение.</p>
-							<p>Ягоды смородины крупные до 3,6 г одна штука, черного цвета с несильным белесым налетом. Кожица у них
-								тонкая, вкус сладкий десертный.</p>
-							<p>Среди достоинств сорта – устойчивость к заболеваниям и морозостойкость.</p>
-							<p>Используют плоды растения для приготовления напитков, йогуртов, начинок для конфет</p>
-						</div>
-						<div class="product__item-group product__item-group--dark product__item-row--font-sm">
-							<div class="product__item-row">
-								<span>Род: <b>Смородина</b></span>
-								<span>Вид: <b>Черная</b></span>
-								<span>Сорт: <b>Геркулес</b></span>
-								<span>Альтернативные названия растения: <b>Gerkules</b></span>
+				<div class="product__tabs-container">
+					<ul class="product__tabs">
+						<li data-order="1" style="order: 0;"><a href="#tab-1">Полное описание</a></li>
+						<li data-order="3" style="order: 2;"><a href="#tab-2">Рекомендации по высадке и уходу</a></li>
+						<li data-order="5" style="order: 4;"><a href="#tab-3">Гарантии</a></li>
+						<li data-order="7" style="order: 6;"><a href="#tab-4">Вопросы и ответы</a></li>
+						<li data-order="9" style="order: 8;"><a href="#tab-5">Отзывы</a></li>
+					</ul>
+					<div class="product__info" style="order: 1;">
+						<div class="product__item" id="tab-1">
+							<div class="product__item-group">
+								<p>Саженцы смородины черной Геркулес – кустарник с высокими прямостоячими ветвями, что помогает ягодам
+									быстрее созревать, так как ничто не мешает попаданию солнечных лучей на них. Собирать плоды с таких
+									веток
+									также намного удобнее.</p>
+								<p>Крупномер Геркулес славится своей большой урожайностью и неприхотливостью к условиям окружающей
+									среды.
+									Это повышает спрос садоводов на растение.</p>
+								<p>Ягоды смородины крупные до 3,6 г одна штука, черного цвета с несильным белесым налетом. Кожица у них
+									тонкая, вкус сладкий десертный.</p>
+								<p>Среди достоинств сорта – устойчивость к заболеваниям и морозостойкость.</p>
+								<p>Используют плоды растения для приготовления напитков, йогуртов, начинок для конфет</p>
 							</div>
-						</div>
-						<div class="product__item-group">
-							<div class="product__item-row product__item-row--three">
-								<div class="product__item-col">
-									<h2 class="product__item-subtitle">Основные характеристики:</h2>
-									<ul class="product__item-list">
-										<li><span>Пол:</span> <b>Обоеполый</b></li>
-										<li><span>Опыление:</span> <b>Самоопыляемый</b></li>
-										<li><span>Тип роста:</span> <b>Сильнорослый</b></li>
-										<li><span>Группа:</span> <b>Кустарники</b></li>
-										<li><span>Жизненный цикл:</span> <b>Многолетние</b></li>
-										<li><span>Тип ствола:</span> <b>Многоствольные</b></li>
-										<li><span>Назначение:</span> <b>Плодовые / Ягодные</b></li>
-									</ul>
-								</div>
-								<div class="product__item-col">
-									<h2 class="product__item-subtitle">Декоративные свойства:</h2>
-									<ul class="product__item-list">
-										<li><span>Срок созревания:</span> <b>Поздний</b></li>
-										<li><span>Месяц созревания:</span> <b>Июль</b></li>
-										<li><span>Размер плодов:</span> <b>Средний</b></li>
-										<li><span>Масса плода, гр:</span> <b>3.6</b></li>
-										<li><span>Форма плода:</span> <b>Округлая</b></li>
-										<li><span>Вкус:</span> <b>Сладкий</b></li>
-										<li><span>Окраска плода:</span> <b>Черный</b></li>
-										<li><span>Мякоть:</span> <b>Мягкая</b></li>
-										<li><span>Потребление:</span> <b>В свежем виде и на переработку</b></li>
-									</ul>
-								</div>
-								<div class="product__item-col">
-									<h2 class="product__item-subtitle">Декоративные свойства:</h2>
-									<ul class="product__item-list">
-										<li><span>Окраска цветка:</span> <b>Желто-зеленая</b></li>
-										<li><span>Весенняя окраска листвы:</span> <b>Ярко-зеленая</b></li>
-										<li><span>Время цветения:</span> <b>Июнь / Май</b></li>
-										<li><span>Аромат:</span> <b>Нет</b></li>
-										<li><span>Форма листа:</span> <b>Трехлопастный</b></li>
-										<li><span>Шипы:</span> <b>Нет</b></li>
-										<li><span>Декоративные признаки:</span> <b>Лиственные / <br> С декоративными плодами</b></li>
-										<li><span>Применение:</span> <b>Для озеленения</b></li>
-									</ul>
+							<div class="product__item-group product__item-group--dark product__item-row--font-sm">
+								<div class="product__item-row">
+									<span>Род: <b>Смородина</b></span>
+									<span>Вид: <b>Черная</b></span>
+									<span>Сорт: <b>Геркулес</b></span>
+									<span>Альтернативные названия растения: <b>Gerkules</b></span>
 								</div>
 							</div>
-						</div>
-
-						<div class="product__item-group">
-							<div class="product__item-row product__item-row--two">
-								<div class="product__item-col">
-									<h2 class="product__item-subtitle">Выращивание:</h2>
-									<ul class="product__item-list">
-										<li><span>Отношение к свету:</span> <b>Для солнца и полутени</b></li>
-										<li><span>Тип почвы:</span> <b>Для плодородных почв</b></li>
-										<li><span>Место выращивания:</span> <b>Открытый грунт</b></li>
-										<li><span>Регион:</span> <b>для Подмосковья</b></li>
-										<li><span>Зона морозостойкости:</span> <b>Московская область, большая часть россии (зона 4)</b></li>
-									</ul>
-								</div>
-								<div class="product__item-col">
-									<h2 class="product__item-subtitle">Происхождение:</h2>
-									<ul class="product__item-list">
-										<li><span>Год создания:</span> <b>2000</b></li>
-										<li><span>Оригинатор:</span> <b>НИИ садоводства Сибири им. М.А. Лисавенко</b></li>
-									</ul>
+							<div class="product__item-group">
+								<div class="product__item-row product__item-row--three">
+									<div class="product__item-col">
+										<h2 class="product__item-subtitle">Основные характеристики:</h2>
+										<ul class="product__item-list">
+											<li><span>Пол:</span> <b>Обоеполый</b></li>
+											<li><span>Опыление:</span> <b>Самоопыляемый</b></li>
+											<li><span>Тип роста:</span> <b>Сильнорослый</b></li>
+											<li><span>Группа:</span> <b>Кустарники</b></li>
+											<li><span>Жизненный цикл:</span> <b>Многолетние</b></li>
+											<li><span>Тип ствола:</span> <b>Многоствольные</b></li>
+											<li><span>Назначение:</span> <b>Плодовые / Ягодные</b></li>
+										</ul>
+									</div>
+									<div class="product__item-col">
+										<h2 class="product__item-subtitle">Описание плодов:</h2>
+										<ul class="product__item-list">
+											<li><span>Срок созревания:</span> <b>Поздний</b></li>
+											<li><span>Месяц созревания:</span> <b>Июль</b></li>
+											<li><span>Размер плодов:</span> <b>Средний</b></li>
+											<li><span>Масса плода, гр:</span> <b>3.6</b></li>
+											<li><span>Форма плода:</span> <b>Округлая</b></li>
+											<li><span>Вкус:</span> <b>Сладкий</b></li>
+											<li><span>Окраска плода:</span> <b>Черный</b></li>
+											<li><span>Мякоть:</span> <b>Мягкая</b></li>
+											<li><span>Потребление:</span> <b>В свежем виде и на переработку</b></li>
+										</ul>
+									</div>
+									<div class="product__item-col">
+										<h2 class="product__item-subtitle">Декоративные свойства:</h2>
+										<ul class="product__item-list">
+											<li><span>Окраска цветка:</span> <b>Желто-зеленая</b></li>
+											<li><span>Весенняя окраска листвы:</span> <b>Ярко-зеленая</b></li>
+											<li><span>Время цветения:</span> <b>Июнь / Май</b></li>
+											<li><span>Аромат:</span> <b>Нет</b></li>
+											<li><span>Форма листа:</span> <b>Трехлопастный</b></li>
+											<li><span>Шипы:</span> <b>Нет</b></li>
+											<li><span>Декоративные признаки:</span> <b>Лиственные / <br> С декоративными плодами</b></li>
+											<li><span>Применение:</span> <b>Для озеленения</b></li>
+										</ul>
+									</div>
 								</div>
 							</div>
-						</div>
 
-						<div class="product__item-group">
-							<div class="product__item-disclaimer">
-								Информация является справочной и не считается публичной офертой. Сведения не попадают под п.2 ст. 437 ГК
-								РФ.Питомник «Лафа Дачное счастье» оставляет за собой право вносить изменения в характеристики и внешний
-								вид карточки товара без предварительного уведомления пользователей интернет-магазина. Фото в карточке
-								товара может отличаться от внешнего вида конкретного посадочного материала.Для получения точной
-								информации обращайтесь к консультантам.Пожалуйста, в случае обнаружения неточности в описании товара или
-								на любой странице сайта, сообщите нам на почту <a
-									href="mailto:lafa.market@yandex.ru">lafa.market@yandex.ru</a> или другим удобным Вам способом.
+							<div class="product__item-group">
+								<div class="product__item-row product__item-row--two">
+									<div class="product__item-col">
+										<h2 class="product__item-subtitle">Выращивание:</h2>
+										<ul class="product__item-list">
+											<li><span>Отношение к свету:</span> <b>Для солнца и полутени</b></li>
+											<li><span>Тип почвы:</span> <b>Для плодородных почв</b></li>
+											<li><span>Место выращивания:</span> <b>Открытый грунт</b></li>
+											<li><span>Регион:</span> <b>для Подмосковья</b></li>
+											<li><span>Зона морозостойкости:</span> <b>Московская область, большая часть россии (зона 4)</b>
+											</li>
+										</ul>
+									</div>
+									<div class="product__item-col">
+										<h2 class="product__item-subtitle">Происхождение:</h2>
+										<ul class="product__item-list">
+											<li><span>Год создания:</span> <b>2000</b></li>
+											<li><span>Оригинатор:</span> <b>НИИ садоводства Сибири им. М.А. Лисавенко</b></li>
+										</ul>
+									</div>
+								</div>
 							</div>
-						</div>
 
-						<div class="product__item-bottom">
-							<button class="button js-modal-askQuestion button--gray">Задать свой вопрос</button>
-							<button class="button js-modal-cart" data-label="В корзину" title="В корзину">
-								В корзину
-								<img src="/images/icons/cart.svg" alt="">
-							</button>
-						</div>
+							<div class="product__item-group">
+								<div class="product__item-disclaimer">
+									Информация является справочной и не считается публичной офертой. Сведения не попадают под п.2 ст. 437
+									ГК
+									РФ.Питомник «Лафа Дачное счастье» оставляет за собой право вносить изменения в характеристики и
+									внешний
+									вид карточки товара без предварительного уведомления пользователей интернет-магазина. Фото в карточке
+									товара может отличаться от внешнего вида конкретного посадочного материала.Для получения точной
+									информации обращайтесь к консультантам.Пожалуйста, в случае обнаружения неточности в описании товара
+									или
+									на любой странице сайта, сообщите нам на почту <a
+										href="mailto:lafa.market@yandex.ru">lafa.market@yandex.ru</a> или другим удобным Вам способом.
+								</div>
+							</div>
 
+							<div class="product__item-bottom">
+								<button class="button js-modal-askQuestion button--gray">Задать свой вопрос</button>
+							</div>
+
+						</div>
+						<div class="product__item" id="tab-2">Рекомендации по высадке и уходу</div>
+						<div class="product__item" id="tab-3">Гарантии</div>
+						<div class="product__item" id="tab-4">Вопросы и ответы</div>
+						<div class="product__item" id="tab-5">Отзывы</div>
 					</div>
-					<div class="product__item" id="tab-2">Рекомендации по высадке и уходу</div>
-					<div class="product__item" id="tab-3">Гарантии</div>
-					<div class="product__item" id="tab-4">Вопросы и ответы</div>
-					<div class="product__item" id="tab-5">Отзывы</div>
 				</div>
 			</div>
 		</section>
-
 
 		<section class="swiper-block swiper-block--catalog">
 			<div class="swiper-block__container container">
@@ -6755,6 +6841,7 @@
 						src="/images/icons/arrow.svg" alt=""></a>
 			</div>
 		</section>
+
 	</main>
 
 	<footer class="footer">
@@ -6892,7 +6979,7 @@
 							<input type="email" id="sendcatalog-email" name="sendcatalog-email" class="form__input"
 								placeholder="Email" required>
 						</div>
-						<div class="form__group">
+						<div class="form__group">opacity
 							<input type="checkbox" name="sendcatalog-privacy" id="sendcatalog-privacy" class="form__checkbox-sm"
 								checked required>
 							<label for="sendcatalog-privacy" class="form__label">Нажимая, соглашаюсь на обработку персональных
@@ -6998,85 +7085,94 @@
 						</div>
 						<ul class="cart__list">
 							<li class="cart__item">
-								<label class="form__checkbox" for="cart-item-1">
-									<input class="form__checkbox-control" type="checkbox" name="cart-item-1" id="cart-item-1" checked>
-									<span class="form__checkbox-emulator"></span>
-								</label>
-								<div class="cart__image">
-									<img src="/images/catalog/catalog-1.jpg" alt="Яблоня Ред Кетти" loading="lazy">
-								</div>
-								<div class="cart__info">
-									<div class="cart__articul">Арт. 103296706</div>
-									<div class="cart__info-name">
-										<a href="#" class="cart__title">Яблоня Ред Кетти</a>
-										<div class="cart__subtitle">Malus Red Katie</div>
+								<div class="cart__item-left">
+									<label class="form__checkbox" for="cart-item-1">
+										<input class="form__checkbox-control" type="checkbox" name="cart-item-1" id="cart-item-1" checked>
+										<span class="form__checkbox-emulator"></span>
+									</label>
+									<div class="cart__image">
+										<img src="/images/catalog/catalog-1.jpg" alt="Яблоня Ред Кетти" loading="lazy">
 									</div>
-									<div class="cart__desc">С-10,РА 160-180 см + крона</div>
+									<div class="cart__info">
+										<div class="cart__articul">Арт. 103296706</div>
+										<div class="cart__info-name">
+											<a href="#" class="cart__title">Яблоня Ред Кетти</a>
+											<div class="cart__subtitle">Malus Red Katie</div>
+										</div>
+										<div class="cart__desc">С-10,РА 160-180 см + крона</div>
+									</div>
 								</div>
-								<div class="cart__price-block">
-									<div class="cart__price">
-										<div class="cart__price-text">Цена</div>
-										<div class="cart__price-row">
-											<span class="cart__price-current">2 000 ₽</span>
-											<span class="cart__price-old">5 000 ₽</span>
+								<div class="cart__item-right">
+									<div class="cart__price-block">
+										<div class="cart__price">
+											<div class="cart__price-text">Цена</div>
+											<div class="cart__price-row">
+												<span class="cart__price-current">2 000 ₽</span>
+												<span class="cart__price-old">5 000 ₽</span>
+											</div>
+										</div>
+										<div class="cart__quantity">
+											<button class="cart__quantity-button cart__quantity-button-minus" type="button">-</button>
+											<input type="number" name="cart__quantity-1" id="cart__quantity-1" class="cart__quantity-value"
+												value="1" min="1">
+											<button class="cart__quantity-button cart__quantity-button-plus" type="button">+</button>
+										</div>
+										<div class="cart__total">
+											<div class="cart__total-text">Цена</div>
+											<div class="cart__total-row">
+												<span class="cart__total-current">16 000 ₽</span>
+												<span class="cart__total-old">25 000 ₽</span>
+											</div>
 										</div>
 									</div>
-									<div class="cart__quantity">
-										<button class="cart__quantity-button cart__quantity-button-minus" type="button">-</button>
-										<input type="number" name="cart__quantity-1" id="cart__quantity-1" class="cart__quantity-value"
-											value="1" min="1">
-										<button class="cart__quantity-button cart__quantity-button-plus" type="button">+</button>
-									</div>
-									<div class="cart__total">
-										<div class="cart__total-text">Цена</div>
-										<div class="cart__total-row">
-											<span class="cart__total-current">16 000 ₽</span>
-											<span class="cart__total-old">25 000 ₽</span>
-										</div>
-									</div>
+									<button class="cart__remove" type="button">×</button>
 								</div>
-								<button class="cart__remove" type="button">×</button>
 							</li>
 							<li class="cart__item">
-								<label class="form__checkbox" for="cart-item-2">
-									<input class="form__checkbox-control" type="checkbox" name="cart-item-2" id="cart-item-2" checked>
-									<span class="form__checkbox-emulator"></span>
-								</label>
-								<div class="cart__image">
-									<img src="/images/catalog/catalog-2.jpg" alt="Яблоня Ред Кетти" loading="lazy">
-								</div>
-								<div class="cart__info">
-									<div class="cart__articul">Арт. 103296706</div>
-									<div class="cart__info-name">
-										<a href="#" class="cart__title">Яблоня Ред Кетти</a>
-										<div class="cart__subtitle">Malus Red Katie</div>
+								<div class="cart__item-left">
+									<label class="form__checkbox" for="cart-item-2">
+										<input class="form__checkbox-control" type="checkbox" name="cart-item-2" id="cart-item-2" checked>
+										<span class="form__checkbox-emulator"></span>
+									</label>
+									<div class="cart__image">
+										<img src="/images/catalog/catalog-1.jpg" alt="Яблоня Ред Кетти" loading="lazy">
 									</div>
-									<div class="cart__desc">С-10,РА 160-180 см + крона</div>
+									<div class="cart__info">
+										<div class="cart__articul">Арт. 103296706</div>
+										<div class="cart__info-name">
+											<a href="#" class="cart__title">Яблоня Ред Кетти</a>
+											<div class="cart__subtitle">Malus Red Katie</div>
+										</div>
+										<div class="cart__desc">С-10,РА 160-180 см + крона</div>
+									</div>
 								</div>
-								<div class="cart__price-block">
-									<div class="cart__price">
-										<div class="cart__price-text">Цена</div>
-										<div class="cart__price-row">
-											<span class="cart__price-current">2 000 ₽</span>
-											<span class="cart__price-old">5 000 ₽</span>
+								<div class="cart__item-right">
+									<div class="cart__price-block">
+										<div class="cart__price">
+											<div class="cart__price-text">Цена</div>
+											<div class="cart__price-row">
+												<span class="cart__price-current">2 000 ₽</span>
+												<span class="cart__price-old">5 000 ₽</span>
+											</div>
+										</div>
+										<div class="cart__quantity">
+											<button class="cart__quantity-button cart__quantity-button-minus" type="button">-</button>
+											<input type="number" name="cart__quantity-2" id="cart__quantity-2" class="cart__quantity-value"
+												value="1" min="1">
+											<button class="cart__quantity-button cart__quantity-button-plus" type="button">+</button>
+										</div>
+										<div class="cart__total">
+											<div class="cart__total-text">Цена</div>
+											<div class="cart__total-row">
+												<span class="cart__total-current">16 000 ₽</span>
+												<span class="cart__total-old">25 000 ₽</span>
+											</div>
 										</div>
 									</div>
-									<div class="cart__quantity">
-										<button class="cart__quantity-button cart__quantity-button-minus" type="button">-</button>
-										<input type="number" name="cart__quantity-2" id="cart__quantity-2" class="cart__quantity-value"
-											value="1" min="1">
-										<button class="cart__quantity-button cart__quantity-button-plus" type="button">+</button>
-									</div>
-									<div class="cart__total">
-										<div class="cart__total-text">Цена</div>
-										<div class="cart__total-row">
-											<span class="cart__total-current">16 000 ₽</span>
-											<span class="cart__total-old">25 000 ₽</span>
-										</div>
-									</div>
+									<button class="cart__remove" type="button">×</button>
 								</div>
-								<button class="cart__remove" type="button">×</button>
 							</li>
+
 						</ul>
 						<div class="cart__checkbox-group">
 							<label class="form__checkbox" for="cart-select-all-bottom">
