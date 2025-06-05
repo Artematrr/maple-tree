@@ -515,6 +515,10 @@
 		line-height: 135%;
 		z-index: 10;
 
+		&.is-active {
+			background-color: var(--secondary-500);
+		}
+
 		@include mobile-s {
 			padding: 4px 5px;
 		}

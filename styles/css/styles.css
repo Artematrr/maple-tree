@@ -774,6 +774,7 @@ h4,
 @media (max-width: 767px) {
   .modal__container {
     padding: 15px;
+    max-height: 90dvh;
   }
 }
 .modal__header {
@@ -1019,6 +1020,11 @@ h4,
   -webkit-user-select: none;
      -moz-user-select: none;
           user-select: none;
+}
+@media (max-width: 767px) {
+  .form__checkbox-sm + label {
+    padding-left: 27px;
+  }
 }
 .form__checkbox-sm + label:before {
   width: 12px;
@@ -2062,6 +2068,9 @@ h4,
   font-size: 14px;
   line-height: 135%;
   z-index: 10;
+}
+.header__mobile-button.is-active {
+  background-color: var(--secondary-500);
 }
 @media (max-width: 374px) {
   .header__mobile-button {
@@ -5499,6 +5508,11 @@ h4,
 }
 .contacts__list-row .contacts__item {
   flex: 1 1 308px;
+}
+@media (max-width: 767px) {
+  .contacts__list-row {
+    gap: 15px 5px;
+  }
 }
 .contacts__form {
   width: 100%;

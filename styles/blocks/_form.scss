@@ -50,6 +50,10 @@
 			cursor: pointer;
 			user-select: none;
 
+			@include mobile {
+				padding-left: calc(12px + 15px);
+			}
+
 			&:before {
 				@include square(12px);
 
