@@ -29,10 +29,11 @@
 		overflow-y: auto;
 		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 		border-radius: 12px;
+		overscroll-behavior: contain;
 
 		@include mobile {
 			padding: 15px;
-			max-height: 90dvh;
+			max-height: 95dvh;
 		}
 	}
 
