@@ -138,17 +138,32 @@ jQuery(document).ready(function () {
 		})
 	})
 
-	$('.swiper-block--catalog .swiper-block__swiper').each(function () {
+	$('.swiper-block--catalog-rows-1 .swiper-block__swiper').each(function () {
 		var $swiperEl = $(this)
 		new Swiper($swiperEl[0], {
 			spaceBetween: 30,
 			breakpoints: {
 				320: { slidesPerView: 1, spaceBetween: 10 },
-				375: {
-					slidesPerView: 2,
-					spaceBetween: 10,
-					grid: { rows: 2, fill: 'row' },
-				},
+				375: { slidesPerView: 2, spaceBetween: 10 },
+				768: { slidesPerView: 2, spaceBetween: 15 },
+				1024: { slidesPerView: 3 },
+				1440: { slidesPerView: 4 },
+			},
+			pagination: {
+				el: $swiperEl.find('.swiper-block__pagination')[0],
+				clickable: true,
+			},
+		})
+	})
+
+	$('.swiper-block--catalog-rows-2 .swiper-block__swiper').each(function () {
+		var $swiperEl = $(this)
+		new Swiper($swiperEl[0], {
+			spaceBetween: 30,
+			breakpoints: {
+				320: { slidesPerView: 1, spaceBetween: 10 },
+				375: { slidesPerView: 2, spaceBetween: 10,
+							 grid: { rows: 2, fill: 'row' } },
 				768: { slidesPerView: 2, spaceBetween: 15 },
 				1024: { slidesPerView: 3 },
 				1440: { slidesPerView: 4 },

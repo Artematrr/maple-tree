@@ -14,11 +14,6 @@
 	font-weight: 700;
 	line-height: 1;
 
-	// text-transform: lowercase;
-	// &:first-letter {
-	// 	text-transform: uppercase;
-	// }
-
 	img {
 		max-width: 40px;
 		max-height: 40px;
@@ -58,6 +53,17 @@
 		@include hover {
 			color: var(--white);
 			background-color: var(--primary-500);
+		}
+	}
+
+	&:disabled,
+	&.disabled {
+		pointer-events: none;
+		cursor: not-allowed;
+		background-color: var(--gray-500);
+
+		@include hover {
+			background-color: var(--gray-500);
 		}
 	}
 }

@@ -42,6 +42,15 @@
 		text-align: center;
 		overflow: hidden;
 
+		&:has(.popular-categories__text) {
+			@include mobile {
+				flex-direction: row;
+				justify-content: flex-start;
+				gap: 15px;
+				flex: 1 0 100%;
+			}
+		}
+
 		@include hover {
 			box-shadow: 0px 4px 40px 0px rgba(163, 163, 163, 0.3);
 		}
@@ -50,6 +59,10 @@
 			padding: 15px;
 			flex: 1 0 155px;
 			min-height: unset;
+		}
+
+		@include mobile-s {
+			flex: 1 0 125px;
 		}
 
 		.img-1 {
@@ -163,6 +176,16 @@
 		}
 	}
 
+	.popular-categories__text {
+		display: contents;
+
+		@include mobile {
+			display: flex;
+			flex-direction: column;
+			text-align: left;
+		}
+	}
+
 	&__name {
 		@include fluid-text(20, 16);
 
@@ -177,6 +200,12 @@
 
 		@include mobile {
 			margin-top: auto;
+		}
+	}
+
+	&__count-text {
+		@include mobile {
+			display: none;
 		}
 	}
 

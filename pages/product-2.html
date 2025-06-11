@@ -241,7 +241,8 @@
 									</div>
 									<div class="product__header-rating-text">
 										<a href="#">
-											Отзывы <span>(6)</span></a>
+											<span class="hidden-mobile">Отзывы</span>
+											<span>(6)</span></a>
 									</div>
 								</div>
 								<div class="product__header-views">
@@ -539,7 +540,7 @@
 			</div>
 		</section>
 
-		<section class="swiper-block swiper-block--catalog">
+		<section class="swiper-block swiper-block--catalog swiper-block--catalog-rows-1">
 			<div class="swiper-block__container container">
 				<header class="title-wrapper">
 					<h2 class="swiper-block__title bottom-line">
@@ -571,34 +572,38 @@
 										<div class="swiper-pagination"></div>
 									</div>
 									<div class="catalog-card__content">
-										<p class="catalog-card__articul">Арт. 103296706</p>
-										<div class="catalog-card__name">
-											<a href="#" class="catalog-card__title">Разнообразный и богатый опыт</a>
-											<p class="catalog-card__subtitle">Malus Red Katie</p>
+										<div class="catalog-card__content-top">
+											<p class="catalog-card__articul">Арт. 103296706</p>
+											<div class="catalog-card__name">
+												<a href="#" class="catalog-card__title">Разнообразный и богатый опыт</a>
+												<p class="catalog-card__subtitle">Malus Red Katie</p>
+											</div>
+											<div class="catalog-card__details">
+												<p>C-10,PA 160-180 см + крона</p>
+											</div>
+											<p class="catalog-card__availability">В наличии</p>
 										</div>
-										<div class="catalog-card__details">
-											<p>C-10,PA 160-180 см + крона</p>
-										</div>
-										<p class="catalog-card__availability">В наличии</p>
-										<p class="catalog-card__price">
-											<span class="catalog-card__price-text">Цена</span>
-											<span class="catalog-card__price-current">16 000 ₽</span>
-											<span class="catalog-card__price-old">25 000 ₽</span>
-										</p>
-										<div class="catalog-card__actions">
-											<button class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
-												data-label="Купить в один клик" title="Купить в один клик">
-												<img src="/images/icons/one-click.svg" alt="">
-											</button>
-											<button class="catalog-card__button catalog-card__button--cart button js-modal-cart"
-												data-label="В корзину" title="В корзину">
-												<img src="/images/icons/shopping-cart.svg" alt="">
-												В корзину
-											</button>
-											<button class="catalog-card__button catalog-card__button--info button js-info-open"
-												data-label="Информация" title="Информация">
-												<img src="/images/icons/exclamation-white.svg" alt="">
-											</button>
+										<div class="catalog-card__content-bottom">
+											<p class="catalog-card__price">
+												<span class="catalog-card__price-text">Цена</span>
+												<span class="catalog-card__price-current">16 000 ₽</span>
+												<span class="catalog-card__price-old">25 000 ₽</span>
+											</p>
+											<div class="catalog-card__actions">
+												<button class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+													data-label="Купить в один клик" title="Купить в один клик">
+													<img src="/images/icons/one-click.svg" alt="">
+												</button>
+												<button class="catalog-card__button catalog-card__button--cart button js-modal-cart"
+													data-label="В корзину" title="В корзину">
+													<img src="/images/icons/shopping-cart.svg" alt="">
+													В корзину
+												</button>
+												<button class="catalog-card__button catalog-card__button--info button js-info-open"
+													data-label="Информация" title="Информация">
+													<img src="/images/icons/exclamation-white.svg" alt="">
+												</button>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -1349,28 +1354,32 @@
 										<div class="swiper-pagination"></div>
 									</div>
 									<div class="catalog-card__content">
-										<p class="catalog-card__articul">Арт. 103296706</p>
-										<div class="catalog-card__name">
-											<a href="#" class="catalog-card__title">Яблоня Ред Кетти</a>
-											<p class="catalog-card__subtitle">Malus Red Katie</p>
+										<div class="catalog-card__content-top">
+											<p class="catalog-card__articul">Арт. 103296706</p>
+											<div class="catalog-card__name">
+												<a href="#" class="catalog-card__title">Яблоня Ред Кетти</a>
+												<p class="catalog-card__subtitle">Malus Red Katie</p>
+											</div>
+											<div class="catalog-card__details">
+												<p>C-10,PA 160-180 см + крона</p>
+											</div>
+											<p class="catalog-card__availability">В наличии</p>
 										</div>
-										<div class="catalog-card__details">
-											<p>C-10,PA 160-180 см + крона</p>
-										</div>
-										<p class="catalog-card__availability">В наличии</p>
-										<p class="catalog-card__price">
-											<span class="catalog-card__price-text">Цена по запросу</span>
-										</p>
-										<div class="catalog-card__actions">
-											<button class="catalog-card__button catalog-card__button--cart button js-modal-requestPrice"
-												data-label="В корзину" title="В корзину">
-												<img src="/images/icons/shopping-cart.svg" alt="">
-												Запросить цену
-											</button>
-											<button class="catalog-card__button catalog-card__button--info button js-info-open"
-												data-label="Информация" title="Информация">
-												<img src="/images/icons/exclamation-white.svg" alt="">
-											</button>
+										<div class="catalog-card__content-bottom">
+											<p class="catalog-card__price">
+												<span class="catalog-card__price-text">Цена по запросу</span>
+											</p>
+											<div class="catalog-card__actions">
+												<button class="catalog-card__button catalog-card__button--cart button js-modal-requestPrice"
+													data-label="В корзину" title="В корзину">
+													<img src="/images/icons/shopping-cart.svg" alt="">
+													Запросить цену
+												</button>
+												<button class="catalog-card__button catalog-card__button--info button js-info-open"
+													data-label="Информация" title="Информация">
+													<img src="/images/icons/exclamation-white.svg" alt="">
+												</button>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -1805,34 +1814,38 @@
 										<div class="swiper-pagination"></div>
 									</div>
 									<div class="catalog-card__content">
-										<p class="catalog-card__articul">Арт. 103296706</p>
-										<div class="catalog-card__name">
-											<a href="#" class="catalog-card__title">Яблоня Ред Кетти</a>
-											<p class="catalog-card__subtitle">Malus Red Katie</p>
+										<div class="catalog-card__content-top">
+											<p class="catalog-card__articul">Арт. 103296706</p>
+											<div class="catalog-card__name">
+												<a href="#" class="catalog-card__title">Яблоня Ред Кетти</a>
+												<p class="catalog-card__subtitle">Malus Red Katie</p>
+											</div>
+											<div class="catalog-card__details">
+												<p>C-10,PA 160-180 см + крона</p>
+											</div>
+											<p class="catalog-card__availability catalog-card__availability--for-order">Под заказ</p>
 										</div>
-										<div class="catalog-card__details">
-											<p>C-10,PA 160-180 см + крона</p>
-										</div>
-										<p class="catalog-card__availability catalog-card__availability--for-order">Под заказ</p>
-										<p class="catalog-card__price">
-											<span class="catalog-card__price-text">Цена</span>
-											<span class="catalog-card__price-current">16 000 ₽</span>
-											<span class="catalog-card__price-old">25 000 ₽</span>
-										</p>
-										<div class="catalog-card__actions">
-											<button class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
-												data-label="Купить в один клик" title="Купить в один клик">
-												<img src="/images/icons/one-click.svg" alt="">
-											</button>
-											<button class="catalog-card__button catalog-card__button--cart button js-modal-cart"
-												data-label="В корзину" title="В корзину">
-												<img src="/images/icons/shopping-cart.svg" alt="">
-												В корзину
-											</button>
-											<button class="catalog-card__button catalog-card__button--info button js-info-open"
-												data-label="Информация" title="Информация">
-												<img src="/images/icons/exclamation-white.svg" alt="">
-											</button>
+										<div class="catalog-card__content-bottom">
+											<p class="catalog-card__price">
+												<span class="catalog-card__price-text">Цена</span>
+												<span class="catalog-card__price-current">16 000 ₽</span>
+												<span class="catalog-card__price-old">25 000 ₽</span>
+											</p>
+											<div class="catalog-card__actions">
+												<button class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+													data-label="Купить в один клик" title="Купить в один клик">
+													<img src="/images/icons/one-click.svg" alt="">
+												</button>
+												<button class="catalog-card__button catalog-card__button--cart button js-modal-cart"
+													data-label="В корзину" title="В корзину">
+													<img src="/images/icons/shopping-cart.svg" alt="">
+													В корзину
+												</button>
+												<button class="catalog-card__button catalog-card__button--info button js-info-open"
+													data-label="Информация" title="Информация">
+													<img src="/images/icons/exclamation-white.svg" alt="">
+												</button>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -2104,40 +2117,43 @@
 												<div class="swiper-slide">
 													<img src="/images/catalog/catalog-3.jpg" alt="Разнообразный и богатый опыт" loading="lazy">
 												</div>
-
 											</div>
 										</div>
 										<div class="swiper-pagination"></div>
 									</div>
 									<div class="catalog-card__content">
-										<p class="catalog-card__articul">Арт. 103296706</p>
-										<div class="catalog-card__name">
-											<a href="#" class="catalog-card__title">Разнообразный и богатый опыт</a>
-											<p class="catalog-card__subtitle">Malus Red Katie</p>
+										<div class="catalog-card__content-top">
+											<p class="catalog-card__articul">Арт. 103296706</p>
+											<div class="catalog-card__name">
+												<a href="#" class="catalog-card__title">Разнообразный и богатый опыт</a>
+												<p class="catalog-card__subtitle">Malus Red Katie</p>
+											</div>
+											<div class="catalog-card__details">
+												<p>C-10,PA 160-180 см + крона</p>
+											</div>
+											<p class="catalog-card__availability">В наличии</p>
 										</div>
-										<div class="catalog-card__details">
-											<p>C-10,PA 160-180 см + крона</p>
-										</div>
-										<p class="catalog-card__availability">В наличии</p>
-										<p class="catalog-card__price">
-											<span class="catalog-card__price-text">Цена</span>
-											<span class="catalog-card__price-current">16 000 ₽</span>
-											<span class="catalog-card__price-old">25 000 ₽</span>
-										</p>
-										<div class="catalog-card__actions">
-											<button class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
-												data-label="Купить в один клик" title="Купить в один клик">
-												<img src="/images/icons/one-click.svg" alt="">
-											</button>
-											<button class="catalog-card__button catalog-card__button--cart button js-modal-cart"
-												data-label="В корзину" title="В корзину">
-												<img src="/images/icons/shopping-cart.svg" alt="">
-												В корзину
-											</button>
-											<button class="catalog-card__button catalog-card__button--info button js-info-open"
-												data-label="Информация" title="Информация">
-												<img src="/images/icons/exclamation-white.svg" alt="">
-											</button>
+										<div class="catalog-card__content-bottom">
+											<p class="catalog-card__price">
+												<span class="catalog-card__price-text">Цена</span>
+												<span class="catalog-card__price-current">16 000 ₽</span>
+												<span class="catalog-card__price-old">25 000 ₽</span>
+											</p>
+											<div class="catalog-card__actions">
+												<button class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+													data-label="Купить в один клик" title="Купить в один клик">
+													<img src="/images/icons/one-click.svg" alt="">
+												</button>
+												<button class="catalog-card__button catalog-card__button--cart button js-modal-cart"
+													data-label="В корзину" title="В корзину">
+													<img src="/images/icons/shopping-cart.svg" alt="">
+													В корзину
+												</button>
+												<button class="catalog-card__button catalog-card__button--info button js-info-open"
+													data-label="Информация" title="Информация">
+													<img src="/images/icons/exclamation-white.svg" alt="">
+												</button>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -2865,6 +2881,7 @@
 								</div>
 							</div>
 						</div>
+
 					</div>
 					<div class="swiper-pagination swiper-block__pagination"></div>
 				</div>
@@ -2873,7 +2890,7 @@
 			</div>
 		</section>
 
-		<section class="swiper-block swiper-block--catalog">
+		<section class="swiper-block swiper-block--catalog swiper-block--catalog-rows-1">
 			<div class="swiper-block__container container">
 				<header class="title-wrapper">
 					<h2 class="swiper-block__title bottom-line">
@@ -2905,34 +2922,38 @@
 										<div class="swiper-pagination"></div>
 									</div>
 									<div class="catalog-card__content">
-										<p class="catalog-card__articul">Арт. 103296706</p>
-										<div class="catalog-card__name">
-											<a href="#" class="catalog-card__title">Разнообразный и богатый опыт</a>
-											<p class="catalog-card__subtitle">Malus Red Katie</p>
+										<div class="catalog-card__content-top">
+											<p class="catalog-card__articul">Арт. 103296706</p>
+											<div class="catalog-card__name">
+												<a href="#" class="catalog-card__title">Разнообразный и богатый опыт</a>
+												<p class="catalog-card__subtitle">Malus Red Katie</p>
+											</div>
+											<div class="catalog-card__details">
+												<p>C-10,PA 160-180 см + крона</p>
+											</div>
+											<p class="catalog-card__availability">В наличии</p>
 										</div>
-										<div class="catalog-card__details">
-											<p>C-10,PA 160-180 см + крона</p>
-										</div>
-										<p class="catalog-card__availability">В наличии</p>
-										<p class="catalog-card__price">
-											<span class="catalog-card__price-text">Цена</span>
-											<span class="catalog-card__price-current">16 000 ₽</span>
-											<span class="catalog-card__price-old">25 000 ₽</span>
-										</p>
-										<div class="catalog-card__actions">
-											<button class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
-												data-label="Купить в один клик" title="Купить в один клик">
-												<img src="/images/icons/one-click.svg" alt="">
-											</button>
-											<button class="catalog-card__button catalog-card__button--cart button js-modal-cart"
-												data-label="В корзину" title="В корзину">
-												<img src="/images/icons/shopping-cart.svg" alt="">
-												В корзину
-											</button>
-											<button class="catalog-card__button catalog-card__button--info button js-info-open"
-												data-label="Информация" title="Информация">
-												<img src="/images/icons/exclamation-white.svg" alt="">
-											</button>
+										<div class="catalog-card__content-bottom">
+											<p class="catalog-card__price">
+												<span class="catalog-card__price-text">Цена</span>
+												<span class="catalog-card__price-current">16 000 ₽</span>
+												<span class="catalog-card__price-old">25 000 ₽</span>
+											</p>
+											<div class="catalog-card__actions">
+												<button class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+													data-label="Купить в один клик" title="Купить в один клик">
+													<img src="/images/icons/one-click.svg" alt="">
+												</button>
+												<button class="catalog-card__button catalog-card__button--cart button js-modal-cart"
+													data-label="В корзину" title="В корзину">
+													<img src="/images/icons/shopping-cart.svg" alt="">
+													В корзину
+												</button>
+												<button class="catalog-card__button catalog-card__button--info button js-info-open"
+													data-label="Информация" title="Информация">
+													<img src="/images/icons/exclamation-white.svg" alt="">
+												</button>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -3683,28 +3704,32 @@
 										<div class="swiper-pagination"></div>
 									</div>
 									<div class="catalog-card__content">
-										<p class="catalog-card__articul">Арт. 103296706</p>
-										<div class="catalog-card__name">
-											<a href="#" class="catalog-card__title">Яблоня Ред Кетти</a>
-											<p class="catalog-card__subtitle">Malus Red Katie</p>
+										<div class="catalog-card__content-top">
+											<p class="catalog-card__articul">Арт. 103296706</p>
+											<div class="catalog-card__name">
+												<a href="#" class="catalog-card__title">Яблоня Ред Кетти</a>
+												<p class="catalog-card__subtitle">Malus Red Katie</p>
+											</div>
+											<div class="catalog-card__details">
+												<p>C-10,PA 160-180 см + крона</p>
+											</div>
+											<p class="catalog-card__availability">В наличии</p>
 										</div>
-										<div class="catalog-card__details">
-											<p>C-10,PA 160-180 см + крона</p>
-										</div>
-										<p class="catalog-card__availability">В наличии</p>
-										<p class="catalog-card__price">
-											<span class="catalog-card__price-text">Цена по запросу</span>
-										</p>
-										<div class="catalog-card__actions">
-											<button class="catalog-card__button catalog-card__button--cart button js-modal-requestPrice"
-												data-label="В корзину" title="В корзину">
-												<img src="/images/icons/shopping-cart.svg" alt="">
-												Запросить цену
-											</button>
-											<button class="catalog-card__button catalog-card__button--info button js-info-open"
-												data-label="Информация" title="Информация">
-												<img src="/images/icons/exclamation-white.svg" alt="">
-											</button>
+										<div class="catalog-card__content-bottom">
+											<p class="catalog-card__price">
+												<span class="catalog-card__price-text">Цена по запросу</span>
+											</p>
+											<div class="catalog-card__actions">
+												<button class="catalog-card__button catalog-card__button--cart button js-modal-requestPrice"
+													data-label="В корзину" title="В корзину">
+													<img src="/images/icons/shopping-cart.svg" alt="">
+													Запросить цену
+												</button>
+												<button class="catalog-card__button catalog-card__button--info button js-info-open"
+													data-label="Информация" title="Информация">
+													<img src="/images/icons/exclamation-white.svg" alt="">
+												</button>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -4139,34 +4164,38 @@
 										<div class="swiper-pagination"></div>
 									</div>
 									<div class="catalog-card__content">
-										<p class="catalog-card__articul">Арт. 103296706</p>
-										<div class="catalog-card__name">
-											<a href="#" class="catalog-card__title">Яблоня Ред Кетти</a>
-											<p class="catalog-card__subtitle">Malus Red Katie</p>
+										<div class="catalog-card__content-top">
+											<p class="catalog-card__articul">Арт. 103296706</p>
+											<div class="catalog-card__name">
+												<a href="#" class="catalog-card__title">Яблоня Ред Кетти</a>
+												<p class="catalog-card__subtitle">Malus Red Katie</p>
+											</div>
+											<div class="catalog-card__details">
+												<p>C-10,PA 160-180 см + крона</p>
+											</div>
+											<p class="catalog-card__availability catalog-card__availability--for-order">Под заказ</p>
 										</div>
-										<div class="catalog-card__details">
-											<p>C-10,PA 160-180 см + крона</p>
-										</div>
-										<p class="catalog-card__availability catalog-card__availability--for-order">Под заказ</p>
-										<p class="catalog-card__price">
-											<span class="catalog-card__price-text">Цена</span>
-											<span class="catalog-card__price-current">16 000 ₽</span>
-											<span class="catalog-card__price-old">25 000 ₽</span>
-										</p>
-										<div class="catalog-card__actions">
-											<button class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
-												data-label="Купить в один клик" title="Купить в один клик">
-												<img src="/images/icons/one-click.svg" alt="">
-											</button>
-											<button class="catalog-card__button catalog-card__button--cart button js-modal-cart"
-												data-label="В корзину" title="В корзину">
-												<img src="/images/icons/shopping-cart.svg" alt="">
-												В корзину
-											</button>
-											<button class="catalog-card__button catalog-card__button--info button js-info-open"
-												data-label="Информация" title="Информация">
-												<img src="/images/icons/exclamation-white.svg" alt="">
-											</button>
+										<div class="catalog-card__content-bottom">
+											<p class="catalog-card__price">
+												<span class="catalog-card__price-text">Цена</span>
+												<span class="catalog-card__price-current">16 000 ₽</span>
+												<span class="catalog-card__price-old">25 000 ₽</span>
+											</p>
+											<div class="catalog-card__actions">
+												<button class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+													data-label="Купить в один клик" title="Купить в один клик">
+													<img src="/images/icons/one-click.svg" alt="">
+												</button>
+												<button class="catalog-card__button catalog-card__button--cart button js-modal-cart"
+													data-label="В корзину" title="В корзину">
+													<img src="/images/icons/shopping-cart.svg" alt="">
+													В корзину
+												</button>
+												<button class="catalog-card__button catalog-card__button--info button js-info-open"
+													data-label="Информация" title="Информация">
+													<img src="/images/icons/exclamation-white.svg" alt="">
+												</button>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -4438,40 +4467,43 @@
 												<div class="swiper-slide">
 													<img src="/images/catalog/catalog-3.jpg" alt="Разнообразный и богатый опыт" loading="lazy">
 												</div>
-
 											</div>
 										</div>
 										<div class="swiper-pagination"></div>
 									</div>
 									<div class="catalog-card__content">
-										<p class="catalog-card__articul">Арт. 103296706</p>
-										<div class="catalog-card__name">
-											<a href="#" class="catalog-card__title">Разнообразный и богатый опыт</a>
-											<p class="catalog-card__subtitle">Malus Red Katie</p>
+										<div class="catalog-card__content-top">
+											<p class="catalog-card__articul">Арт. 103296706</p>
+											<div class="catalog-card__name">
+												<a href="#" class="catalog-card__title">Разнообразный и богатый опыт</a>
+												<p class="catalog-card__subtitle">Malus Red Katie</p>
+											</div>
+											<div class="catalog-card__details">
+												<p>C-10,PA 160-180 см + крона</p>
+											</div>
+											<p class="catalog-card__availability">В наличии</p>
 										</div>
-										<div class="catalog-card__details">
-											<p>C-10,PA 160-180 см + крона</p>
-										</div>
-										<p class="catalog-card__availability">В наличии</p>
-										<p class="catalog-card__price">
-											<span class="catalog-card__price-text">Цена</span>
-											<span class="catalog-card__price-current">16 000 ₽</span>
-											<span class="catalog-card__price-old">25 000 ₽</span>
-										</p>
-										<div class="catalog-card__actions">
-											<button class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
-												data-label="Купить в один клик" title="Купить в один клик">
-												<img src="/images/icons/one-click.svg" alt="">
-											</button>
-											<button class="catalog-card__button catalog-card__button--cart button js-modal-cart"
-												data-label="В корзину" title="В корзину">
-												<img src="/images/icons/shopping-cart.svg" alt="">
-												В корзину
-											</button>
-											<button class="catalog-card__button catalog-card__button--info button js-info-open"
-												data-label="Информация" title="Информация">
-												<img src="/images/icons/exclamation-white.svg" alt="">
-											</button>
+										<div class="catalog-card__content-bottom">
+											<p class="catalog-card__price">
+												<span class="catalog-card__price-text">Цена</span>
+												<span class="catalog-card__price-current">16 000 ₽</span>
+												<span class="catalog-card__price-old">25 000 ₽</span>
+											</p>
+											<div class="catalog-card__actions">
+												<button class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+													data-label="Купить в один клик" title="Купить в один клик">
+													<img src="/images/icons/one-click.svg" alt="">
+												</button>
+												<button class="catalog-card__button catalog-card__button--cart button js-modal-cart"
+													data-label="В корзину" title="В корзину">
+													<img src="/images/icons/shopping-cart.svg" alt="">
+													В корзину
+												</button>
+												<button class="catalog-card__button catalog-card__button--info button js-info-open"
+													data-label="Информация" title="Информация">
+													<img src="/images/icons/exclamation-white.svg" alt="">
+												</button>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -5199,6 +5231,7 @@
 								</div>
 							</div>
 						</div>
+
 					</div>
 					<div class="swiper-pagination swiper-block__pagination"></div>
 				</div>
@@ -5207,7 +5240,7 @@
 			</div>
 		</section>
 
-		<section class="swiper-block swiper-block--catalog">
+		<section class="swiper-block swiper-block--catalog swiper-block--catalog-rows-1">
 			<div class="swiper-block__container container">
 				<header class="title-wrapper">
 					<h2 class="swiper-block__title bottom-line">
@@ -5239,34 +5272,38 @@
 										<div class="swiper-pagination"></div>
 									</div>
 									<div class="catalog-card__content">
-										<p class="catalog-card__articul">Арт. 103296706</p>
-										<div class="catalog-card__name">
-											<a href="#" class="catalog-card__title">Разнообразный и богатый опыт</a>
-											<p class="catalog-card__subtitle">Malus Red Katie</p>
+										<div class="catalog-card__content-top">
+											<p class="catalog-card__articul">Арт. 103296706</p>
+											<div class="catalog-card__name">
+												<a href="#" class="catalog-card__title">Разнообразный и богатый опыт</a>
+												<p class="catalog-card__subtitle">Malus Red Katie</p>
+											</div>
+											<div class="catalog-card__details">
+												<p>C-10,PA 160-180 см + крона</p>
+											</div>
+											<p class="catalog-card__availability">В наличии</p>
 										</div>
-										<div class="catalog-card__details">
-											<p>C-10,PA 160-180 см + крона</p>
-										</div>
-										<p class="catalog-card__availability">В наличии</p>
-										<p class="catalog-card__price">
-											<span class="catalog-card__price-text">Цена</span>
-											<span class="catalog-card__price-current">16 000 ₽</span>
-											<span class="catalog-card__price-old">25 000 ₽</span>
-										</p>
-										<div class="catalog-card__actions">
-											<button class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
-												data-label="Купить в один клик" title="Купить в один клик">
-												<img src="/images/icons/one-click.svg" alt="">
-											</button>
-											<button class="catalog-card__button catalog-card__button--cart button js-modal-cart"
-												data-label="В корзину" title="В корзину">
-												<img src="/images/icons/shopping-cart.svg" alt="">
-												В корзину
-											</button>
-											<button class="catalog-card__button catalog-card__button--info button js-info-open"
-												data-label="Информация" title="Информация">
-												<img src="/images/icons/exclamation-white.svg" alt="">
-											</button>
+										<div class="catalog-card__content-bottom">
+											<p class="catalog-card__price">
+												<span class="catalog-card__price-text">Цена</span>
+												<span class="catalog-card__price-current">16 000 ₽</span>
+												<span class="catalog-card__price-old">25 000 ₽</span>
+											</p>
+											<div class="catalog-card__actions">
+												<button class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+													data-label="Купить в один клик" title="Купить в один клик">
+													<img src="/images/icons/one-click.svg" alt="">
+												</button>
+												<button class="catalog-card__button catalog-card__button--cart button js-modal-cart"
+													data-label="В корзину" title="В корзину">
+													<img src="/images/icons/shopping-cart.svg" alt="">
+													В корзину
+												</button>
+												<button class="catalog-card__button catalog-card__button--info button js-info-open"
+													data-label="Информация" title="Информация">
+													<img src="/images/icons/exclamation-white.svg" alt="">
+												</button>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -6017,28 +6054,32 @@
 										<div class="swiper-pagination"></div>
 									</div>
 									<div class="catalog-card__content">
-										<p class="catalog-card__articul">Арт. 103296706</p>
-										<div class="catalog-card__name">
-											<a href="#" class="catalog-card__title">Яблоня Ред Кетти</a>
-											<p class="catalog-card__subtitle">Malus Red Katie</p>
+										<div class="catalog-card__content-top">
+											<p class="catalog-card__articul">Арт. 103296706</p>
+											<div class="catalog-card__name">
+												<a href="#" class="catalog-card__title">Яблоня Ред Кетти</a>
+												<p class="catalog-card__subtitle">Malus Red Katie</p>
+											</div>
+											<div class="catalog-card__details">
+												<p>C-10,PA 160-180 см + крона</p>
+											</div>
+											<p class="catalog-card__availability">В наличии</p>
 										</div>
-										<div class="catalog-card__details">
-											<p>C-10,PA 160-180 см + крона</p>
-										</div>
-										<p class="catalog-card__availability">В наличии</p>
-										<p class="catalog-card__price">
-											<span class="catalog-card__price-text">Цена по запросу</span>
-										</p>
-										<div class="catalog-card__actions">
-											<button class="catalog-card__button catalog-card__button--cart button js-modal-requestPrice"
-												data-label="В корзину" title="В корзину">
-												<img src="/images/icons/shopping-cart.svg" alt="">
-												Запросить цену
-											</button>
-											<button class="catalog-card__button catalog-card__button--info button js-info-open"
-												data-label="Информация" title="Информация">
-												<img src="/images/icons/exclamation-white.svg" alt="">
-											</button>
+										<div class="catalog-card__content-bottom">
+											<p class="catalog-card__price">
+												<span class="catalog-card__price-text">Цена по запросу</span>
+											</p>
+											<div class="catalog-card__actions">
+												<button class="catalog-card__button catalog-card__button--cart button js-modal-requestPrice"
+													data-label="В корзину" title="В корзину">
+													<img src="/images/icons/shopping-cart.svg" alt="">
+													Запросить цену
+												</button>
+												<button class="catalog-card__button catalog-card__button--info button js-info-open"
+													data-label="Информация" title="Информация">
+													<img src="/images/icons/exclamation-white.svg" alt="">
+												</button>
+											</div>
 										</div>
 									</div>
 								</div>
@@ -6473,34 +6514,38 @@
 										<div class="swiper-pagination"></div>
 									</div>
 									<div class="catalog-card__content">
-										<p class="catalog-card__articul">Арт. 103296706</p>
-										<div class="catalog-card__name">
-											<a href="#" class="catalog-card__title">Яблоня Ред Кетти</a>
-											<p class="catalog-card__subtitle">Malus Red Katie</p>
+										<div class="catalog-card__content-top">
+											<p class="catalog-card__articul">Арт. 103296706</p>
+											<div class="catalog-card__name">
+												<a href="#" class="catalog-card__title">Яблоня Ред Кетти</a>
+												<p class="catalog-card__subtitle">Malus Red Katie</p>
+											</div>
+											<div class="catalog-card__details">
+												<p>C-10,PA 160-180 см + крона</p>
+											</div>
+											<p class="catalog-card__availability catalog-card__availability--for-order">Под заказ</p>
 										</div>
-										<div class="catalog-card__details">
-											<p>C-10,PA 160-180 см + крона</p>
-										</div>
-										<p class="catalog-card__availability catalog-card__availability--for-order">Под заказ</p>
-										<p class="catalog-card__price">
-											<span class="catalog-card__price-text">Цена</span>
-											<span class="catalog-card__price-current">16 000 ₽</span>
-											<span class="catalog-card__price-old">25 000 ₽</span>
-										</p>
-										<div class="catalog-card__actions">
-											<button class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
-												data-label="Купить в один клик" title="Купить в один клик">
-												<img src="/images/icons/one-click.svg" alt="">
-											</button>
-											<button class="catalog-card__button catalog-card__button--cart button js-modal-cart"
-												data-label="В корзину" title="В корзину">
-												<img src="/images/icons/shopping-cart.svg" alt="">
-												В корзину
-											</button>
-											<button class="catalog-card__button catalog-card__button--info button js-info-open"
-												data-label="Информация" title="Информация">
-												<img src="/images/icons/exclamation-white.svg" alt="">
-											</button>
+										<div class="catalog-card__content-bottom">
+											<p class="catalog-card__price">
+												<span class="catalog-card__price-text">Цена</span>
+												<span class="catalog-card__price-current">16 000 ₽</span>
+												<span class="catalog-card__price-old">25 000 ₽</span>
+											</p>
+											<div class="catalog-card__actions">
+												<button class="catalog-card__button catalog-card__button--one-click button js-modal-oneClick"
+													data-label="Купить в один клик" title="Купить в один клик">
+													<img src="/images/icons/one-click.svg" alt="">
+												</button>
+												<button class="catalog-card__button catalog-card__button--cart button js-modal-cart"
+													data-label="В корзину" title="В корзину">
+													<img src="/images/icons/shopping-cart.svg" alt="">
+													В корзину
+												</button>
+												<button class="catalog-card__button catalog-card__button--info button js-info-open"
+													data-label="Информация" title="Информация">
+													<img src="/images/icons/exclamation-white.svg" alt="">
+												</button>
+											</div>
 										</div>
 									</div>
 								</div>
