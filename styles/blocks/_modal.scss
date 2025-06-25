@@ -12,11 +12,29 @@
 		left: 0;
 		right: 0;
 		bottom: 0;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		padding: 5px;
+		display: block;
+		padding: 0;
 		background: var(--overlay-black);
+		overflow-y: auto;
+		overscroll-behavior: contain;
+
+		&::-webkit-scrollbar {
+			height: 4px;
+			width: 6px;
+		}
+
+		&::-webkit-scrollbar-track {
+			background-color: var(--gray-200);
+			border-radius: 3px;
+		}
+
+		&::-webkit-scrollbar-thumb {
+			background-color: var(--gray-700);
+		}
+
+		&::-webkit-scrollbar-thumb:hover {
+			background-color: var(--gray-900);
+		}
 	}
 
 	&__container {
@@ -25,15 +43,13 @@
 		padding: 30px;
 		max-width: 470px;
 		width: 100%;
-		max-height: 100vh;
-		overflow-y: auto;
+		margin: 40px auto;
 		box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 		border-radius: 12px;
-		overscroll-behavior: contain;
 
 		@include mobile {
 			padding: 15px;
-			max-height: 95dvh;
+			margin: 20px auto;
 		}
 	}
 
