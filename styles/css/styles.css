@@ -6234,33 +6234,33 @@ h4,
 .product__additional {
   margin-bottom: var(--section-margin-bottom);
 }
-.product__tabs-container {
+.product__tabs {
   position: relative;
 }
-.product__tabs-container:has(.ui-tabs-active:first-child) .product__info {
+.product__tabs:has(.product__tab.is-active:first-child) .product__info {
   border-radius: 0px 28px 28px 28px;
 }
 @media (max-width: 767px) {
-  .product__tabs-container {
+  .product__tabs {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
   }
-  .product__tabs-container:has(.ui-tabs-active) .product__info {
+  .product__tabs:has(.product__tab.is-active) .product__info {
     border-radius: 0px 28px 28px 28px;
   }
 }
 @media (max-width: 374px) {
-  .product__tabs-container:has(.ui-tabs-active) .product__info, .product__tabs-container:has(.ui-tabs-active:first-child) .product__info {
+  .product__tabs:has(.product__tab.is-active) .product__info, .product__tabs:has(.product__tab.is-active:first-child) .product__info {
     border-radius: 0px 0px 28px 28px;
   }
 }
-.product__tabs {
+.product__tabs-list {
   display: flex;
   gap: 10px;
 }
-.product__tabs .ui-tabs-tab {
+.product__tabs-list .product__tab {
   position: relative;
   display: flex;
   align-items: center;
@@ -6271,39 +6271,39 @@ h4,
   letter-spacing: 0.51px;
 }
 @media (max-width: 1023px) {
-  .product__tabs .ui-tabs-tab {
+  .product__tabs-list .product__tab {
     padding: 10px 15px;
   }
 }
 @media (max-width: 767px) {
-  .product__tabs .ui-tabs-tab {
+  .product__tabs-list .product__tab {
     padding: 20px 15px;
     border-radius: 25px;
     background: var(--white);
     width: 100%;
     text-align: left;
   }
-  .product__tabs .ui-tabs-tab a {
+  .product__tabs-list .product__tab a {
     width: 100%;
   }
 }
-.product__tabs .ui-tabs-active {
+.product__tabs-list .product__tab.is-active {
   color: var(--primary-500);
   border-radius: 28px 28px 0px 0px;
   background: var(--white);
 }
 @media (max-width: 767px) {
-  .product__tabs .ui-tabs-active {
+  .product__tabs-list .product__tab.is-active {
     width: auto;
   }
 }
 @media (max-width: 374px) {
-  .product__tabs .ui-tabs-active {
+  .product__tabs-list .product__tab.is-active {
     width: 100%;
   }
 }
 @media (max-width: 767px) {
-  .product__tabs {
+  .product__tabs-list {
     display: contents;
   }
 }
@@ -6322,9 +6322,12 @@ h4,
 }
 .product__item {
   font-size: clamp(14px, 1.1111111111vw, 16px);
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 30px;
+}
+.product__item.is-active {
+  display: flex;
 }
 .product__item b {
   font-size: clamp(14px, 1.1111111111vw, 16px);

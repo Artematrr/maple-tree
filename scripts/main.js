@@ -162,8 +162,11 @@ jQuery(document).ready(function () {
 			spaceBetween: 30,
 			breakpoints: {
 				320: { slidesPerView: 1, spaceBetween: 10 },
-				375: { slidesPerView: 2, spaceBetween: 10,
-							 grid: { rows: 2, fill: 'row' } },
+				375: {
+					slidesPerView: 2,
+					spaceBetween: 10,
+					grid: { rows: 2, fill: 'row' },
+				},
 				768: { slidesPerView: 2, spaceBetween: 15 },
 				1024: { slidesPerView: 3 },
 				1440: { slidesPerView: 4 },
@@ -176,32 +179,64 @@ jQuery(document).ready(function () {
 	})
 
 	// Инициализация вкладок товара
-	$('#product-tabs').tabs({
-		activate: function (event, ui) {
-			if (window.innerWidth <= 767) {
-				const tabId = ui.newTab.data('order')
-				const $info = $('.product__info')
-				$info.css('order', tabId)
-				const headerHeight = $('.header').outerHeight()
-				const activeTabHeight = $('.ui-tabs-active').outerHeight() || 0
+	function initProductTabs() {
+		const $tabsContainer = $('#product-tabs')
+		const $tabs = $tabsContainer.find('.product__tab')
+		const $links = $tabs.find('.product__tab-link')
+		const $items = $tabsContainer.find('.product__item')
+		const $info = $tabsContainer.find('.product__info')
 
-				setTimeout(function () {
+		function updateInfoOrder(order) {
+			if (typeof order === 'number') {
+				$info.css('order', order)
+			} else {
+				$info.css('order', 1)
+			}
+		}
+
+		function activateTab($tab) {
+			$tabs.removeClass('is-active')
+			$tab.addClass('is-active')
+			const href = $tab.find('.product__tab-link').attr('href')
+			$items.removeClass('is-active')
+			$items.filter(href).addClass('is-active')
+
+			// Скролл к активной вкладке на мобиле
+			if (window.innerWidth <= 767) {
+				const order = $tab.data('order')
+				updateInfoOrder(order)
+				const headerHeight = $('.header').outerHeight() || 0
+				const activeTabHeight = $tab.outerHeight() || 0
+				setTimeout(() => {
 					$('html, body').scrollTop(
 						$info.offset().top - headerHeight - activeTabHeight
 					)
 				}, 5)
-			}
-		},
-	})
-	$(window).on('resize', function () {
-		if (window.innerWidth <= 767) {
-			const activeTab = $('#product-tabs .ui-tabs-active ')
-			if (activeTab.length) {
-				const order = activeTab.data('order')
-				$('.product__info').css('order', order)
+			} else {
+				updateInfoOrder()
 			}
 		}
-	})
+
+		$links.on('click', function (e) {
+			e.preventDefault()
+			activateTab($(this).closest('.product__tab'))
+		})
+
+		// При загрузке первая вкладка становится активной
+		if ($tabs.length) {
+			activateTab($tabs.first())
+		}
+
+		$(window).on('resize', function () {
+			const $activeTab = $tabs.filter('.is-active')
+			if ($activeTab.length && window.innerWidth <= 767) {
+				updateInfoOrder($activeTab.data('order'))
+			} else {
+				updateInfoOrder()
+			}
+		})
+	}
+	initProductTabs()
 
 	// Модальные окна
 	MicroModal.init({
