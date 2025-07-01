@@ -62,7 +62,7 @@
 						<li><a href="#">Полезно знать</a></li>
 						<li><a href="#">Контакты</a></li>
 						<li>
-							<a href="javascript:void(0);" class="header__search">
+							<a href="javascript:void(0);" class="header__search js-header-search">
 								<span class="header__search-icon">
 									<img src="/images/icons/search.svg" alt="Поиск">
 								</span>
@@ -139,7 +139,7 @@
 							<a href="#" class="header__social" aria-label="Telegram"><img src="/images/icons/telegram.svg"
 									alt="Telegram"></a>
 						</div>
-						<a href="javascript:void(0);" class="header__search">
+						<a href="javascript:void(0);" class="header__search js-header-search">
 							<span class="header__search-icon">
 								<img src="/images/icons/search.svg" alt="Поиск">
 							</span>
@@ -158,6 +158,16 @@
 					<button class="header__mobile-button button button--outline js-modal-callback">Перезвонить</button>
 					<button class="header__mobile-button button button--outline js-modal-askQuestion">Задать вопрос</button>
 				</div>
+			</div>
+		</div>
+
+		<div class="header-search-popup container">
+			<div class="header-search-popup__inner">
+				<form class="header-search-popup__form form" autocomplete="off">
+					<input type="text" class="header-search-popup__input form__input" placeholder="Поиск..." name="search-popup"
+						id='search-popup' autofocus>
+					<button type="submit" class="header-search-popup__button button">Найти</button>
+				</form>
 			</div>
 		</div>
 	</header>
@@ -466,8 +476,9 @@
 									<span>Альтернативные названия растения: <b>Gerkules</b></span>
 								</div>
 							</div>
+
 							<div class="product__item-group">
-								<div class="product__item-row product__item-row--three">
+								<div class="product__item-row">
 									<div class="product__item-col">
 										<h2 class="product__item-subtitle">Основные характеристики:</h2>
 										<ul class="product__item-list">
@@ -507,11 +518,6 @@
 											<li><span>Применение:</span> <b>Для озеленения</b></li>
 										</ul>
 									</div>
-								</div>
-							</div>
-
-							<div class="product__item-group">
-								<div class="product__item-row product__item-row--two">
 									<div class="product__item-col">
 										<h2 class="product__item-subtitle">Выращивание:</h2>
 										<ul class="product__item-list">

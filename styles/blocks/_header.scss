@@ -27,6 +27,14 @@
 		.header__mobile-bottom {
 			display: none;
 		}
+
+		.header-search-popup {
+			margin-top: 0;
+		}
+		.header-search-popup__inner {
+			border-top-left-radius: 0;
+			border-top-right-radius: 0;
+		}
 	}
 
 	&__container {

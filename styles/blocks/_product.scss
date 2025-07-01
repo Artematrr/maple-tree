@@ -106,7 +106,7 @@
 	&__contents {
 		display: flex;
 		flex-direction: column;
-		justify-content: space-between;
+		justify-content: flex-start;
 		gap: 15px;
 
 		@include tablet {
@@ -730,34 +730,12 @@
 
 	&__item-row {
 		display: flex;
+		flex-wrap: wrap;
 		gap: 30px;
 
 		@include mobile {
-			display: flex;
 			flex-direction: column;
 			gap: 5px;
-		}
-
-		&--three {
-			display: grid;
-			grid-template-columns: repeat(3, 1fr);
-
-			@include mobile {
-				display: flex;
-				flex-direction: column;
-				gap: 15px;
-			}
-		}
-
-		&--two {
-			display: grid;
-			grid-template-columns: repeat(2, 1fr);
-
-			@include mobile {
-				display: flex;
-				flex-direction: column;
-				gap: 15px;
-			}
 		}
 
 		&--font-sm {
@@ -769,6 +747,7 @@
 		display: flex;
 		flex-direction: column;
 		gap: 15px;
+		flex: 1 1 320px;
 
 		@include mobile {
 			gap: 10px;

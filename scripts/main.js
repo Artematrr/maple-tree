@@ -236,6 +236,7 @@ jQuery(document).ready(function () {
 			}
 		})
 	}
+
 	initProductTabs()
 
 	// Модальные окна
@@ -499,11 +500,18 @@ jQuery(document).ready(function () {
 	$("input[type='tel']").mask('+7 (999) 999-99-99')
 
 	// Фиксированный хэдер при скролле
-	const header = $('.header')
-	const headerHeight = $('.header').outerHeight()
+	function getHeaderHeight() {
+		if (window.innerWidth <= 1023) {
+			return $('.header__mobile').outerHeight() || 146
+		} else {
+			return $('.header__container').outerHeight() || 55
+		}
+	}
 
-	$(window).on('scroll', function () {
-		if ($(window).scrollTop() > headerHeight) {
+	const header = $('.header')
+	$(window).on('scroll resize', function () {
+		const currentHeaderHeight = getHeaderHeight()
+		if ($(window).scrollTop() > currentHeaderHeight) {
 			header.addClass('is-fixed')
 		} else {
 			header.removeClass('is-fixed')
@@ -514,5 +522,15 @@ jQuery(document).ready(function () {
 	$('.js-menu-toggle').on('click', function (e) {
 		e.preventDefault()
 		$('.header__mobile').toggleClass('is-open')
+	})
+
+	// Поисковое окно под хэдером
+	$('.js-header-search').on('click', function (e) {
+		e.preventDefault()
+		$('.header-search-popup').toggleClass('is-open')
+
+		if ($('.header-search-popup').is(':visible')) {
+			$('.header-search-popup__input').focus()
+		}
 	})
 })
